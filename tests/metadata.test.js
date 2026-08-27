@@ -14,7 +14,7 @@ test("manifest, package, and runtime metadata agree", () => {
   assert.equal(manifest.version, MODULE_VERSION);
   assert.equal(pkg.version, MODULE_VERSION);
   assert.equal(manifest.relationships.requires[0].id, "pf2e-critical-forge");
-  assert.equal(manifest.relationships.requires[0].compatibility.minimum, "1.0.1-rc.5");
+  assert.equal(manifest.relationships.requires[0].compatibility.minimum, "1.0.1-rc.6.1");
 });
 
 test("German and English localization trees contain identical keys", () => {

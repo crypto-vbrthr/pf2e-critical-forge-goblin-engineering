@@ -30,7 +30,7 @@
       },
       "EquipmentIncidents": {
         "Name": "Ausrüstungszwischenfälle aktivieren",
-        "Hint": "Aktiviert humorvolle Ausrüstungszwischenfälle bei unterstützten kritischen Fehlschlägen von Fertigkeitsproben wie Reparieren, Herstellen, Schloss knacken, Mechanismus ausschalten, Wunden versorgen und Erste Hilfe leisten."
+        "Hint": "Aktiviert humorvolle Ausrüstungszwischenfälle bei unterstützten kritischen Fehlschlägen von Fertigkeitsproben wie Reparieren, Herstellen, Schloss knacken, Mechanismus ausschalten, Wunden versorgen, Erste Hilfe leisten, Krankheit behandeln und Vergiftung behandeln."
       }
     },
     "Cards": {
@@ -313,6 +313,46 @@
       "EmergencyClampChoosesTheBag": {
         "Title": "Notfallklemme wählt die Tasche",
         "Description": "Eine Notfallklemme aktiviert sich mit bewundernswerter Dringlichkeit und befestigt sich an den Heilerwerkzeugen. Bis zum Ende deines nächsten Zuges musst du 1 Aktion Interagieren aufwenden, um die Klemme zu lösen, bevor du mit diesen Heilerwerkzeugen erneut Erste Hilfe leisten kannst. Das Lösen beendet diese Folge."
+      },
+      "SterilizerDeclaresVictory": {
+        "Title": "Sterilisator erklärt den Sieg",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Krankheit behandeln ab, einschließlich des Malus auf den nächsten Rettungswurf des Patienten. Danach piept das Heilerwerkzeug und stempelt einen Papierstreifen mit der Aufschrift PATIENT JETZT TECHNISCH SAUBER. Es gibt keinen zusätzlichen regeltechnischen Effekt."
+      },
+      "DiagnosticWheelFindsANewSymptom": {
+        "Title": "Diagnoserad findet ein neues Symptom",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Krankheit behandeln ab, einschließlich des Malus auf den nächsten Rettungswurf des Patienten. Ein Diagnoserad im Heilerwerkzeug dreht wild durch und bleibt bei einer tatsächlich nützlichen Beobachtung stehen. Dein nächster Wurf zum Wissen abrufen über dieselbe Krankheit innerhalb von 1 Stunde erhält einen Situationsbonus von +1. Der Malus auf den Krankheitsrettungswurf bleibt unverändert."
+      },
+      "DoseCounterWrapsAround": {
+        "Title": "Dosierzähler läuft über",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Vergiftung behandeln ab, einschließlich des Malus auf den nächsten Rettungswurf des Patienten. Der Dosierzähler des Heilerwerkzeugs zeigt 0, dann 255 und schließlich AUSREICHEND GEZÄHLT. Es gibt keinen zusätzlichen regeltechnischen Effekt."
+      },
+      "ExtractorCupRefusesToLetGo": {
+        "Title": "Saugglocke weigert sich loszulassen",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Vergiftung behandeln ab, einschließlich des Malus auf den nächsten Rettungswurf des Patienten. Eine Saugglocke heftet sich mit übertriebenem beruflichem Engagement an den Patienten. Bis zum Ende des nächsten Zuges des Patienten wird seine Bewegungsrate um 1,50 m reduziert. Eine angrenzende Kreatur kann 1 Aktion Interagieren aufwenden, um die Saugglocke zu lösen und diese Folge vorzeitig zu beenden. Nichts wird beschädigt."
+      },
+      "PartsTrayAchievesEscapeVelocity": {
+        "Title": "Teileschale erreicht Fluchtgeschwindigkeit",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Reparieren oder Herstellen ab. Eine flache Teileschale kippt plötzlich und rutscht bis zu 3 m weit auf ein zulässiges Feld nach Wahl der SL, wobei sie mehrere nicht unverzichtbare Kleinteile mitnimmt. Bis du die Schale angrenzend mit 1 Aktion Interagieren zurückholst, erhält dein nächster Wurf zum Reparieren oder Herstellen mit derselben Ausrüstung einen Situationsmalus von -1. Nichts geht verloren oder wird beschädigt."
+      },
+      "ToolboxDrawerLabelsEverything": {
+        "Title": "Werkzeugkasten beschriftet alles",
+        "Description": "Der Versuch zum Reparieren oder Herstellen scheitert normal. Jedes Fach der Ausrüstung beschriftet sich still mit SONSTIGES neu. Es gibt keinen regeltechnischen Effekt. Öffnest du das Fach SONSTIGES, befindet sich darin eine kleinere Schale mit der Aufschrift ANDERES."
+      },
+      "LockpickCaseDeploysEverything": {
+        "Title": "Dietrichetui entfaltet alles",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Schloss knacken ab, einschließlich eventuell zerbrochener Werkzeuge. Danach springt das Etui auf und fächert die verbliebenen Dietriche nach scheinbarem Selbstvertrauen statt nach Größe auf. Bevor du mit derselben Ausrüstung deinen nächsten Wurf zum Schloss knacken ablegst, musst du 1 Aktion Interagieren zum Sortieren aufwenden oder erhältst auf diesen Wurf einen Situationsmalus von -1. Das Sortieren beendet diese Folge."
+      },
+      "WireSpoolAutoDeploys": {
+        "Title": "Drahtspule entfaltet sich automatisch",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Mechanismus ausschalten ab, einschließlich des Auslösens des Mechanismus, falls zutreffend. Eine Drahtspule in der Ausrüstung wickelt sich augenblicklich um deine Stiefel ab. Bis zum Ende deines nächsten Zuges wird deine Bewegungsrate um 1,50 m reduziert. Du kannst 1 Aktion Interagieren aufwenden, um den Draht einzusammeln und diese Folge vorzeitig zu beenden."
+      },
+      "EmergencySplintSelectsTheOperator": {
+        "Title": "Notfallschiene wählt den Bediener",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Wunden versorgen oder Erste Hilfe leisten ab. Eine Notfallschiene entscheidet, dass der Heiler eindeutig der nächste Patient ist, und schnallt sich an deinem Unterarm fest. Bis zum Ende deines nächsten Zuges erhältst du einen Situationsmalus von -1 auf Heilkunde- sowie Diebeskunstwürfe, für die du diese Hand benötigst. Du kannst 1 Aktion Interagieren aufwenden, um die Schiene abzunehmen und diese Folge vorzeitig zu beenden."
+      },
+      "FailureAnalysisActuallyWorks": {
+        "Title": "Fehleranalyse funktioniert tatsächlich",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Reparieren oder Herstellen ab. Eine winzige Anzeige an der Ausrüstung zeigt auf etwas in der Nähe und leuchtet mit der Aufschrift TATSÄCHLICHES PROBLEM auf. Dein nächster Wurf zum Wissen abrufen innerhalb von 10 Minuten, der ausdrücklich dem Verständnis des fehlgeschlagenen Gegenstands, Projekts oder Mechanismus dient, erhält einen Situationsbonus von +1. Der ursprüngliche kritische Fehlschlag und alle seine normalen Folgen bleiben unverändert."
       }
     }
   }

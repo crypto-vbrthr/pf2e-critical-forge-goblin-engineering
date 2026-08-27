@@ -51,7 +51,7 @@ test("Equipment Incident titles are unique and preserve the equipment-centered i
     ...WEAPON_MALFUNCTION_CARDS.map((card) => card.fallbackTitle),
     ...RANGED_ENGINEERING_CARDS.map((card) => card.fallbackTitle)
   ]);
-  assert.equal(new Set(EQUIPMENT_INCIDENT_CARDS.map((card) => card.fallbackTitle)).size, 10);
+  assert.equal(new Set(EQUIPMENT_INCIDENT_CARDS.map((card) => card.fallbackTitle)).size, 20);
   for (const card of EQUIPMENT_INCIDENT_CARDS) {
     assert.equal(allNeighborTitles.has(card.fallbackTitle), false, card.fallbackTitle);
   }
@@ -59,7 +59,7 @@ test("Equipment Incident titles are unique and preserve the equipment-centered i
 
 test("overlap review documents the Equipment Incidents rules boundary", () => {
   const review = fs.readFileSync(path.join(root, "docs/OVERLAP_REVIEW.md"), "utf8");
-  for (const phrase of ["Equipment Incidents I review", "Repair", "Craft", "Pick a Lock", "Disable a Device", "Treat Wounds", "Administer First Aid"]) {
+  for (const phrase of ["Equipment Incidents I review", "Equipment Incidents II review", "Repair", "Craft", "Pick a Lock", "Disable a Device", "Treat Wounds", "Administer First Aid", "Treat Disease", "Treat Poison", "rc.6.1"]) {
     assert.match(review, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"));
   }
 });

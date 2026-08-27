@@ -48,7 +48,7 @@ export const GOBLIN_PACK_CONFIGS = Object.freeze([
     id: PACK_IDS.EQUIPMENT_INCIDENTS,
     deckType: "skill",
     fallbackTitle: "Goblin Engineering: Equipment Incidents",
-    fallbackDescription: "Humorous critical failures for equipment-heavy skill checks such as Repair, Craft, Pick a Lock, Disable a Device, Treat Wounds, and Administer First Aid.",
+    fallbackDescription: "Humorous critical failures for equipment-heavy skill checks such as Repair, Craft, Pick a Lock, Disable a Device, Treat Wounds, Administer First Aid, Treat Disease, and Treat Poison.",
     cards: EQUIPMENT_INCIDENT_CARDS,
     defaultEnabled: true,
     metadata: Object.freeze({
@@ -58,7 +58,7 @@ export const GOBLIN_PACK_CONFIGS = Object.freeze([
       scope: "equipment-heavy-skill-check-critical-failures",
       contentStatus: "development",
       plannedCards: 30,
-      implementedCards: 10
+      implementedCards: 20
     })
   })
 ]);

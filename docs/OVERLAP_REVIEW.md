@@ -153,3 +153,18 @@ The governing rule is deliberately conservative: **Goblin Engineering does not r
 This block also avoids Arcane Backlash territory. Identify Magic, Trick Magic Item, Learn a Spell, and other magic-facing skill failures are intentionally not included.
 
 The result is a new mechanical lane for the module: **Weapon Malfunctions and Ranged Engineering make weapons behave badly; Equipment Incidents makes the tools involved in a failed skill activity develop unsolicited features.**
+
+
+## Equipment Incidents II review (0.1.0-dev.8)
+
+The second Equipment Incidents block expands the same conservative rules lane and was reviewed against the rc.6.1 skill-action normalization used by Critical Forge. Canonical action slugs are used throughout, including `treat-disease` and `treat-poison`.
+
+- **Treat Disease** and **Treat Poison** both already impose a circumstance penalty on the patient's next saving throw on a critical failure. Sterilizer Declares Victory, Diagnostic Wheel Finds a New Symptom, Dose Counter Wraps Around, and Extractor Cup Refuses to Let Go explicitly resolve that penalty first and never cancel it.
+- **Repair** and **Craft** gain Parts Tray Achieves Escape Velocity, Toolbox Drawer Labels Everything, and Failure Analysis Actually Works. These cards add temporary tool logistics or a bounded information benefit without increasing item damage or material loss.
+- **Pick a Lock** gains Lockpick Case Deploys Everything. It never restores tools broken by the normal critical failure.
+- **Disable a Device** gains Wire Spool Auto-Deploys. It never prevents or rewinds a mechanism triggered by the normal critical failure.
+- **Treat Wounds** and **Administer First Aid** gain Emergency Splint Selects the Operator. The splint only complicates the healer after the normal PF2e result has been resolved.
+
+The block still avoids **Arcane Backlash** territory by excluding Identify Magic, Learn a Spell, and other magic-facing checks. It also avoids turning generic Athletics or exploration failures into Goblin Engineering incidents when no specific equipment is guaranteed to be involved.
+
+The rc.6.1 dependency is intentional: Equipment Incidents relies on Critical Forge's canonical action-slug normalization so PF2e options such as `action:pick-a-lock` and equivalent spellings match the card filters consistently.

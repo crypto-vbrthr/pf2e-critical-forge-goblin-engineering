@@ -275,27 +275,60 @@ test("pack construction exposes three active content packs", () => {
   assert.equal(packs[1].decks.attack.cards.length, 30);
   assert.equal(packs[1].metadata.implementedCards, 30);
   assert.equal(packs[1].enabled, true);
-  assert.equal(packs[2].decks.skill.cards.length, 10);
-  assert.equal(packs[2].metadata.implementedCards, 10);
+  assert.equal(packs[2].decks.skill.cards.length, 20);
+  assert.equal(packs[2].metadata.implementedCards, 20);
   assert.equal(packs[2].enabled, true);
 });
 
-test("dev.7 adds ten Equipment Incidents in the dedicated skill deck", () => {
-  assert.equal(EQUIPMENT_INCIDENT_CARDS.length, 10);
-  assert.equal(new Set(EQUIPMENT_INCIDENT_CARDS.map((card) => card.id)).size, 10);
-  assert.equal(new Set(EQUIPMENT_INCIDENT_CARDS.map((card) => card.fallbackTitle)).size, 10);
+test("dev.8 contains twenty Equipment Incidents in the dedicated skill deck", () => {
+  assert.equal(EQUIPMENT_INCIDENT_CARDS.length, 20);
+  assert.equal(new Set(EQUIPMENT_INCIDENT_CARDS.map((card) => card.id)).size, 20);
+  assert.equal(new Set(EQUIPMENT_INCIDENT_CARDS.map((card) => card.fallbackTitle)).size, 20);
   for (const card of EQUIPMENT_INCIDENT_CARDS) {
     assert.equal(card.packId, PACK_IDS.EQUIPMENT_INCIDENTS);
     assert.equal(card.category, "skillCheckCriticalFailure");
     assert.equal(card.deckType, "skill");
     assert.equal(card.tone, "humorous");
     assert.equal(card.effect, null);
-    assert.equal(card.metadata.contentBatch, 1);
     assert.equal(card.filters.actionSlugs.length > 0, true, card.id);
   }
 });
 
-test("Equipment Incidents cover the six reviewed equipment-heavy skill actions", () => {
+test("dev.7 Equipment Incidents remain in content batch one", () => {
+  const batchOne = EQUIPMENT_INCIDENT_CARDS.filter((card) => card.metadata.contentBatch === 1);
+  assert.equal(batchOne.length, 10);
+  assert.deepEqual(batchOne.map((card) => card.id.split(".").at(-1)), [
+    "ei-001-torque-limiter-enters-negotiations",
+    "ei-002-spare-parts-form-a-committee",
+    "ei-003-blueprint-adds-an-optional-disaster",
+    "ei-004-measuring-tape-invents-a-unit",
+    "ei-005-broken-pick-requests-promotion",
+    "ei-006-lock-profile-accidentally-saved",
+    "ei-007-safety-flag-deploys",
+    "ei-008-probe-locks-fully-extended",
+    "ei-009-bandage-dispenser-achieves-coverage",
+    "ei-010-emergency-clamp-chooses-the-bag"
+  ]);
+});
+
+test("dev.8 adds ten Equipment Incidents in content batch two", () => {
+  const batchTwo = EQUIPMENT_INCIDENT_CARDS.filter((card) => card.metadata.contentBatch === 2);
+  assert.equal(batchTwo.length, 10);
+  assert.deepEqual(batchTwo.map((card) => card.id.split(".").at(-1)), [
+    "ei-011-sterilizer-declares-victory",
+    "ei-012-diagnostic-wheel-finds-a-new-symptom",
+    "ei-013-dose-counter-wraps-around",
+    "ei-014-extractor-cup-refuses-to-let-go",
+    "ei-015-parts-tray-achieves-escape-velocity",
+    "ei-016-toolbox-drawer-labels-everything",
+    "ei-017-lockpick-case-deploys-everything",
+    "ei-018-wire-spool-auto-deploys",
+    "ei-019-emergency-splint-selects-the-operator",
+    "ei-020-failure-analysis-actually-works"
+  ]);
+});
+
+test("Equipment Incidents cover eight reviewed equipment-heavy skill actions", () => {
   const actions = new Set(EQUIPMENT_INCIDENT_CARDS.flatMap((card) => card.filters.actionSlugs));
   assert.deepEqual([...actions].sort(), [
     "administer-first-aid",
@@ -303,6 +336,8 @@ test("Equipment Incidents cover the six reviewed equipment-heavy skill actions",
     "disable-a-device",
     "pick-a-lock",
     "repair",
+    "treat-disease",
+    "treat-poison",
     "treat-wounds"
   ]);
 });
@@ -325,6 +360,38 @@ test("dev.7 includes bounded upside and narrative-only equipment incidents", () 
     "ei-004-measuring-tape-invents-a-unit",
     "ei-005-broken-pick-requests-promotion",
     "ei-007-safety-flag-deploys"
+  ]) {
+    const card = bySuffix(suffix);
+    assert.equal(card.impact, "narrative");
+    assert.equal(card.tags.includes("no-mechanical-effect"), true);
+    assert.match(card.fallbackDescription, /(no mechanical effect|no additional mechanical effect)/i);
+  }
+});
+
+
+test("dev.8 preserves disease and poison critical-failure penalties while adding tool behavior", () => {
+  const bySuffix = (suffix) => EQUIPMENT_INCIDENT_CARDS.find((card) => card.id.endsWith(suffix));
+  assert.match(bySuffix("ei-011-sterilizer-declares-victory").fallbackDescription, /penalty to the patient's next saving throw/i);
+  assert.match(bySuffix("ei-012-diagnostic-wheel-finds-a-new-symptom").fallbackDescription, /does not alter the disease saving-throw penalty/i);
+  assert.match(bySuffix("ei-013-dose-counter-wraps-around").fallbackDescription, /penalty to the patient's next saving throw/i);
+  assert.match(bySuffix("ei-014-extractor-cup-refuses-to-let-go").fallbackDescription, /Speed is reduced by 5 feet/i);
+});
+
+test("dev.8 adds new workbench, thieves-tool, and healer-tool mechanics", () => {
+  const bySuffix = (suffix) => EQUIPMENT_INCIDENT_CARDS.find((card) => card.id.endsWith(suffix));
+  assert.match(bySuffix("ei-015-parts-tray-achieves-escape-velocity").fallbackDescription, /up to 10 feet/i);
+  assert.match(bySuffix("ei-017-lockpick-case-deploys-everything").fallbackDescription, /1 Interact action sorting/i);
+  assert.match(bySuffix("ei-018-wire-spool-auto-deploys").fallbackDescription, /Speed is reduced by 5 feet/i);
+  assert.match(bySuffix("ei-019-emergency-splint-selects-the-operator").fallbackDescription, /Medicine checks and Thievery checks/i);
+  assert.equal(bySuffix("ei-020-failure-analysis-actually-works").tags.includes("benefit"), true);
+});
+
+test("dev.8 narrative Equipment Incidents remain mechanically harmless", () => {
+  const bySuffix = (suffix) => EQUIPMENT_INCIDENT_CARDS.find((card) => card.id.endsWith(suffix));
+  for (const suffix of [
+    "ei-011-sterilizer-declares-victory",
+    "ei-013-dose-counter-wraps-around",
+    "ei-016-toolbox-drawer-labels-everything"
   ]) {
     const card = bySuffix(suffix);
     assert.equal(card.impact, "narrative");

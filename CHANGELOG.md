@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.0-dev.8 - Equipment Incidents II
+
+- Added 10 additional Equipment Incidents cards, bringing the skill deck to 20 / 30 cards.
+- Added dedicated Treat Disease and Treat Poison incidents using healer's tools, including explicit preservation of the normal critical-failure saving-throw penalty.
+- Added new Repair/Craft parts-tray and toolbox incidents, a lockpick-case deployment, a Disable a Device wire-spool incident, and an emergency splint that selects the operator.
+- Added two bounded information benefits through Recall Knowledge without undoing the triggering critical failure.
+- Raised the Critical Forge dependency to 1.0.1-rc.6.1 while keeping API 0.9.7 and `cards.skillCheckCriticals`; this is the corrected skill action-slug matching baseline.
+- Expanded DE/EN localization, roadmap and overlap documentation, content-batch tests, action coverage tests, and metadata regression coverage.
+
 ## 0.1.0-dev.7 - Equipment Incidents I
 
 - Added the first 10 Equipment Incidents cards using Critical Forge's new skill-check critical-failure context.
