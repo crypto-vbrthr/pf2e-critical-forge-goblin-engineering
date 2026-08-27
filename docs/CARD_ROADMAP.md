@@ -14,24 +14,27 @@ No additional Weapon Malfunctions cards are planned before the other decks are e
 ## Ranged Engineering
 
 Planned: 30 cards  
-Implemented in 0.1.0-dev.4: 10 cards
+Implemented through 0.1.0-dev.5: 20 cards
 
 Ranged Engineering covers non-spell ranged weapon critical fumbles where the equipment itself is responsible for the problem.
 
-The first block establishes the intended mechanical space:
+The first two blocks establish the intended mechanical space:
 
 - ammunition and reload systems behaving incorrectly
 - questionable safety interlocks
 - recoil and pressure-management hardware
 - bow-specific tension controls
-- projectile retrieval features
-- temporary restrictions on special ammunition
+- projectile retrieval features and overenthusiastic return systems
+- temporary restrictions on special ammunition and double-feed behavior
+- close-quarters attachments and temporary utility modes
+- firearm hearing protection, bow sound dampening, and sling stabilization
+- sight systems that improve one shot and complicate the next
 - occasional bounded upside that never erases the original critical fumble
-- purely narrative diagnostics, counters, printers, and measuring devices
+- purely narrative diagnostics, counters, printers, inspections, labels, and measuring devices
 
 The deck deliberately avoids the main Ranged Mishaps vocabulary: firing-position exposure, cover changes, range-estimation penalties, target movement, projectile-path terrain changes, counterfire information, and ordinary shooting-rhythm failures.
 
-Future blocks should expand the hardware vocabulary with more thrown-weapon, bow, crossbow, firearm, sling, and generic ranged-device incidents without drifting back into Ranged Mishaps.
+The final block should complete the deck with additional crossbow/firearm/bow/sling/generic device incidents while avoiding generic range, cover, firing-position, target-movement, and shooting-rhythm consequences already owned by Ranged Mishaps.
 
 ## Equipment Incidents
 

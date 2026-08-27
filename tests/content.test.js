@@ -5,7 +5,7 @@ import { WEAPON_MALFUNCTION_CARDS } from "../scripts/data/cards/weapon-malfuncti
 import { RANGED_ENGINEERING_CARDS } from "../scripts/data/cards/ranged-engineering.js";
 import { buildGoblinEngineeringPacks } from "../scripts/data/packs.js";
 
-test("dev.4 retains thirty unique Weapon Malfunctions", () => {
+test("dev.5 retains thirty unique Weapon Malfunctions", () => {
   assert.equal(WEAPON_MALFUNCTION_CARDS.length, 30);
   assert.equal(new Set(WEAPON_MALFUNCTION_CARDS.map((card) => card.id)).size, 30);
   assert.equal(new Set(WEAPON_MALFUNCTION_CARDS.map((card) => card.fallbackTitle)).size, 30);
@@ -113,11 +113,16 @@ test("dev.3 narrative incidents remain mechanically harmless", () => {
   }
 });
 
-test("dev.4 adds ten unique Ranged Engineering cards", () => {
-  assert.equal(RANGED_ENGINEERING_CARDS.length, 10);
-  assert.equal(new Set(RANGED_ENGINEERING_CARDS.map((card) => card.id)).size, 10);
-  assert.equal(new Set(RANGED_ENGINEERING_CARDS.map((card) => card.fallbackTitle)).size, 10);
-  assert.deepEqual(RANGED_ENGINEERING_CARDS.map((card) => card.id.split(".").at(-1)), [
+test("dev.5 retains twenty unique Ranged Engineering cards", () => {
+  assert.equal(RANGED_ENGINEERING_CARDS.length, 20);
+  assert.equal(new Set(RANGED_ENGINEERING_CARDS.map((card) => card.id)).size, 20);
+  assert.equal(new Set(RANGED_ENGINEERING_CARDS.map((card) => card.fallbackTitle)).size, 20);
+});
+
+test("dev.4 Ranged Engineering batch one remains intact", () => {
+  const batchOne = RANGED_ENGINEERING_CARDS.filter((card) => card.metadata.contentBatch === 1);
+  assert.equal(batchOne.length, 10);
+  assert.deepEqual(batchOne.map((card) => card.id.split(".").at(-1)), [
     "re-001-helpful-auto-loader",
     "re-002-safety-arc-projector",
     "re-003-ammunition-counter-panic",
@@ -128,6 +133,23 @@ test("dev.4 adds ten unique Ranged Engineering cards", () => {
     "re-008-pressure-gauge-redlines",
     "re-009-projectile-return-protocol",
     "re-010-trajectory-printer"
+  ]);
+});
+
+test("dev.5 adds ten cards in Ranged Engineering batch two", () => {
+  const batchTwo = RANGED_ENGINEERING_CARDS.filter((card) => card.metadata.contentBatch === 2);
+  assert.equal(batchTwo.length, 10);
+  assert.deepEqual(batchTwo.map((card) => card.id.split(".").at(-1)), [
+    "re-011-emergency-close-quarters-attachment",
+    "re-012-double-feed-optimizer",
+    "re-013-trigger-apology-protocol",
+    "re-014-windage-knob-comes-off",
+    "re-015-emergency-ear-protection",
+    "re-016-string-silencer-inflates",
+    "re-017-pouch-stabilizer-locks",
+    "re-018-retrieval-reel-overcommits",
+    "re-019-ammunition-inspector",
+    "re-020-self-zeroing-sight-overachieves"
   ]);
 });
 
@@ -170,6 +192,32 @@ test("dev.4 narrative ranged incidents remain mechanically harmless", () => {
   }
 });
 
+test("dev.5 broadens Ranged Engineering with hardware-specific mixed outcomes", () => {
+  const bySuffix = (suffix) => RANGED_ENGINEERING_CARDS.find((card) => card.id.endsWith(suffix));
+  assert.deepEqual(bySuffix("re-011-emergency-close-quarters-attachment").filters.weaponGroups, ["bow", "firearm"]);
+  assert.match(bySuffix("re-011-emergency-close-quarters-attachment").fallbackDescription, /Shove/i);
+  assert.match(bySuffix("re-012-double-feed-optimizer").fallbackDescription, /additional piece of ordinary ammunition/i);
+  assert.deepEqual(bySuffix("re-015-emergency-ear-protection").filters.weaponGroups, ["firearm"]);
+  assert.match(bySuffix("re-015-emergency-ear-protection").fallbackDescription, /deafened/i);
+  assert.deepEqual(bySuffix("re-016-string-silencer-inflates").filters.weaponGroups, ["bow"]);
+  assert.deepEqual(bySuffix("re-017-pouch-stabilizer-locks").filters.weaponGroups, ["sling"]);
+  assert.match(bySuffix("re-018-retrieval-reel-overcommits").fallbackDescription, /off-guard/i);
+  assert.match(bySuffix("re-020-self-zeroing-sight-overachieves").fallbackDescription, /sight flips backward/i);
+});
+
+test("dev.5 narrative ranged incidents remain mechanically harmless", () => {
+  for (const suffix of [
+    "re-013-trigger-apology-protocol",
+    "re-014-windage-knob-comes-off",
+    "re-019-ammunition-inspector"
+  ]) {
+    const card = RANGED_ENGINEERING_CARDS.find((entry) => entry.id.endsWith(suffix));
+    assert.equal(card.impact, "narrative");
+    assert.equal(card.tags.includes("no-mechanical-effect"), true);
+    assert.match(card.fallbackDescription, /no mechanical effect/i);
+  }
+});
+
 test("pack construction exposes two active content packs and one reserved pack", () => {
   const packs = buildGoblinEngineeringPacks();
   assert.equal(packs.length, 3);
@@ -181,8 +229,8 @@ test("pack construction exposes two active content packs and one reserved pack",
   assert.equal(packs[0].decks.attack.cards.length, 30);
   assert.equal(packs[0].metadata.implementedCards, 30);
   assert.equal(packs[0].enabled, true);
-  assert.equal(packs[1].decks.attack.cards.length, 10);
-  assert.equal(packs[1].metadata.implementedCards, 10);
+  assert.equal(packs[1].decks.attack.cards.length, 20);
+  assert.equal(packs[1].metadata.implementedCards, 20);
   assert.equal(packs[1].enabled, true);
   assert.equal(packs[2].decks.attack.cards.length, 0);
   assert.equal(packs[2].enabled, false);

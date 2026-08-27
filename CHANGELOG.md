@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.0-dev.5 - Ranged Engineering II
+
+- Added 10 additional Ranged Engineering cards, bringing the deck to 20 / 30 cards.
+- Added a temporary close-quarters Shove attachment, double-feed optimization, emergency hearing protection, bow-string dampening, sling stabilization, an aggressive retrieval reel, and a self-zeroing sight sequence.
+- Added three new narrative-only incidents: Trigger Apology Protocol, Windage Knob Comes Off, and Ammunition Inspector.
+- Expanded hardware-specific coverage for bows, firearms, slings, thrown weapons, and ammunition-fed ranged weapons without moving into Ranged Mishaps terrain.
+- Preserved the rule that critical fumbles remain critical fumbles, equipment is not permanently damaged, and positive side effects stay bounded and temporary.
+- Added regression tests and localization coverage for the second Ranged Engineering block.
+
 ## 0.1.0-dev.4 - Ranged Engineering I
 
 - Added the first 10 Ranged Engineering cards.

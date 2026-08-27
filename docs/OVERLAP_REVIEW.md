@@ -1,6 +1,6 @@
 # Running Overlap Review
 
-Reviewed through **0.1.0-dev.4** against the supplied Critical Forge and expansion modules.
+Reviewed through **0.1.0-dev.5** against the supplied Critical Forge and expansion modules.
 
 ## Critical Forge Core
 
@@ -104,3 +104,19 @@ Specific boundaries checked:
 No Ranged Engineering title duplicates any of the 30 Ranged Mishaps titles or the six ranged-fumble titles in Critical Forge Core.
 
 The result is a distinct split: **Ranged Mishaps describes a bad shot; Ranged Engineering describes a weapon that has started participating in the decision-making process.**
+
+## Ranged Engineering II review (0.1.0-dev.5)
+
+The second ten-card block was reviewed against the same 30-card Ranged Mishaps deck and against the first ten Ranged Engineering cards. No direct title duplicates were found.
+
+- **Emergency Close-Quarters Attachment** changes the weapon into a temporary Shove-capable tool instead of altering firing position or target movement.
+- **Double-Feed Optimizer** is a deliberate ammunition-system malfunction with a cost/benefit choice and a post-shot maintenance state; it does not duplicate Ammunition Argument's generic pre-shot reset.
+- **Emergency Ear Protection** is a firearm accessory incident affecting hearing rather than recoil movement or firing stance.
+- **String Silencer Inflates** trades a small amount of damage for reduced shot noise and is explicitly a bow-hardware state, not a Hide or sightline consequence.
+- **Pouch Stabilizer Locks** is sling-specific and couples one accurate shot to a later mechanical lock rather than modifying range or battlefield geometry.
+- **Retrieval Reel Overcommits** works after a shot and deliberately couples projectile recovery to becoming off-guard; this is stronger but riskier than Projectile Return Protocol and does not move the target or alter terrain.
+- **Self-Zeroing Sight Overachieves** creates a two-step sight calibration sequence tied to the same weapon rather than a generic aiming or range-estimation penalty.
+- **Trigger Apology Protocol**, **Windage Knob Comes Off**, and **Ammunition Inspector** are narrative-only and mechanically harmless.
+
+The deck remains equipment-centered: the joke and the consequence both originate in a device that has begun interpreting its job description too creatively.
+

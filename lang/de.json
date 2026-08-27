@@ -193,6 +193,46 @@
       "TrajectoryPrinter": {
         "Title": "Flugbahn-Drucker",
         "Description": "Ein schmaler Papierstreifen kommt aus der Waffe und zeigt ein aufwendiges Diagramm des misslungenen Schusses. Es gibt keinen mechanischen Effekt. Das Diagramm trägt die Überschrift ERWARTETE FLUGBAHN und zeigt in eine völlig andere Richtung. Nach deinem nächsten Fernkampfangriff ergänzt der Drucker die Notiz INNERHALB DER TOLERANZ."
+      },
+      "EmergencyCloseQuartersAttachment": {
+        "Title": "Notfall-Nahkampfaufsatz",
+        "Description": "Ein stumpfer Dorn, Haken oder verstärkter Fuß klappt aus der Waffe und verkündet NAHKAMPF BEREIT. Bis zum Ende deines nächsten Zuges kannst du mit dieser Waffe Stoßen, als besäße sie die Eigenschaft Stoßen, aber Fernkampf-Angriffe mit ihr erhalten einen Umstandsmalus von -1. Du kannst 1 Aktion Interagieren aufwenden, um den Aufsatz einzuklappen und diese Folge zu beenden."
+      },
+      "DoubleFeedOptimizer": {
+        "Title": "Doppelzufuhr-Optimierer",
+        "Description": "Das Ladesystem verkündet stolz, ein einzelnes Geschoss sei eine ineffiziente Nutzung des verfügbaren Platzes. Wähle vor deinem nächsten Fernkampf-Angriff mit derselben Waffe vor Ende deines nächsten Zuges: Wende 1 Aktion Interagieren auf, um den Optimierer zu leeren und normal anzugreifen, oder führe ihm ein zusätzliches Stück gewöhnlicher Munition zu, falls du eines besitzt. Bei der zusätzlichen Munition werden beide Geschosse verbraucht, der Angriff verursacht bei einem Treffer 2 zusätzlichen Umstandsschaden, und nach seiner Abwicklung kann die Waffe nicht erneut angreifen, bis du 1 Aktion Interagieren zum Beseitigen der Doppelzufuhr aufwendest. Nichts wird beschädigt."
+      },
+      "TriggerApologyProtocol": {
+        "Title": "Entschuldigungsprotokoll des Abzugs",
+        "Description": "Neben Abzug, Auslöser oder Wurfgriff klappt ein winziges Schild mit der Aufschrift ENTSCHULDIGUNG EMPFANGEN aus. Es hat keinen regeltechnischen Effekt. Niemand hat sich entschuldigt. Entschuldigst du dich danach, wechselt die Anzeige zu ENTSCHULDIGUNG VERMERKT, was offenbar eine andere Abteilung ist."
+      },
+      "WindageKnobComesOff": {
+        "Title": "Seitenkorrekturknopf löst sich",
+        "Description": "Ein sorgfältig gerändelter Einstellknopf schraubt sich selbst ab, fällt ordentlich in deine Hand und enthüllt darunter das Wort DEKORATIV. Es hat keinen regeltechnischen Effekt. Schraubst du ihn verkehrt herum wieder an, wird ein zweites Etikett sichtbar: FORTGESCHRITTENER MODUS."
+      },
+      "EmergencyEarProtection": {
+        "Title": "Notfall-Gehörschutz",
+        "Description": "Zwei gepolsterte Muscheln schnappen mit makellosem Timing nach dem lauten Teil über deine Ohren. Bis zum Beginn deines nächsten Zuges bist du taub, erhältst aber einen Umstandsbonus von +1 auf Rettungswürfe gegen Effekte mit der Kategorie Hörbar. Du kannst 1 Aktion Interagieren aufwenden, um die Muscheln abzuziehen und beide Effekte vorzeitig zu beenden."
+      },
+      "StringSilencerInflates": {
+        "Title": "Sehnendämpfer bläht sich auf",
+        "Description": "Ein gepolsterter Sehnendämpfer bläht sich auf die Größe eines kleinen Gebäcks auf. Dein nächster Fernkampf-Angriff mit demselben Bogen vor Ende deines nächsten Zuges verursacht bei einem Treffer 1 Schadenspunkt weniger, mindestens 0, erzeugt aber nur ein leises Schnappen. Allein das Geräusch dieses Angriffs verrät deine Position keiner Kreatur, die dich nicht auf andere Weise wahrnehmen kann. Nach dem Angriff fällt der Dämpfer wieder in sich zusammen."
+      },
+      "PouchStabilizerLocks": {
+        "Title": "Taschenstabilisator verriegelt",
+        "Description": "Ein winziges Gyroskop klemmt die Schleudertasche in die PERFEKTE ABSCHUSSPOSITION. Dein nächster Fernkampf-Angriff mit derselben Schleuder vor Ende deines nächsten Zuges erhält einen Umstandsbonus von +1 auf den Angriffswurf. Nach der Abwicklung des Angriffs verriegelt die Tasche, und die Schleuder kann nicht erneut angreifen, bis du 1 Aktion Interagieren zum Entriegeln aufwendest. Das Gyroskop schläft anschließend sofort ein."
+      },
+      "RetrievalReelOvercommits": {
+        "Title": "Rückholspule übertreibt",
+        "Description": "Eine Rückholleine schnappt sich mit beängstigender Begeisterung an der Waffe oder ihrem nächsten Geschoss fest. Nach deinem nächsten Fernkampf-Angriff mit derselben Waffe vor Ende deines nächsten Zuges kehrt eine geworfene Waffe in eine freie Hand zurück; gewöhnliche wiederverwendbare Munition schnellt stattdessen in dein Feld zurück und kann geborgen werden. Trifft beides nicht zu, reißt die Spule die Waffe lediglich ruckartig zu dir, ohne sie zu bewegen. Dies geschieht unabhängig davon, ob der Angriff trifft oder verfehlt. In jedem Fall macht dich der plötzliche Ruck bis zum Beginn deines nächsten Zuges auf dem falschen Fuß. Kehrt eine geworfene Waffe zurück, während du keine freie Hand hast, landet sie stattdessen zu deinen Füßen."
+      },
+      "AmmunitionInspector": {
+        "Title": "Munitionsprüfer",
+        "Description": "Ein winziger Gelenkarm fährt aus, betrachtet das nächste verfügbare Geschoss aus drei Winkeln und stempelt es BALLISTISCH AUSREICHEND. Es hat keinen regeltechnischen Effekt. Ist keine Munition verfügbar, stempelt der Arm stattdessen die Waffe mit MUNITION AUSSTEHEND und fährt wieder ein."
+      },
+      "SelfZeroingSightOverachieves": {
+        "Title": "Selbstnullendes Visier übertreibt",
+        "Description": "Ein winziges Visier klickt durch mehrere Positionen und verkündet triumphierend NULLPUNKT GEFUNDEN. Dein nächster Fernkampf-Angriff mit derselben Waffe vor Ende deines nächsten Zuges erhält einen Umstandsbonus von +1 auf den Angriffswurf. Nach der Abwicklung klappt das Visier nach hinten. Führst du vor Ende deines darauffolgenden Zuges einen weiteren Fernkampf-Angriff mit der Waffe aus, ohne zuvor 1 Aktion Interagieren aufzuwenden, um das Visier umzudrehen, erhält dieser Angriff einen Umstandsmalus von -1. Danach endet die Folge."
       }
     }
   }
