@@ -179,4 +179,104 @@ export const WEAPON_MALFUNCTION_CARDS = Object.freeze([
     tags: ["narrative", "paperwork", "no-mechanical-effect", "sparks"],
     contentBatch: 2
   })
+,
+
+  defineWeaponMalfunction({
+    id: "wm-021-quality-assurance-stamp",
+    localizationKey: "QualityAssuranceStamp",
+    impact: "narrative",
+    weight: 1.4,
+    fallbackTitle: "Quality Assurance Stamp",
+    fallbackDescription: "A tiny brass stamp clicks out of the weapon and marks the nearest flat surface APPROVED. There is no mechanical effect. If anyone inspects the stamp, it retracts and produces a second mark reading INSPECTED AFTER APPROVAL.",
+    tags: ["narrative", "quality-assurance", "no-mechanical-effect", "paperwork"],
+    contentBatch: 3
+  }),
+  defineWeaponMalfunction({
+    id: "wm-022-auxiliary-hook-deployment",
+    localizationKey: "AuxiliaryHookDeployment",
+    impact: "light",
+    weight: 0.8,
+    fallbackTitle: "Auxiliary Hook Deployment",
+    fallbackDescription: "A hooked attachment unfolds from the weapon at exactly the wrong angle. Until the end of your next turn, you can use this weapon to Trip as though it had the trip trait, but Strikes with it take a -1 circumstance penalty. You can spend 1 Interact action to retract the hook and end this consequence.",
+    tags: ["trip", "attack-roll", "mixed-result", "interact", "same-weapon"],
+    contentBatch: 3
+  }),
+  defineWeaponMalfunction({
+    id: "wm-023-automatic-parry-mode",
+    localizationKey: "AutomaticParryMode",
+    impact: "moderate",
+    weight: 0.8,
+    fallbackTitle: "Automatic Parry Mode",
+    fallbackDescription: "A defensive plate snaps into place and the weapon becomes extremely proud of itself. Until the start of your next turn, you gain a +1 circumstance bonus to AC against melee attacks while wielding this weapon, but your Strikes with it take a -1 circumstance penalty. You can spend 1 Interact action to fold the plate away and end this consequence early.",
+    tags: ["ac", "attack-roll", "mixed-result", "interact", "same-weapon"],
+    contentBatch: 3
+  }),
+  defineWeaponMalfunction({
+    id: "wm-024-field-repair-configuration",
+    localizationKey: "FieldRepairConfiguration",
+    impact: "moderate",
+    fallbackTitle: "Field Repair Configuration",
+    fallbackDescription: "The weapon folds itself into something that is, against all expectations, a fairly decent maintenance tool. Until the end of your next turn, you cannot Strike with it unless you spend 1 Interact action to restore its weapon configuration. While it remains in repair configuration, you gain a +1 circumstance bonus to the first Crafting check you attempt to Repair an item within your reach.",
+    tags: ["repair", "crafting", "interact", "mixed-result", "same-weapon", "action-tax"],
+    contentBatch: 3
+  }),
+  defineWeaponMalfunction({
+    id: "wm-025-counterthrust-system-activates",
+    localizationKey: "CounterthrustSystemActivates",
+    impact: "strong",
+    weight: 0.45,
+    fallbackTitle: "Counterthrust System Activates",
+    fallbackDescription: "A mechanism labeled COUNTERTHRUST ARMED begins ticking. Before your next Strike with this weapon before the end of your next turn, you may spend 1 Interact action to disable it. Otherwise, after that Strike resolves, you are moved 5 feet directly away from the target if a legal space is available. If that movement is impossible, the weapon drops at your feet instead. The consequence then ends.",
+    tags: ["forced-movement", "drop", "choice", "interact", "same-weapon", "one-use", "controlled-chaos"],
+    contentBatch: 3
+  }),
+  defineWeaponMalfunction({
+    id: "wm-026-operator-feedback-chime",
+    localizationKey: "OperatorFeedbackChime",
+    impact: "narrative",
+    weight: 1.4,
+    fallbackTitle: "Operator Feedback Chime",
+    fallbackDescription: "The weapon plays a solemn three-note chime. There is no mechanical effect. The next time you Strike with it, it answers with one cheerful ding regardless of the result, then considers the matter resolved.",
+    tags: ["narrative", "auditory", "no-mechanical-effect", "chime"],
+    contentBatch: 3
+  }),
+  defineWeaponMalfunction({
+    id: "wm-027-balance-indicator-lights",
+    localizationKey: "BalanceIndicatorLights",
+    impact: "light",
+    weight: 0.8,
+    fallbackTitle: "Balance Indicator Lights",
+    fallbackDescription: "Two tiny indicator lights begin judging your footwork. For your next Strike with this weapon before the end of your next turn, gain a +1 circumstance bonus if you have not used an action with the move trait earlier that turn, or take a -1 circumstance penalty if you have. The lights switch off after the Strike.",
+    tags: ["move-trait", "attack-roll", "mixed-result", "same-weapon", "one-use"],
+    contentBatch: 3
+  }),
+  defineWeaponMalfunction({
+    id: "wm-028-emergency-bracing-foot",
+    localizationKey: "EmergencyBracingFoot",
+    impact: "light",
+    weight: 0.8,
+    fallbackTitle: "Emergency Bracing Foot",
+    fallbackDescription: "A tiny stabilizing foot unfolds from the weapon and becomes deeply committed to the floor. Until the end of your next turn, while wielding this weapon you gain a +1 circumstance bonus to checks and DCs against attempts to Shove or forcibly move you, but your Speed is reduced by 5 feet. You can spend 1 Interact action to retract the foot and end this consequence.",
+    tags: ["speed", "forced-movement", "shove", "mixed-result", "interact", "same-weapon"],
+    contentBatch: 3
+  }),
+  defineWeaponMalfunction({
+    id: "wm-029-automatic-disassembly-demonstration",
+    localizationKey: "AutomaticDisassemblyDemonstration",
+    impact: "moderate",
+    fallbackTitle: "Automatic Disassembly Demonstration",
+    fallbackDescription: "The weapon begins demonstrating how easily it can be serviced. Your next Strike with it before the end of your next turn functions normally. Immediately afterward, a labeled access panel pops free and the weapon cannot Strike again until you spend 1 Interact action to snap the panel back into place. The panel remains attached by a tiny chain and nothing is actually damaged.",
+    tags: ["interact", "action-tax", "same-weapon", "after-strike", "maintenance"],
+    contentBatch: 3
+  }),
+  defineWeaponMalfunction({
+    id: "wm-030-instruction-manual-escapes",
+    localizationKey: "InstructionManualEscapes",
+    impact: "narrative",
+    weight: 1.4,
+    fallbackTitle: "Instruction Manual Escapes",
+    fallbackDescription: "A tightly folded instruction manual springs out of the weapon and skitters into an adjacent space. There is no mechanical effect. The entire manual contains one sentence: IF THIS HAPPENS, CONSULT THE MANUAL.",
+    tags: ["narrative", "manual", "no-mechanical-effect", "paperwork"],
+    contentBatch: 3
+  })
 ]);

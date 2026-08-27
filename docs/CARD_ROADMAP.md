@@ -3,7 +3,7 @@
 ## Weapon Malfunctions
 
 Planned: 30 cards  
-Implemented in 0.1.0-dev.2: 20 cards
+Implemented in 0.1.0-dev.3: 30 cards
 
 The deck covers non-spell melee weapon critical fumbles where the item itself develops a short-lived problem or an unexpected function.
 
@@ -14,7 +14,7 @@ Target final mix:
 - a smaller number of stronger but brief catastrophes
 - occasional beneficial side effects that never erase the critical fumble
 
-The second block broadens the mechanical vocabulary with temporary reach and damage-mode changes, light and noise, a small randomized lever, and controlled flat-check chaos rather than adding another group of generic attack penalties.
+The completed deck broadens the mechanical vocabulary with temporary reach and damage-mode changes, light and noise, defensive and utility configurations, a small randomized lever, forced movement, and controlled flat-check chaos rather than adding another group of generic attack penalties.
 
 ## Ranged Engineering
 

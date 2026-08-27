@@ -113,6 +113,46 @@
       "WarrantyVoid": {
         "Title": "Garantie erloschen",
         "Description": "Ein winziges Papiersiegel springt aus der Waffe, stempelt sich selbst mit UNGÜLTIG und fängt für genau eine Sekunde Feuer. Es gibt keinen mechanischen Effekt, keinen Schaden und keinen tatsächlichen Defekt. Die Garantie war vermutlich ohnehin erfunden."
+      },
+      "QualityAssuranceStamp": {
+        "Title": "Qualitätssicherungsstempel",
+        "Description": "Ein winziger Messingstempel klickt aus der Waffe und markiert die nächste flache Oberfläche mit ABGENOMMEN. Es gibt keinen mechanischen Effekt. Wenn jemand den Stempel untersucht, zieht er sich zurück und erzeugt einen zweiten Abdruck: NACH ABNAHME GEPRÜFT."
+      },
+      "AuxiliaryHookDeployment": {
+        "Title": "Hilfshaken ausgefahren",
+        "Description": "Ein hakenförmiger Aufsatz klappt in genau dem falschen Winkel aus der Waffe. Bis zum Ende deines nächsten Zuges kannst du mit dieser Waffe Zu-Fall-Bringen einsetzen, als hätte sie das Merkmal Zu-Fall-Bringen, aber Angriffe mit ihr erhalten einen Situationsmalus von -1. Du kannst 1 Aktion Interagieren aufwenden, um den Haken einzuziehen und diese Folge zu beenden."
+      },
+      "AutomaticParryMode": {
+        "Title": "Automatischer Pariermodus",
+        "Description": "Eine Schutzplatte schnappt in Position und die Waffe ist darauf außerordentlich stolz. Bis zum Beginn deines nächsten Zuges erhältst du einen Situationsbonus von +1 auf deine RK gegen Nahkampfangriffe, solange du diese Waffe führst, aber deine Angriffe mit ihr erhalten einen Situationsmalus von -1. Du kannst 1 Aktion Interagieren aufwenden, um die Platte einzuklappen und diese Folge vorzeitig zu beenden."
+      },
+      "FieldRepairConfiguration": {
+        "Title": "Feldreparatur-Konfiguration",
+        "Description": "Die Waffe faltet sich zu etwas zusammen, das wider jede Erwartung ein ziemlich brauchbares Wartungswerkzeug ist. Bis zum Ende deines nächsten Zuges kannst du mit ihr keinen Angriff ausführen, solange du nicht 1 Aktion Interagieren aufwendest, um ihre Waffenkonfiguration wiederherzustellen. Solange sie in Reparaturkonfiguration bleibt, erhältst du einen Situationsbonus von +1 auf den ersten Handwerkskunstwurf, den du zum Reparieren eines Gegenstands in deiner Reichweite ablegst."
+      },
+      "CounterthrustSystemActivates": {
+        "Title": "Gegenschubsystem aktiviert",
+        "Description": "Ein Mechanismus mit der Aufschrift GEGENSCHUB SCHARF beginnt zu ticken. Bevor du vor dem Ende deines nächsten Zuges deinen nächsten Angriff mit dieser Waffe ausführst, kannst du 1 Aktion Interagieren aufwenden, um ihn zu deaktivieren. Andernfalls wirst du nach der Abwicklung dieses Angriffs 1,5 Meter direkt vom Ziel weg bewegt, sofern dort ein zulässiges Feld verfügbar ist. Ist diese Bewegung unmöglich, fällt die Waffe stattdessen zu deinen Füßen. Danach endet die Folge."
+      },
+      "OperatorFeedbackChime": {
+        "Title": "Bedienerrückmeldung",
+        "Description": "Die Waffe spielt einen feierlichen Dreiklang. Es gibt keinen mechanischen Effekt. Beim nächsten Angriff mit ihr antwortet sie unabhängig vom Ergebnis mit einem fröhlichen Kling und betrachtet die Angelegenheit anschließend als erledigt."
+      },
+      "BalanceIndicatorLights": {
+        "Title": "Balance-Anzeigeleuchten",
+        "Description": "Zwei winzige Anzeigeleuchten beginnen, deine Beinarbeit zu beurteilen. Für deinen nächsten Angriff mit dieser Waffe vor dem Ende deines nächsten Zuges erhältst du einen Situationsbonus von +1, wenn du in diesem Zug zuvor keine Aktion mit dem Merkmal Bewegung eingesetzt hast, oder einen Situationsmalus von -1, wenn doch. Nach dem Angriff erlöschen die Leuchten."
+      },
+      "EmergencyBracingFoot": {
+        "Title": "Notfall-Stützfuß",
+        "Description": "Ein winziger Stützfuß klappt aus der Waffe und entwickelt eine bemerkenswert feste Bindung zum Boden. Bis zum Ende deines nächsten Zuges erhältst du, solange du diese Waffe führst, einen Situationsbonus von +1 auf Würfe und SG gegen Versuche, dich zu Schieben oder anderweitig gewaltsam zu bewegen; deine Bewegungsrate ist jedoch um 1,5 Meter reduziert. Du kannst 1 Aktion Interagieren aufwenden, um den Stützfuß einzuziehen und diese Folge zu beenden."
+      },
+      "AutomaticDisassemblyDemonstration": {
+        "Title": "Automatische Demontagevorführung",
+        "Description": "Die Waffe beginnt vorzuführen, wie einfach sie gewartet werden kann. Dein nächster Angriff mit ihr vor dem Ende deines nächsten Zuges funktioniert normal. Unmittelbar danach springt eine beschriftete Wartungsabdeckung auf, und du kannst mit der Waffe keinen weiteren Angriff ausführen, bis du 1 Aktion Interagieren aufwendest, um die Abdeckung wieder einzurasten. Sie bleibt an einer winzigen Kette befestigt, und tatsächlich ist nichts beschädigt."
+      },
+      "InstructionManualEscapes": {
+        "Title": "Bedienungsanleitung entkommt",
+        "Description": "Eine eng gefaltete Bedienungsanleitung springt aus der Waffe und schlittert auf ein angrenzendes Feld. Es gibt keinen mechanischen Effekt. Die gesamte Anleitung besteht aus einem einzigen Satz: WENN DIES GESCHIEHT, KONSULTIEREN SIE DIE ANLEITUNG."
       }
     }
   }

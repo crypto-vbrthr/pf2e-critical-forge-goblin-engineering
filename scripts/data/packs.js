@@ -19,7 +19,7 @@ export const GOBLIN_PACK_CONFIGS = Object.freeze([
       scope: "non-spell-melee-weapon-critical-fumbles",
       contentStatus: "development",
       plannedCards: 30,
-      implementedCards: 20
+      implementedCards: 30
     })
   }),
   Object.freeze({

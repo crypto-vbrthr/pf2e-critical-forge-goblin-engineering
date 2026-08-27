@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-dev.3 - Weapon Malfunctions III
+
+- Added the final 10 Weapon Malfunctions cards, completing the deck at 30 / 30 cards.
+- Added temporary Trip and parry modes, a field-repair configuration, counterthrust movement, balance indicators, a bracing foot, and an automatic disassembly demonstration.
+- Added three narrative-only incidents: Quality Assurance Stamp, Operator Feedback Chime, and Instruction Manual Escapes.
+- Preserved the non-spell melee weapon boundary, short-lived consequences, and the rule that no malfunction permanently damages equipment.
+- Completed the initial Weapon Malfunctions content roadmap and expanded overlap and regression tests for the full 30-card deck.
+
 ## 0.1.0-dev.2 - Weapon Malfunctions II
 
 - Added 10 additional Weapon Malfunctions cards, bringing the deck to 20 / 30 cards.

@@ -1,6 +1,6 @@
 # Running Overlap Review
 
-Reviewed through **0.1.0-dev.2** against the supplied Critical Forge and expansion modules.
+Reviewed through **0.1.0-dev.3** against the supplied Critical Forge and expansion modules.
 
 ## Critical Forge Core
 
@@ -55,3 +55,21 @@ The second block was also checked against the first ten Goblin Engineering cards
 ## Review conclusion
 
 The first twenty cards maintain a distinct niche: temporary, item-centered failure with a humorous tone and occasional controlled upside. The final Weapon Malfunctions block should continue expanding item behavior rather than returning to generic penalties, stance failures, or ordinary grip problems.
+
+
+## Weapon Malfunctions III review
+
+The final ten-card block was checked against the same neighboring packs and the first twenty Goblin Engineering cards. No direct title duplicates were found.
+
+- Auxiliary Hook Deployment grants a temporary weapon utility mode rather than reproducing Martial Consequences movement or stance failures.
+- Automatic Parry Mode is a mixed defensive configuration tied to the malfunctioning item; it does not reproduce a general defensive critical benefit.
+- Field Repair Configuration converts the weapon into a temporary tool mode and therefore remains equipment-centered even though it includes an action tax.
+- Counterthrust System Activates creates bounded, source-item forced movement with an explicit disable option rather than a generic stumble.
+- Balance Indicator Lights makes the weapon react to the wielder's movement history instead of imposing an unconditional attack penalty.
+- Emergency Bracing Foot trades mobility for resistance to displacement, a mixed equipment state rather than an injury or condition.
+- Automatic Disassembly Demonstration allows one normal Strike before requiring a brief maintenance interaction, separating it from immediate reset cards.
+- Quality Assurance Stamp, Operator Feedback Chime, and Instruction Manual Escapes are narrative-only and mechanically harmless.
+
+## Weapon Malfunctions completion
+
+At 30 cards, Weapon Malfunctions now has a broad enough mechanical vocabulary to avoid further expansion before the other Goblin Engineering decks are explored. The completed deck remains focused on temporary item behavior, controlled chaos, and occasional upside without invalidating the original critical fumble.

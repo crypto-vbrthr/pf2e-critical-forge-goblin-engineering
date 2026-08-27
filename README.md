@@ -1,6 +1,6 @@
 # PF2E Critical Forge: Goblin Engineering
 
-Version **0.1.0-dev.2**
+Version **0.1.0-dev.3**
 
 Goblin Engineering is a humorous expansion for PF2E Critical Forge. Its cards treat critical fumbles as short-lived equipment incidents: springs object, latches become overconfident, counterweights seek independence, and sometimes the weapon simply emits an indignant squeak.
 
@@ -8,9 +8,9 @@ The comedy comes from unreliable equipment and awkward consequences rather than 
 
 ## Current content
 
-### Weapon Malfunctions - 20 / 30 cards
+### Weapon Malfunctions - 30 / 30 cards
 
-The first two development blocks contain twenty cards for critical fumbles with non-spell melee weapons. Unarmed attacks, spell attacks, and ranged attacks are excluded so the pack stays distinct from general Martial Consequences and Ranged Mishaps.
+The three development blocks contain thirty cards for critical fumbles with non-spell melee weapons. Unarmed attacks, spell attacks, and ranged attacks are excluded so the pack stays distinct from general Martial Consequences and Ranged Mishaps.
 
 The current cards are:
 
@@ -34,8 +34,18 @@ The current cards are:
 - Auxiliary Reach Extension
 - Incorrect Damage Mode
 - Warranty Void
+- Quality Assurance Stamp
+- Auxiliary Hook Deployment
+- Automatic Parry Mode
+- Field Repair Configuration
+- Counterthrust System Activates
+- Operator Feedback Chime
+- Balance Indicator Lights
+- Emergency Bracing Foot
+- Automatic Disassembly Demonstration
+- Instruction Manual Escapes
 
-The second block deliberately broadens the deck beyond simple action taxes. It adds temporary damage-mode changes, reach changes, stealth complications, small random outcomes, light-producing sparks, and two purely narrative equipment incidents.
+The completed deck deliberately ranges beyond simple action taxes. It includes temporary weapon-property changes, defensive and utility modes, movement oddities, small random outcomes, light and noise, controlled positive side effects, and several purely narrative equipment incidents.
 
 ### Reserved packs
 

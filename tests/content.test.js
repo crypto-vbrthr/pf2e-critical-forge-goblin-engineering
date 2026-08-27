@@ -4,10 +4,10 @@ import { PACK_IDS } from "../scripts/constants.js";
 import { WEAPON_MALFUNCTION_CARDS } from "../scripts/data/cards/weapon-malfunctions.js";
 import { buildGoblinEngineeringPacks } from "../scripts/data/packs.js";
 
-test("dev.2 contains twenty unique Weapon Malfunctions", () => {
-  assert.equal(WEAPON_MALFUNCTION_CARDS.length, 20);
-  assert.equal(new Set(WEAPON_MALFUNCTION_CARDS.map((card) => card.id)).size, 20);
-  assert.equal(new Set(WEAPON_MALFUNCTION_CARDS.map((card) => card.fallbackTitle)).size, 20);
+test("dev.3 contains thirty unique Weapon Malfunctions", () => {
+  assert.equal(WEAPON_MALFUNCTION_CARDS.length, 30);
+  assert.equal(new Set(WEAPON_MALFUNCTION_CARDS.map((card) => card.id)).size, 30);
+  assert.equal(new Set(WEAPON_MALFUNCTION_CARDS.map((card) => card.fallbackTitle)).size, 30);
 });
 
 test("Weapon Malfunctions stay in non-spell melee weapon fumble contexts", () => {
@@ -69,6 +69,49 @@ test("dev.2 keeps narrative incidents mechanically harmless", () => {
   }
 });
 
+
+
+test("dev.3 adds the final ten cards in content batch three", () => {
+  const batchThree = WEAPON_MALFUNCTION_CARDS.filter((card) => card.metadata.contentBatch === 3);
+  assert.equal(batchThree.length, 10);
+  assert.deepEqual(batchThree.map((card) => card.id.split(".").at(-1)), [
+    "wm-021-quality-assurance-stamp",
+    "wm-022-auxiliary-hook-deployment",
+    "wm-023-automatic-parry-mode",
+    "wm-024-field-repair-configuration",
+    "wm-025-counterthrust-system-activates",
+    "wm-026-operator-feedback-chime",
+    "wm-027-balance-indicator-lights",
+    "wm-028-emergency-bracing-foot",
+    "wm-029-automatic-disassembly-demonstration",
+    "wm-030-instruction-manual-escapes"
+  ]);
+});
+
+test("dev.3 completes the deck with item-centered mixed mechanics", () => {
+  const bySuffix = (suffix) => WEAPON_MALFUNCTION_CARDS.find((card) => card.id.endsWith(suffix));
+  assert.match(bySuffix("wm-022-auxiliary-hook-deployment").fallbackDescription, /trip trait/i);
+  assert.match(bySuffix("wm-023-automatic-parry-mode").fallbackDescription, /bonus to AC/i);
+  assert.match(bySuffix("wm-024-field-repair-configuration").fallbackDescription, /Crafting check/i);
+  assert.match(bySuffix("wm-025-counterthrust-system-activates").fallbackDescription, /moved 5 feet directly away/i);
+  assert.match(bySuffix("wm-027-balance-indicator-lights").fallbackDescription, /move trait/i);
+  assert.match(bySuffix("wm-028-emergency-bracing-foot").fallbackDescription, /Speed is reduced by 5 feet/i);
+  assert.match(bySuffix("wm-029-automatic-disassembly-demonstration").fallbackDescription, /access panel pops free/i);
+});
+
+test("dev.3 narrative incidents remain mechanically harmless", () => {
+  for (const suffix of [
+    "wm-021-quality-assurance-stamp",
+    "wm-026-operator-feedback-chime",
+    "wm-030-instruction-manual-escapes"
+  ]) {
+    const card = WEAPON_MALFUNCTION_CARDS.find((entry) => entry.id.endsWith(suffix));
+    assert.equal(card.impact, "narrative");
+    assert.equal(card.tags.includes("no-mechanical-effect"), true);
+    assert.match(card.fallbackDescription, /no mechanical effect/i);
+  }
+});
+
 test("pack construction reserves three independent pack identities", () => {
   const packs = buildGoblinEngineeringPacks();
   assert.equal(packs.length, 3);
@@ -77,8 +120,8 @@ test("pack construction reserves three independent pack identities", () => {
     PACK_IDS.RANGED_ENGINEERING,
     PACK_IDS.EQUIPMENT_INCIDENTS
   ]);
-  assert.equal(packs[0].decks.attack.cards.length, 20);
-  assert.equal(packs[0].metadata.implementedCards, 20);
+  assert.equal(packs[0].decks.attack.cards.length, 30);
+  assert.equal(packs[0].metadata.implementedCards, 30);
   assert.equal(packs[0].enabled, true);
   assert.equal(packs[1].decks.attack.cards.length, 0);
   assert.equal(packs[1].enabled, false);
