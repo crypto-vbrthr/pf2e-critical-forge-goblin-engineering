@@ -73,6 +73,46 @@
       "PrototypeBehavior": {
         "Title": "Prototype Behavior",
         "Description": "The weapon starts oscillating between two equally confident configurations. Before your next Strike with this weapon before the end of your next turn, choose one: spend 1 Interact action to stabilize it and Strike normally, or make the Strike immediately as a misfortune effect and roll the attack twice, using the worse result. The consequence ends after either choice."
+      },
+      "SafetyCapDeployed": {
+        "Title": "Safety Cap Deployed",
+        "Description": "A spring-loaded guard snaps over whichever part of the weapon was supposed to hurt people. Until the end of your next turn, Strikes with this weapon deal nonlethal damage without the usual -2 circumstance penalty for making a nonlethal attack with an unsuitable weapon. You can spend 1 Interact action to retract the guard and end this consequence."
+      },
+      "TargetRecognitionLoop": {
+        "Title": "Target Recognition Loop",
+        "Description": "The weapon has decided that repeated targets are probably duplicate data. Until the end of your next turn, after you Strike a creature with this weapon, you cannot Strike that same creature again with this weapon during the same turn unless you first spend 1 Interact action to reset the target-recognition mechanism. Other creatures remain perfectly acceptable targets."
+      },
+      "ResonanceCalibration": {
+        "Title": "Resonance Calibration",
+        "Description": "The weapon begins ringing like a tuning fork that has discovered professional ambition. Until the start of your next turn, while you hold it you cannot become hidden or undetected from creatures within 30 feet that can hear the ringing. Creatures that cannot hear it are unaffected."
+      },
+      "ThisLeverWasntHereBefore": {
+        "Title": "This Lever Wasn't Here Before",
+        "Description": "A small lever unfolds from the weapon. Nobody remembers it being there. Before your next Strike with this weapon before the end of your next turn, either spend 1 Interact action to fold it away and end this consequence, or pull it as a free action and roll 1d2. On a 1, the Strike takes a -1 circumstance penalty. On a 2, the Strike gains a +1 circumstance bonus. Either way, the lever retracts after the Strike."
+      },
+      "LoadBearingQuestionMark": {
+        "Title": "Load-Bearing Question Mark",
+        "Description": "A pin works loose and remains attached by what appears to be optimism. Until the end of your next turn, after each Strike with this weapon, attempt a DC 5 flat check. On a failure, the weapon drops at your feet after the Strike resolves. You can spend 1 Interact action to secure the pin and end this consequence before making another Strike."
+      },
+      "FieldServiceHatch": {
+        "Title": "Field Service Hatch",
+        "Description": "A tiny hatch labeled DO NOT OPEN DURING USE flips open. There is no mechanical effect. If you spend an Interact action to close it, a smaller hatch on the opposite side opens with a cheerful click. That one closes normally."
+      },
+      "EmergencyIllumination": {
+        "Title": "Emergency Illumination",
+        "Description": "Three sparks lodge in the weapon and continue glowing with unjustified confidence. Until the start of your next turn, the weapon sheds bright light in a 10-foot radius and dim light for the next 10 feet. This may reveal your position, but it also illuminates the area normally."
+      },
+      "AuxiliaryReachExtension": {
+        "Title": "Auxiliary Reach Extension",
+        "Description": "A telescoping section shoots out of the weapon with an enthusiastic clack. For your next Strike with this weapon before the end of your next turn, increase your reach with the weapon by 5 feet, but take a -1 circumstance penalty to that attack roll. You can instead spend 1 Interact action to retract the extension and end this consequence."
+      },
+      "IncorrectDamageMode": {
+        "Title": "Incorrect Damage Mode",
+        "Description": "The weapon rotates, folds, or presents the wrong striking surface with absolute certainty. The base physical damage of your next Strike with this weapon before the end of your next turn becomes bludgeoning damage instead of its normal type. If its base damage is already bludgeoning, it becomes piercing instead. Additional damage is unchanged. You can spend 1 Interact action to restore the normal configuration and end this consequence."
+      },
+      "WarrantyVoid": {
+        "Title": "Warranty Void",
+        "Description": "A tiny paper seal pops out of the weapon, stamps itself VOID, and catches fire for exactly one second. There is no mechanical effect, no damage, and no actual fault. The warranty was probably imaginary anyway."
       }
     }
   }

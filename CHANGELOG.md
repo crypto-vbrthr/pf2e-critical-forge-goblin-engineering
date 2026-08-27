@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-dev.2 - Weapon Malfunctions II
+
+- Added 10 additional Weapon Malfunctions cards, bringing the deck to 20 / 30 cards.
+- Added temporary nonlethal mode, target-recognition loops, resonance noise, random lever behavior, a flat-check drop risk, temporary illumination, reach extension, and temporary damage-mode changes.
+- Added two new narrative-only malfunctions: Field Service Hatch and Warranty Void.
+- Preserved the non-spell melee weapon boundary and the rule that no card permanently damages equipment or creates repair costs.
+- Expanded the overlap review and content tests for the second card block.
+
 ## 0.1.0-dev.1 - Foundation & Weapon Malfunctions I
 
 - Added the initial Goblin Engineering Critical Forge extension module.

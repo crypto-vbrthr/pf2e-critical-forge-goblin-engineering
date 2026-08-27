@@ -73,6 +73,46 @@
       "PrototypeBehavior": {
         "Title": "Prototypenverhalten",
         "Description": "Die Waffe beginnt zwischen zwei gleichermaßen überzeugten Konfigurationen zu schwingen. Bevor du vor dem Ende deines nächsten Zuges deinen nächsten Angriff mit dieser Waffe ausführst, wähle eine Möglichkeit: Wende 1 Aktion Interagieren auf, um sie zu stabilisieren und normal anzugreifen, oder führe den Angriff sofort als Unglückseffekt aus, würfle den Angriff zweimal und verwende das schlechtere Ergebnis. Danach endet die Folge."
+      },
+      "SafetyCapDeployed": {
+        "Title": "Sicherheitskappe ausgefahren",
+        "Description": "Eine federbelastete Schutzkappe schnappt über genau den Teil der Waffe, der eigentlich Leuten wehtun sollte. Bis zum Ende deines nächsten Zuges verursachen Angriffe mit dieser Waffe nichttödlichen Schaden, ohne den üblichen Situationsmalus von -2 für einen nichttödlichen Angriff mit einer ungeeigneten Waffe. Du kannst 1 Aktion Interagieren aufwenden, um die Kappe einzuziehen und diese Folge zu beenden."
+      },
+      "TargetRecognitionLoop": {
+        "Title": "Zielerkennungsschleife",
+        "Description": "Die Waffe hat beschlossen, dass wiederholte Ziele vermutlich doppelte Daten sind. Bis zum Ende deines nächsten Zuges kannst du, nachdem du eine Kreatur mit dieser Waffe angegriffen hast, dieselbe Kreatur im selben Zug nicht erneut mit dieser Waffe angreifen, außer du wendest zuvor 1 Aktion Interagieren auf, um die Zielerkennung zurückzusetzen. Andere Kreaturen gelten weiterhin als vollkommen akzeptable Ziele."
+      },
+      "ResonanceCalibration": {
+        "Title": "Resonanzkalibrierung",
+        "Description": "Die Waffe beginnt wie eine Stimmgabel zu klingen, die berufliche Ambitionen entwickelt hat. Bis zum Beginn deines nächsten Zuges kannst du, solange du sie hältst, gegenüber Kreaturen innerhalb von 9 Metern, die das Klingeln hören können, nicht verborgen oder unentdeckt werden. Kreaturen, die sie nicht hören können, sind nicht betroffen."
+      },
+      "ThisLeverWasntHereBefore": {
+        "Title": "Dieser Hebel war vorher nicht da",
+        "Description": "Ein kleiner Hebel klappt aus der Waffe. Niemand erinnert sich daran, dass er vorher da war. Bevor du vor dem Ende deines nächsten Zuges deinen nächsten Angriff mit dieser Waffe ausführst, wähle: Wende 1 Aktion Interagieren auf, um ihn einzuklappen und diese Folge zu beenden, oder ziehe ihn als Freie Aktion und würfle 1W2. Bei einer 1 erhält der Angriff einen Situationsmalus von -1. Bei einer 2 erhält er einen Situationsbonus von +1. In beiden Fällen zieht sich der Hebel nach dem Angriff wieder ein."
+      },
+      "LoadBearingQuestionMark": {
+        "Title": "Tragendes Fragezeichen",
+        "Description": "Ein Stift löst sich und bleibt offenbar nur durch Optimismus befestigt. Bis zum Ende deines nächsten Zuges legst du nach jedem Angriff mit dieser Waffe einen Einfachen Wurf gegen SG 5 ab. Bei einem Fehlschlag fällt die Waffe nach Abwicklung des Angriffs zu deinen Füßen. Du kannst 1 Aktion Interagieren aufwenden, um den Stift zu sichern und diese Folge zu beenden, bevor du erneut angreifst."
+      },
+      "FieldServiceHatch": {
+        "Title": "Wartungsklappe für den Feldeinsatz",
+        "Description": "Eine winzige Klappe mit der Aufschrift NICHT WÄHREND DER BENUTZUNG ÖFFNEN springt auf. Es gibt keinen mechanischen Effekt. Wenn du 1 Aktion Interagieren aufwendest, um sie zu schließen, öffnet sich auf der gegenüberliegenden Seite mit einem fröhlichen Klick eine kleinere Klappe. Diese lässt sich normal schließen."
+      },
+      "EmergencyIllumination": {
+        "Title": "Notbeleuchtung",
+        "Description": "Drei Funken bleiben in der Waffe hängen und leuchten mit völlig unbegründetem Selbstvertrauen weiter. Bis zum Beginn deines nächsten Zuges verbreitet die Waffe in einem Radius von 3 Metern helles Licht und auf den nächsten 3 Metern dämmriges Licht. Das kann deine Position verraten, beleuchtet den Bereich aber auch ganz normal."
+      },
+      "AuxiliaryReachExtension": {
+        "Title": "Zusätzliche Reichweitenverlängerung",
+        "Description": "Ein Teleskopsegment schießt mit einem begeisterten Klacken aus der Waffe. Für deinen nächsten Angriff mit dieser Waffe vor dem Ende deines nächsten Zuges erhöht sich deine Reichweite mit der Waffe um 1,5 Meter, aber du erhältst einen Situationsmalus von -1 auf diesen Angriffswurf. Du kannst stattdessen 1 Aktion Interagieren aufwenden, um die Verlängerung einzuziehen und diese Folge zu beenden."
+      },
+      "IncorrectDamageMode": {
+        "Title": "Falscher Schadensmodus",
+        "Description": "Die Waffe dreht oder faltet sich und präsentiert mit absoluter Überzeugung die falsche Schlagfläche. Der körperliche Grundschaden deines nächsten Angriffs mit dieser Waffe vor dem Ende deines nächsten Zuges wird zu Wuchtschaden statt zur normalen Schadensart. Verursacht ihr Grundschaden bereits Wuchtschaden, wird er stattdessen zu Stichschaden. Zusätzlicher Schaden bleibt unverändert. Du kannst 1 Aktion Interagieren aufwenden, um die normale Konfiguration wiederherzustellen und diese Folge zu beenden."
+      },
+      "WarrantyVoid": {
+        "Title": "Garantie erloschen",
+        "Description": "Ein winziges Papiersiegel springt aus der Waffe, stempelt sich selbst mit UNGÜLTIG und fängt für genau eine Sekunde Feuer. Es gibt keinen mechanischen Effekt, keinen Schaden und keinen tatsächlichen Defekt. Die Garantie war vermutlich ohnehin erfunden."
       }
     }
   }

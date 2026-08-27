@@ -1,6 +1,6 @@
 # PF2E Critical Forge: Goblin Engineering
 
-Version **0.1.0-dev.1**
+Version **0.1.0-dev.2**
 
 Goblin Engineering is a humorous expansion for PF2E Critical Forge. Its cards treat critical fumbles as short-lived equipment incidents: springs object, latches become overconfident, counterweights seek independence, and sometimes the weapon simply emits an indignant squeak.
 
@@ -8,11 +8,11 @@ The comedy comes from unreliable equipment and awkward consequences rather than 
 
 ## Current content
 
-### Weapon Malfunctions - 10 / 30 cards
+### Weapon Malfunctions - 20 / 30 cards
 
-The first development block contains ten cards for critical fumbles with non-spell melee weapons. Unarmed attacks, spell attacks, and ranged attacks are excluded so the pack stays distinct from general Martial Consequences and Ranged Mishaps.
+The first two development blocks contain twenty cards for critical fumbles with non-spell melee weapons. Unarmed attacks, spell attacks, and ranged attacks are excluded so the pack stays distinct from general Martial Consequences and Ranged Mishaps.
 
-The first ten cards are:
+The current cards are:
 
 - Unscheduled Maintenance
 - Diagnostic Squeal
@@ -24,6 +24,18 @@ The first ten cards are:
 - Safety Feature Engaged
 - Reverse Thrust Compensation
 - Prototype Behavior
+- Safety Cap Deployed
+- Target Recognition Loop
+- Resonance Calibration
+- This Lever Wasn't Here Before
+- Load-Bearing Question Mark
+- Field Service Hatch
+- Emergency Illumination
+- Auxiliary Reach Extension
+- Incorrect Damage Mode
+- Warranty Void
+
+The second block deliberately broadens the deck beyond simple action taxes. It adds temporary damage-mode changes, reach changes, stealth complications, small random outcomes, light-producing sparks, and two purely narrative equipment incidents.
 
 ### Reserved packs
 
@@ -54,4 +66,4 @@ Goblin Engineering does not replace other Critical Forge expansions:
 - Arcane Backlash covers magical failures.
 - Goblin Engineering focuses on the item itself behaving badly.
 
-See `docs/OVERLAP_REVIEW.md` for the initial comparison.
+See `docs/OVERLAP_REVIEW.md` for the running comparison.
