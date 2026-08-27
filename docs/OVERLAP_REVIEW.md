@@ -1,6 +1,6 @@
 # Running Overlap Review
 
-Reviewed through **0.1.0-dev.3** against the supplied Critical Forge and expansion modules.
+Reviewed through **0.1.0-dev.4** against the supplied Critical Forge and expansion modules.
 
 ## Critical Forge Core
 
@@ -73,3 +73,34 @@ The final ten-card block was checked against the same neighboring packs and the 
 ## Weapon Malfunctions completion
 
 At 30 cards, Weapon Malfunctions now has a broad enough mechanical vocabulary to avoid further expansion before the other Goblin Engineering decks are explored. The completed deck remains focused on temporary item behavior, controlled chaos, and occasional upside without invalidating the original critical fumble.
+
+## Ranged Engineering I review (0.1.0-dev.4)
+
+Before implementing Ranged Engineering, the full 30-card **Ranged Mishaps** deck supplied with Martial Consequences was reviewed directly.
+
+Ranged Mishaps is strongly centered on:
+
+- lost or compromised sightlines
+- firing-position exposure and forced repositioning
+- cover and concealment changes
+- target movement and defensive reactions
+- range estimation and counterfire information
+- projectile-path interaction with terrain
+- shooting rhythm, target lock, and battlefield geometry
+
+The first ten Ranged Engineering cards deliberately avoid those mechanics and move the source of the consequence into the equipment itself.
+
+Specific boundaries checked:
+
+- **Helpful Auto-Loader** does not duplicate Ammunition Argument. Ammunition Argument imposes a reset/action tax before the next ranged Strike; Helpful Auto-Loader is a rare post-Strike benefit produced by the weapon's reload mechanism.
+- **Safety Arc Projector** is an item safety interlock, not Friendly Fire Drill's ally movement or line-of-fire penalty.
+- **Recoil Absorber Overachieves** does not reproduce Recoil Stumble. It changes one shot's damage and reaction profile without moving or knocking down the attacker.
+- **Payload Door Stuck Open** restricts newly selected special ammunition rather than destroying ammunition, jamming the weapon, or changing the firing lane.
+- **String Tension Governor** is a bow-specific hardware tradeoff between accuracy and damage; it does not alter cover, range, or firing position.
+- **Pressure Gauge Redlines** is a firearm-specific pressure-management choice with a brief self-inflicted auditory consequence. It does not damage the firearm.
+- **Projectile Return Protocol** affects where a missed thrown weapon or recoverable projectile ends up. It does not create terrain, cover, target movement, or a new projectile path through the battlefield.
+- **Ammunition Counter Panic**, **Range Tape Escapes**, and **Trajectory Printer** are narrative-only equipment jokes with no mechanical effect.
+
+No Ranged Engineering title duplicates any of the 30 Ranged Mishaps titles or the six ranged-fumble titles in Critical Forge Core.
+
+The result is a distinct split: **Ranged Mishaps describes a bad shot; Ranged Engineering describes a weapon that has started participating in the decision-making process.**

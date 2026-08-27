@@ -2,9 +2,10 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { PACK_IDS } from "../scripts/constants.js";
 import { WEAPON_MALFUNCTION_CARDS } from "../scripts/data/cards/weapon-malfunctions.js";
+import { RANGED_ENGINEERING_CARDS } from "../scripts/data/cards/ranged-engineering.js";
 import { buildGoblinEngineeringPacks } from "../scripts/data/packs.js";
 
-test("dev.3 contains thirty unique Weapon Malfunctions", () => {
+test("dev.4 retains thirty unique Weapon Malfunctions", () => {
   assert.equal(WEAPON_MALFUNCTION_CARDS.length, 30);
   assert.equal(new Set(WEAPON_MALFUNCTION_CARDS.map((card) => card.id)).size, 30);
   assert.equal(new Set(WEAPON_MALFUNCTION_CARDS.map((card) => card.fallbackTitle)).size, 30);
@@ -112,7 +113,64 @@ test("dev.3 narrative incidents remain mechanically harmless", () => {
   }
 });
 
-test("pack construction reserves three independent pack identities", () => {
+test("dev.4 adds ten unique Ranged Engineering cards", () => {
+  assert.equal(RANGED_ENGINEERING_CARDS.length, 10);
+  assert.equal(new Set(RANGED_ENGINEERING_CARDS.map((card) => card.id)).size, 10);
+  assert.equal(new Set(RANGED_ENGINEERING_CARDS.map((card) => card.fallbackTitle)).size, 10);
+  assert.deepEqual(RANGED_ENGINEERING_CARDS.map((card) => card.id.split(".").at(-1)), [
+    "re-001-helpful-auto-loader",
+    "re-002-safety-arc-projector",
+    "re-003-ammunition-counter-panic",
+    "re-004-recoil-absorber-overachieves",
+    "re-005-range-tape-escapes",
+    "re-006-payload-door-stuck-open",
+    "re-007-string-tension-governor",
+    "re-008-pressure-gauge-redlines",
+    "re-009-projectile-return-protocol",
+    "re-010-trajectory-printer"
+  ]);
+});
+
+test("Ranged Engineering stays in non-spell ranged weapon fumble contexts", () => {
+  for (const card of RANGED_ENGINEERING_CARDS) {
+    assert.equal(card.packId, PACK_IDS.RANGED_ENGINEERING);
+    assert.equal(card.category, "criticalFumble");
+    assert.equal(card.deckType, "attack");
+    assert.equal(card.tone, "humorous");
+    assert.equal(card.filters.attackTraits.includes("ranged"), true, card.id);
+    assert.equal(card.filters.attackTraits.includes("melee"), false, card.id);
+    assert.equal(card.filters.excludedAttackTraits.includes("spell"), true, card.id);
+    assert.equal(card.filters.excludedAttackTraits.includes("unarmed"), true, card.id);
+    assert.equal(card.filters.excludedAttackTraits.includes("ranged"), false, card.id);
+    assert.equal(card.effect, null, card.id);
+  }
+});
+
+test("dev.4 includes hardware-specific and narrative ranged incidents", () => {
+  const bySuffix = (suffix) => RANGED_ENGINEERING_CARDS.find((card) => card.id.endsWith(suffix));
+  assert.match(bySuffix("re-001-helpful-auto-loader").fallbackDescription, /Reload action/i);
+  assert.match(bySuffix("re-002-safety-arc-projector").fallbackDescription, /adjacent to one of your allies/i);
+  assert.match(bySuffix("re-004-recoil-absorber-overachieves").fallbackDescription, /does not trigger enemy reactions/i);
+  assert.deepEqual(bySuffix("re-006-payload-door-stuck-open").filters.weaponGroups, ["bow", "firearm", "sling"]);
+  assert.deepEqual(bySuffix("re-007-string-tension-governor").filters.weaponGroups, ["bow"]);
+  assert.deepEqual(bySuffix("re-008-pressure-gauge-redlines").filters.weaponGroups, ["firearm"]);
+  assert.match(bySuffix("re-009-projectile-return-protocol").fallbackDescription, /lands at your feet/i);
+});
+
+test("dev.4 narrative ranged incidents remain mechanically harmless", () => {
+  for (const suffix of [
+    "re-003-ammunition-counter-panic",
+    "re-005-range-tape-escapes",
+    "re-010-trajectory-printer"
+  ]) {
+    const card = RANGED_ENGINEERING_CARDS.find((entry) => entry.id.endsWith(suffix));
+    assert.equal(card.impact, "narrative");
+    assert.equal(card.tags.includes("no-mechanical-effect"), true);
+    assert.match(card.fallbackDescription, /no mechanical effect/i);
+  }
+});
+
+test("pack construction exposes two active content packs and one reserved pack", () => {
   const packs = buildGoblinEngineeringPacks();
   assert.equal(packs.length, 3);
   assert.deepEqual(packs.map((pack) => pack.id), [
@@ -123,8 +181,9 @@ test("pack construction reserves three independent pack identities", () => {
   assert.equal(packs[0].decks.attack.cards.length, 30);
   assert.equal(packs[0].metadata.implementedCards, 30);
   assert.equal(packs[0].enabled, true);
-  assert.equal(packs[1].decks.attack.cards.length, 0);
-  assert.equal(packs[1].enabled, false);
+  assert.equal(packs[1].decks.attack.cards.length, 10);
+  assert.equal(packs[1].metadata.implementedCards, 10);
+  assert.equal(packs[1].enabled, true);
   assert.equal(packs[2].decks.attack.cards.length, 0);
   assert.equal(packs[2].enabled, false);
 });

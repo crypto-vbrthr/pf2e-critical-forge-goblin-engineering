@@ -1,8 +1,8 @@
 # PF2E Critical Forge: Goblin Engineering
 
-Version **0.1.0-dev.3**
+Version **0.1.0-dev.4**
 
-Goblin Engineering is a humorous expansion for PF2E Critical Forge. Its cards treat critical fumbles as short-lived equipment incidents: springs object, latches become overconfident, counterweights seek independence, and sometimes the weapon simply emits an indignant squeak.
+Goblin Engineering is a humorous expansion for PF2E Critical Forge. Its cards treat critical fumbles as short-lived equipment incidents: springs object, latches become overconfident, ammunition systems panic, and sometimes the weapon simply emits an indignant squeak.
 
 The comedy comes from unreliable equipment and awkward consequences rather than insulting the character. No card in this module permanently destroys equipment or creates repair costs.
 
@@ -10,51 +10,36 @@ The comedy comes from unreliable equipment and awkward consequences rather than 
 
 ### Weapon Malfunctions - 30 / 30 cards
 
-The three development blocks contain thirty cards for critical fumbles with non-spell melee weapons. Unarmed attacks, spell attacks, and ranged attacks are excluded so the pack stays distinct from general Martial Consequences and Ranged Mishaps.
+The completed Weapon Malfunctions deck contains thirty cards for critical fumbles with non-spell melee weapons. Unarmed attacks, spell attacks, and ranged attacks are excluded.
 
-The current cards are:
+The deck deliberately ranges beyond simple action taxes. It includes temporary weapon-property changes, defensive and utility modes, movement oddities, small random outcomes, light and noise, controlled positive side effects, and several purely narrative equipment incidents.
 
-- Unscheduled Maintenance
-- Diagnostic Squeal
-- Counterweight Goes Freelance
-- Emergency Ejection System
-- Self-Tightening Grip
-- Unexpected Secondary Function
-- Successful Failure
-- Safety Feature Engaged
-- Reverse Thrust Compensation
-- Prototype Behavior
-- Safety Cap Deployed
-- Target Recognition Loop
-- Resonance Calibration
-- This Lever Wasn't Here Before
-- Load-Bearing Question Mark
-- Field Service Hatch
-- Emergency Illumination
-- Auxiliary Reach Extension
-- Incorrect Damage Mode
-- Warranty Void
-- Quality Assurance Stamp
-- Auxiliary Hook Deployment
-- Automatic Parry Mode
-- Field Repair Configuration
-- Counterthrust System Activates
-- Operator Feedback Chime
-- Balance Indicator Lights
-- Emergency Bracing Foot
-- Automatic Disassembly Demonstration
-- Instruction Manual Escapes
+### Ranged Engineering - 10 / 30 cards
 
-The completed deck deliberately ranges beyond simple action taxes. It includes temporary weapon-property changes, defensive and utility modes, movement oddities, small random outcomes, light and noise, controlled positive side effects, and several purely narrative equipment incidents.
+The first Ranged Engineering block adds ten cards for critical fumbles with non-spell ranged weapons. Ranged unarmed attacks and spell attacks are excluded so the deck stays focused on actual equipment.
 
-### Reserved packs
+Current cards:
 
-The module already reserves independent settings and Critical Forge pack identities for:
+- Helpful Auto-Loader
+- Safety Arc Projector
+- Ammunition Counter Panic
+- Recoil Absorber Overachieves
+- Range Tape Escapes
+- Payload Door Stuck Open
+- String Tension Governor
+- Pressure Gauge Redlines
+- Projectile Return Protocol
+- Trajectory Printer
 
-- Ranged Engineering - planned, 0 / 30 cards
+Ranged Engineering is intentionally narrower than Martial Consequences: Ranged Mishaps. Ranged Mishaps covers firing positions, sightlines, cover, range estimation, projectile paths, target reactions, and shooting rhythm. Ranged Engineering instead asks what happens when the weapon, ammunition system, safety mechanism, pressure regulator, or retrieval feature becomes the source of the problem.
+
+The first block includes three narrative-only incidents, several mixed outcomes, a rare helpful auto-loader, special-ammunition restrictions, bow-specific tension trouble, and a firearm pressure-gauge incident. None of these cards permanently damages the weapon or destroys ammunition automatically.
+
+### Reserved pack
+
 - Equipment Incidents - planned, 0 / 30 cards
 
-Reserved packs remain disabled and their settings stay hidden until they contain content. Equipment Incidents may require additional runtime context before it can cover shields, tools, and held items cleanly.
+Equipment Incidents remains disabled and its setting stays hidden until its trigger and context requirements for shields, tools, held items, and containers are reviewed.
 
 ## Requirements
 
@@ -64,14 +49,20 @@ Reserved packs remain disabled and their settings stay hidden until they contain
 
 ## Settings
 
-Each Goblin Engineering pack has its own world setting. Weapon Malfunctions is enabled by default in this development build. The two reserved settings are already registered internally, but remain hidden and disabled until their packs contain cards.
+Each Goblin Engineering pack has its own world setting.
+
+- Weapon Malfunctions is enabled by default.
+- Ranged Engineering is enabled by default once this development block is installed.
+- Equipment Incidents remains hidden and disabled while it has no cards.
+
+Settings refresh the registered Critical Forge packs without requiring a world restart.
 
 ## Design boundaries
 
 Goblin Engineering does not replace other Critical Forge expansions:
 
-- Martial Consequences covers the attacker's stance, timing, positioning, and combat rhythm.
-- Ranged Mishaps covers sightlines, cover, range, projectile paths, and ranged firing problems.
+- Martial Attack Fumbles covers the attacker's stance, timing, positioning, and combat rhythm.
+- Ranged Mishaps covers sightlines, cover, range, projectile paths, firing positions, and target reactions.
 - Arsenal covers damage-type-specific injuries and physical consequences.
 - Arcane Backlash covers magical failures.
 - Goblin Engineering focuses on the item itself behaving badly.

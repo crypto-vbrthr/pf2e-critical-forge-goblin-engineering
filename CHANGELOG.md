@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.0-dev.4 - Ranged Engineering I
+
+- Added the first 10 Ranged Engineering cards.
+- Activated the independent Ranged Engineering world setting and pack registration.
+- Restricted Ranged Engineering to non-spell ranged weapon critical fumbles and excluded ranged unarmed attacks.
+- Added general equipment incidents plus bow-, firearm-, and ammunition-system-specific cards.
+- Added three narrative-only ranged incidents and several controlled mixed outcomes without permanent equipment damage.
+- Reviewed all 30 existing Ranged Mishaps cards and kept Ranged Engineering away from sightline, cover, firing-position, range-estimation, target-reaction, and ordinary shot-rhythm mechanics.
+- Expanded card-factory support so melee and ranged Goblin Engineering packs can share the same schema safely.
+- Added regression tests for ranged filters, pack settings, localization parity, overlap boundaries, and the new 10-card block.
+
 ## 0.1.0-dev.3 - Weapon Malfunctions III
 
 - Added the final 10 Weapon Malfunctions cards, completing the deck at 30 / 30 cards.

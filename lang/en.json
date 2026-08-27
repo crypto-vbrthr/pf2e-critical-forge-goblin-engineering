@@ -12,7 +12,7 @@
       },
       "RangedEngineering": {
         "Title": "Goblin Engineering: Ranged Engineering",
-        "Description": "Reserved for chaotic ranged-weapon engineering incidents in a later development block."
+        "Description": "Humorous critical fumbles for non-spell ranged weapons, focused on unreliable ammunition systems, questionable safety devices, and hardware that develops opinions mid-fight."
       },
       "EquipmentIncidents": {
         "Title": "Goblin Engineering: Equipment Incidents",
@@ -26,7 +26,7 @@
       },
       "RangedEngineering": {
         "Name": "Enable Ranged Engineering",
-        "Hint": "Reserved for the future Ranged Engineering deck. This development build does not contain ranged cards yet."
+        "Hint": "Enables humorous critical-fumble cards for non-spell ranged weapons."
       },
       "EquipmentIncidents": {
         "Name": "Enable Equipment Incidents",
@@ -153,6 +153,46 @@
       "InstructionManualEscapes": {
         "Title": "Instruction Manual Escapes",
         "Description": "A tightly folded instruction manual springs out of the weapon and skitters into an adjacent space. There is no mechanical effect. The entire manual contains one sentence: IF THIS HAPPENS, CONSULT THE MANUAL."
+      },
+      "HelpfulAutoLoader": {
+        "Title": "Helpful Auto-Loader",
+        "Description": "The mechanism responds to the failed shot by becoming aggressively helpful. After your next Strike with this same weapon before the end of your next turn, if the weapon normally requires a Reload action and you have appropriate ammunition available, it immediately completes one normal Reload without requiring an action. Ammunition is consumed normally. If the weapon cannot be reloaded this way, a tiny spring deploys, salutes, and retracts with no mechanical effect. The original critical fumble remains a critical fumble."
+      },
+      "SafetyArcProjector": {
+        "Title": "Safety Arc Projector",
+        "Description": "A tiny warning lamp begins scanning for friend-shaped objects. Until the end of your next turn, this weapon refuses to make a ranged Strike against a creature adjacent to one of your allies. Before making such a Strike, you can spend 1 Interact action to override the projector and end this consequence. Against other targets, the weapon functions normally and looks extremely pleased with itself."
+      },
+      "AmmunitionCounterPanic": {
+        "Title": "Ammunition Counter Panic",
+        "Description": "A dial, tally wheel, etched mark, or entirely unnecessary display announces that the weapon contains MINUS ONE shots. There is no mechanical effect. Reloading it changes the display to MINUS TWO, which appears to calm the mechanism considerably."
+      },
+      "RecoilAbsorberOverachieves": {
+        "Title": "Recoil Absorber Overachieves",
+        "Description": "The weapon decides recoil is a design flaw and removes rather too much enthusiasm from the next shot. Your next ranged Strike with this same weapon before the end of your next turn deals 2 less damage on a hit, to a minimum of 0. However, that Strike does not trigger enemy reactions whose trigger is specifically your use of a ranged attack. The consequence ends after the Strike."
+      },
+      "RangeTapeEscapes": {
+        "Title": "Range Tape Escapes",
+        "Description": "A measuring tape shoots out of the weapon, points accusingly toward the target, retracts, and presents a tiny result window reading FAR ENOUGH. There is no mechanical effect. Measuring the actual distance does not change its opinion."
+      },
+      "PayloadDoorStuckOpen": {
+        "Title": "Payload Door Stuck Open",
+        "Description": "An access panel flips open and exposes a mechanism that has suddenly become extremely conservative about ammunition. Until the end of your next turn, any ammunition you load or select for this weapon must be ordinary, non-magical, and non-alchemical. Ammunition already loaded when this consequence begins is unaffected. You can spend 1 Interact action to latch the panel and end this consequence."
+      },
+      "StringTensionGovernor": {
+        "Title": "String Tension Governor",
+        "Description": "A governor clamps onto the string, cable, or prod and proudly selects EFFICIENT MODE. Your next ranged Strike with this same weapon before the end of your next turn gains a +1 circumstance bonus to its attack roll but deals 2 less damage on a hit, to a minimum of 0. You can spend 1 Interact action before the Strike to restore normal tension and end this consequence instead."
+      },
+      "PressureGaugeRedlines": {
+        "Title": "Pressure Gauge Redlines",
+        "Description": "A pressure gauge that may not have existed a moment ago swings into the red and begins vibrating with confidence. Before your next ranged Strike with this same firearm before the end of your next turn, choose one: spend 1 Interact action to vent the pressure and Strike normally, or fire without venting. If you fire without venting, the Strike deals 2 additional damage on a hit, and after it resolves you are deafened until the start of your next turn. The firearm is not damaged either way."
+      },
+      "ProjectileReturnProtocol": {
+        "Title": "Projectile Return Protocol",
+        "Description": "The weapon activates a retrieval feature with suspiciously optimistic timing. If your next ranged Strike with this same weapon before the end of your next turn misses, a thrown weapon lands at your feet instead of wherever it would otherwise come to rest. Ordinary recoverable ammunition instead lands in your space in recoverable condition. If the Strike hits, the protocol accomplishes nothing and quietly pretends it was never enabled."
+      },
+      "TrajectoryPrinter": {
+        "Title": "Trajectory Printer",
+        "Description": "A narrow strip of paper emerges from the weapon showing an elaborate diagram of the failed shot. There is no mechanical effect. The diagram is labeled EXPECTED TRAJECTORY and depicts a completely different direction. After your next ranged Strike, the printer adds the note WITHIN TOLERANCE."
       }
     }
   }

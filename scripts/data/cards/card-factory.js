@@ -36,6 +36,8 @@ function defineGoblinCard({
   weight = 1,
   tags = [],
   filters = {},
+  requiredAttackTraits = ["melee"],
+  defaultExcludedAttackTraits = ["spell", "unarmed", "ranged"],
   contentBatch = 1
 }) {
   return Object.freeze({
@@ -54,8 +56,8 @@ function defineGoblinCard({
     tags: Object.freeze(["goblin-engineering", collection, "critical-fumble", "weapon", ...unique(tags)]),
     filters: freezeFilters({
       ...filters,
-      attackTraits: unique(["melee", ...(filters.attackTraits ?? [])]),
-      excludedAttackTraits: unique(["spell", "unarmed", "ranged", ...(filters.excludedAttackTraits ?? [])])
+      attackTraits: unique([...requiredAttackTraits, ...(filters.attackTraits ?? [])]),
+      excludedAttackTraits: unique([...defaultExcludedAttackTraits, ...(filters.excludedAttackTraits ?? [])])
     }),
     conditions: null,
     effect: null,
@@ -72,5 +74,15 @@ export function defineWeaponMalfunction(options) {
     ...options,
     packId: PACK_IDS.WEAPON_MALFUNCTIONS,
     collection: "weapon-malfunctions"
+  });
+}
+
+export function defineRangedEngineering(options) {
+  return defineGoblinCard({
+    ...options,
+    packId: PACK_IDS.RANGED_ENGINEERING,
+    collection: "ranged-engineering",
+    requiredAttackTraits: ["ranged"],
+    defaultExcludedAttackTraits: ["spell", "unarmed"]
   });
 }

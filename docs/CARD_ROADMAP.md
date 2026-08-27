@@ -3,25 +3,35 @@
 ## Weapon Malfunctions
 
 Planned: 30 cards  
-Implemented in 0.1.0-dev.3: 30 cards
+Implemented: 30 cards
 
-The deck covers non-spell melee weapon critical fumbles where the item itself develops a short-lived problem or an unexpected function.
+The completed deck covers non-spell melee weapon critical fumbles where the item itself develops a short-lived problem or an unexpected function.
 
-Target final mix:
+Its mechanical vocabulary includes temporary reach and damage-mode changes, light and noise, defensive and utility configurations, small randomized behavior, forced movement, flat-check chaos, brief action taxes, and several narrative-only failures.
 
-- frequent minor malfunctions and narrative oddities
-- moderate action taxes, temporary handling problems, and mixed outcomes
-- a smaller number of stronger but brief catastrophes
-- occasional beneficial side effects that never erase the critical fumble
-
-The completed deck broadens the mechanical vocabulary with temporary reach and damage-mode changes, light and noise, defensive and utility configurations, a small randomized lever, forced movement, and controlled flat-check chaos rather than adding another group of generic attack penalties.
+No additional Weapon Malfunctions cards are planned before the other decks are explored.
 
 ## Ranged Engineering
 
 Planned: 30 cards  
-Implemented: 0 cards
+Implemented in 0.1.0-dev.4: 10 cards
 
-This pack will be narrower than Ranged Mishaps. It should focus on the device or ammunition system behaving incorrectly rather than on sightlines, range, cover, or ordinary firing technique.
+Ranged Engineering covers non-spell ranged weapon critical fumbles where the equipment itself is responsible for the problem.
+
+The first block establishes the intended mechanical space:
+
+- ammunition and reload systems behaving incorrectly
+- questionable safety interlocks
+- recoil and pressure-management hardware
+- bow-specific tension controls
+- projectile retrieval features
+- temporary restrictions on special ammunition
+- occasional bounded upside that never erases the original critical fumble
+- purely narrative diagnostics, counters, printers, and measuring devices
+
+The deck deliberately avoids the main Ranged Mishaps vocabulary: firing-position exposure, cover changes, range-estimation penalties, target movement, projectile-path terrain changes, counterfire information, and ordinary shooting-rhythm failures.
+
+Future blocks should expand the hardware vocabulary with more thrown-weapon, bow, crossbow, firearm, sling, and generic ranged-device incidents without drifting back into Ranged Mishaps.
 
 ## Equipment Incidents
 

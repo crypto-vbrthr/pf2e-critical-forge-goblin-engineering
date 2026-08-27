@@ -1,5 +1,6 @@
 import { MODULE_ID, MODULE_VERSION, PACK_IDS, SETTING_KEYS } from "../constants.js";
 import { WEAPON_MALFUNCTION_CARDS } from "./cards/weapon-malfunctions.js";
+import { RANGED_ENGINEERING_CARDS } from "./cards/ranged-engineering.js";
 
 const EMPTY_CARDS = Object.freeze([]);
 
@@ -27,17 +28,17 @@ export const GOBLIN_PACK_CONFIGS = Object.freeze([
     settingToken: "RangedEngineering",
     id: PACK_IDS.RANGED_ENGINEERING,
     fallbackTitle: "Goblin Engineering: Ranged Engineering",
-    fallbackDescription: "Reserved for chaotic ranged-weapon engineering incidents in a later development block.",
-    cards: EMPTY_CARDS,
-    defaultEnabled: false,
+    fallbackDescription: "Humorous critical fumbles for non-spell ranged weapons, focused on unreliable ammunition systems, questionable safety devices, and hardware that develops opinions mid-fight.",
+    cards: RANGED_ENGINEERING_CARDS,
+    defaultEnabled: true,
     metadata: Object.freeze({
       theme: "goblin-engineering",
       family: "goblin-engineering",
       category: "ranged-engineering",
-      scope: "planned",
-      contentStatus: "reserved",
+      scope: "non-spell-ranged-weapon-critical-fumbles",
+      contentStatus: "development",
       plannedCards: 30,
-      implementedCards: 0
+      implementedCards: 10
     })
   }),
   Object.freeze({

@@ -12,7 +12,7 @@
       },
       "RangedEngineering": {
         "Title": "Goblin Engineering: Fernkampf-Ingenieurskunst",
-        "Description": "Reserviert für chaotische technische Zwischenfälle mit Fernkampfwaffen in einem späteren Entwicklungsblock."
+        "Description": "Humorvolle kritische Patzer für nichtmagische Fernkampfwaffen mit unzuverlässigen Munitionssystemen, fragwürdigen Sicherheitsvorrichtungen und Technik, die mitten im Kampf eigene Ansichten entwickelt."
       },
       "EquipmentIncidents": {
         "Title": "Goblin Engineering: Ausrüstungszwischenfälle",
@@ -26,7 +26,7 @@
       },
       "RangedEngineering": {
         "Name": "Fernkampf-Ingenieurskunst aktivieren",
-        "Hint": "Reserviert für das spätere Fernkampf-Deck. Dieser Entwicklungsstand enthält noch keine Fernkampfkarten."
+        "Hint": "Aktiviert humorvolle Karten für kritische Patzer mit nichtmagischen Fernkampfwaffen."
       },
       "EquipmentIncidents": {
         "Name": "Ausrüstungszwischenfälle aktivieren",
@@ -153,6 +153,46 @@
       "InstructionManualEscapes": {
         "Title": "Bedienungsanleitung entkommt",
         "Description": "Eine eng gefaltete Bedienungsanleitung springt aus der Waffe und schlittert auf ein angrenzendes Feld. Es gibt keinen mechanischen Effekt. Die gesamte Anleitung besteht aus einem einzigen Satz: WENN DIES GESCHIEHT, KONSULTIEREN SIE DIE ANLEITUNG."
+      },
+      "HelpfulAutoLoader": {
+        "Title": "Hilfsbereiter Autolader",
+        "Description": "Der Mechanismus reagiert auf den misslungenen Schuss, indem er ausgesprochen hilfsbereit wird. Nach deinem nächsten Angriff mit derselben Waffe vor dem Ende deines nächsten Zuges führt sie, sofern sie normalerweise eine Aktion zum Nachladen benötigt und passende Munition verfügbar ist, sofort einmal ihr normales Nachladen aus, ohne dafür eine Aktion zu benötigen. Munition wird normal verbraucht. Kann die Waffe so nicht nachgeladen werden, klappt eine winzige Feder heraus, salutiert und verschwindet wieder, ohne mechanischen Effekt. Der ursprüngliche kritische Patzer bleibt ein kritischer Patzer."
+      },
+      "SafetyArcProjector": {
+        "Title": "Sicherheitsbereich-Projektor",
+        "Description": "Eine winzige Warnleuchte beginnt nach allem zu suchen, was ungefähr wie ein Freund aussieht. Bis zum Ende deines nächsten Zuges weigert sich diese Waffe, einen Fernkampfangriff gegen eine Kreatur auszuführen, die an einen deiner Verbündeten angrenzt. Vor einem solchen Angriff kannst du 1 Aktion Interagieren aufwenden, um den Projektor zu übersteuern und diese Folge zu beenden. Gegen andere Ziele funktioniert die Waffe normal und wirkt dabei ausgesprochen zufrieden mit sich selbst."
+      },
+      "AmmunitionCounterPanic": {
+        "Title": "Munitionszähler in Panik",
+        "Description": "Ein Zifferblatt, Zählrad, eine eingeritzte Markierung oder eine völlig unnötige Anzeige verkündet, dass die Waffe MINUS EINEN Schuss enthält. Es gibt keinen mechanischen Effekt. Beim Nachladen springt die Anzeige auf MINUS ZWEI, was den Mechanismus offenbar deutlich beruhigt."
+      },
+      "RecoilAbsorberOverachieves": {
+        "Title": "Rückstoßdämpfer übertreibt",
+        "Description": "Die Waffe entscheidet, dass Rückstoß ein Konstruktionsfehler ist, und nimmt dem nächsten Schuss deutlich zu viel Begeisterung. Dein nächster Fernkampfangriff mit derselben Waffe vor dem Ende deines nächsten Zuges verursacht bei einem Treffer 2 Punkte weniger Schaden, mindestens jedoch 0. Dafür löst dieser Angriff keine gegnerischen Reaktionen aus, deren Auslöser ausdrücklich darin besteht, dass du einen Fernkampfangriff ausführst. Danach endet die Folge."
+      },
+      "RangeTapeEscapes": {
+        "Title": "Entfernungsmesser auf Abwegen",
+        "Description": "Ein Maßband schießt aus der Waffe, zeigt vorwurfsvoll auf das Ziel, zieht sich wieder ein und präsentiert in einem winzigen Fenster das Ergebnis WEIT GENUG. Es gibt keinen mechanischen Effekt. Die tatsächliche Entfernung nachzumessen ändert seine Meinung nicht."
+      },
+      "PayloadDoorStuckOpen": {
+        "Title": "Munitionsklappe klemmt offen",
+        "Description": "Eine Wartungsklappe springt auf und legt einen Mechanismus frei, der plötzlich äußerst konservative Ansichten über Munition entwickelt hat. Bis zum Ende deines nächsten Zuges darf Munition, die du für diese Waffe lädst oder auswählst, nur gewöhnlich, nichtmagisch und nichtalchemistisch sein. Munition, die beim Eintreten dieser Folge bereits geladen ist, bleibt davon unberührt. Du kannst 1 Aktion Interagieren aufwenden, um die Klappe zu verriegeln und diese Folge zu beenden."
+      },
+      "StringTensionGovernor": {
+        "Title": "Sehnenspannungsregler",
+        "Description": "Ein Regler klemmt sich an Sehne, Kabel oder Bogenarm und wählt stolz den EFFIZIENZMODUS. Dein nächster Fernkampfangriff mit derselben Waffe vor dem Ende deines nächsten Zuges erhält einen Situationsbonus von +1 auf den Angriffswurf, verursacht bei einem Treffer aber 2 Punkte weniger Schaden, mindestens jedoch 0. Du kannst vor dem Angriff 1 Aktion Interagieren aufwenden, um die normale Spannung wiederherzustellen und diese Folge stattdessen zu beenden."
+      },
+      "PressureGaugeRedlines": {
+        "Title": "Druckanzeige im roten Bereich",
+        "Description": "Eine Druckanzeige, die vor einem Augenblick vielleicht noch gar nicht existierte, schlägt in den roten Bereich aus und beginnt selbstbewusst zu vibrieren. Vor deinem nächsten Fernkampfangriff mit derselben Feuerwaffe vor dem Ende deines nächsten Zuges wählst du: Du wendest 1 Aktion Interagieren auf, um den Druck abzulassen und normal anzugreifen, oder du feuerst ohne Entlüften. Feuert du ohne Entlüften, verursacht der Angriff bei einem Treffer 2 zusätzliche Schadenspunkte und du bist nach seiner Abwicklung bis zum Beginn deines nächsten Zuges taub. Die Feuerwaffe wird in beiden Fällen nicht beschädigt."
+      },
+      "ProjectileReturnProtocol": {
+        "Title": "Projektil-Rückholprotokoll",
+        "Description": "Die Waffe aktiviert mit verdächtig optimistischem Timing eine Rückholfunktion. Verfehlt dein nächster Fernkampfangriff mit derselben Waffe vor dem Ende deines nächsten Zuges, landet eine geworfene Waffe zu deinen Füßen statt dort, wo sie sonst zum Liegen gekommen wäre. Gewöhnliche, grundsätzlich wiederverwendbare Munition landet stattdessen in deinem Feld und kann geborgen werden. Trifft der Angriff, erreicht das Protokoll gar nichts und tut still so, als wäre es nie aktiviert gewesen."
+      },
+      "TrajectoryPrinter": {
+        "Title": "Flugbahn-Drucker",
+        "Description": "Ein schmaler Papierstreifen kommt aus der Waffe und zeigt ein aufwendiges Diagramm des misslungenen Schusses. Es gibt keinen mechanischen Effekt. Das Diagramm trägt die Überschrift ERWARTETE FLUGBAHN und zeigt in eine völlig andere Richtung. Nach deinem nächsten Fernkampfangriff ergänzt der Drucker die Notiz INNERHALB DER TOLERANZ."
       }
     }
   }
