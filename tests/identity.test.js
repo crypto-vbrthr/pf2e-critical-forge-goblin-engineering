@@ -33,12 +33,12 @@ test("Ranged Engineering titles do not duplicate Core or Ranged Mishaps", () => 
   }
 });
 
-test("overlap review documents the main neighboring packs and both ranged comparison blocks", () => {
+test("overlap review documents the main neighboring packs and all three ranged comparison blocks", () => {
   const review = fs.readFileSync(path.join(root, "docs/OVERLAP_REVIEW.md"), "utf8");
   for (const heading of ["Critical Forge Core", "Martial Consequences", "Ranged Mishaps", "Arsenal", "Arcane Backlash", "Against All Odds"]) {
     assert.match(review, new RegExp(heading.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
   }
-  for (const title of ["Helpful Auto-Loader", "Ammunition Argument", "Recoil Stumble", "Pressure Gauge Redlines", "Double-Feed Optimizer", "Retrieval Reel Overcommits"]) {
+  for (const title of ["Helpful Auto-Loader", "Ammunition Argument", "Recoil Stumble", "Pressure Gauge Redlines", "Double-Feed Optimizer", "Retrieval Reel Overcommits", "Spark Arrestor Gives Up", "Compact Storage Mode"]) {
     assert.match(review, new RegExp(title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"));
   }
 });

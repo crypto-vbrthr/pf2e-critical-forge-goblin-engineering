@@ -233,6 +233,46 @@
       "SelfZeroingSightOverachieves": {
         "Title": "Selbstnullendes Visier übertreibt",
         "Description": "Ein winziges Visier klickt durch mehrere Positionen und verkündet triumphierend NULLPUNKT GEFUNDEN. Dein nächster Fernkampf-Angriff mit derselben Waffe vor Ende deines nächsten Zuges erhält einen Umstandsbonus von +1 auf den Angriffswurf. Nach der Abwicklung klappt das Visier nach hinten. Führst du vor Ende deines darauffolgenden Zuges einen weiteren Fernkampf-Angriff mit der Waffe aus, ohne zuvor 1 Aktion Interagieren aufzuwenden, um das Visier umzudrehen, erhält dieser Angriff einen Umstandsmalus von -1. Danach endet die Folge."
+      },
+      "SparkArrestorGivesUp": {
+        "Title": "Funkenfänger kündigt",
+        "Description": "Ein Funkenfänger klappt auf, betrachtet die nächste Entladung der Feuerwaffe und kündigt. Bei deinem nächsten Fernkampf-Angriff mit derselben Feuerwaffe vor Ende deines nächsten Zuges bricht nach der Abwicklung des Angriffs ein harmlos dramatischer Funkenregen um dich herum aus. Du und Kreaturen, die an dich angrenzen, sind bis zum Beginn deines nächsten Zuges geblendet. Vor dem Angriff kannst du 1 Aktion Interagieren aufwenden, um den Funkenfänger zu schließen und diese Folge stattdessen zu beenden."
+      },
+      "StringWaxApplicatorGoesWild": {
+        "Title": "Sehnenwachser übertreibt",
+        "Description": "Ein automatischer Wachser überzieht Sehne, Kabel oder Wicklung mit genug Begeisterung für drei Waffen. Dein nächster Fernkampf-Angriff mit demselben Bogen vor Ende deines nächsten Zuges verursacht bei einem Treffer 1 zusätzlichen Umstandsschaden. Nach der Abwicklung verklebt der Mechanismus, und die Waffe kann nicht erneut angreifen, bis du 1 Aktion Interagieren aufwendest, um das überschüssige Wachs zu entfernen. Nichts ist beschädigt, aber alles glänzt bemerkenswert stark."
+      },
+      "HeavyPayloadSelector": {
+        "Title": "Schwerlastwahlschalter",
+        "Description": "Ein Wahlschalter an der Schleuder klickt von GESCHOSS auf MEHR GESCHOSS. Für deinen nächsten Fernkampf-Angriff mit derselben Schleuder vor Ende deines nächsten Zuges kannst du einen Umstandsmalus von -1 auf den Angriffswurf akzeptieren. Tust du dies und der Angriff trifft, verursacht er 3 zusätzlichen Umstandsschaden. Lehnst du ab, funktioniert die Schleuder normal und der Schalter kehrt unter missbilligendem Ratschen in seine vorherige Stellung zurück."
+      },
+      "SightHoodBecomesSunshade": {
+        "Title": "Visierhaube wird zum Sonnenschutz",
+        "Description": "Eine Schutzhaube klappt über die Visierlinie und interessiert sich augenblicklich wesentlich stärker für Augenkomfort als für Genauigkeit. Bis zum Beginn deines nächsten Zuges erhältst du beim Führen dieser Waffe einen Umstandsbonus von +1 auf Rettungswürfe gegen visuelle Effekte, doch Fernkampf-Angriffe mit ihr erleiden einen Umstandsmalus von -1. Du kannst 1 Aktion Interagieren aufwenden, um die Haube einzuklappen und beide Effekte vorzeitig zu beenden."
+      },
+      "EmergencyOpticsWasher": {
+        "Title": "Notfall-Optikwaschanlage",
+        "Description": "Ein winziger Wischer und eine beunruhigende Menge Reinigungsflüssigkeit fahren über die Visierung der Waffe. Dein nächster Fernkampf-Angriff mit derselben Waffe vor Ende deines nächsten Zuges erhält einen Umstandsbonus von +1 auf den Angriffswurf. Unmittelbar nach der Abwicklung macht dich der Sprühnebel bis zum Beginn deines nächsten Zuges geblendet. Vor dem Angriff kannst du 1 Aktion Interagieren aufwenden, um den Reinigungsvorgang abzubrechen und diese Folge stattdessen zu beenden."
+      },
+      "ObservationStockExtends": {
+        "Title": "Beobachtungsschaft fährt aus",
+        "Description": "Ein Teleskopschaft, eine Wangenauflage oder eine Sichtstütze fährt in die BEOBACHTUNGSKONFIGURATION aus. Bis zum Ende deines nächsten Zuges erhältst du beim Führen dieser Waffe einen Umstandsbonus von +1 auf Wahrnehmungswürfe zum Suchen, doch Fernkampf-Angriffe mit ihr erleiden einen Umstandsmalus von -1. Du kannst 1 Aktion Interagieren aufwenden, um die Beobachtungstechnik einzufahren und diese Folge zu beenden."
+      },
+      "ProjectileSerialNumberer": {
+        "Title": "Geschoss-Seriennummerierer",
+        "Description": "Ein Miniaturgravierer stempelt die nächste verfügbare Munition mit SERIENNR. 000001. Es hat keinen regeltechnischen Effekt. Das folgende Geschoss erhält SERIENNR. 000001-B, was darauf hindeutet, dass das Nummerierungssystem bereits Verwaltungsprobleme entwickelt hat."
+      },
+      "BrassCatcherFilesAReport": {
+        "Title": "Hülsenfänger reicht Bericht ein",
+        "Description": "Ein winziger Hülsenfänger klappt neben der Feuerwaffe aus und erzeugt ein Störungsformular, noch bevor überhaupt eine Hülse eintrifft. Es hat keinen regeltechnischen Effekt. Das Kästchen BEDIENERBETEILIGUNG: WAHRSCHEINLICH ist bereits angekreuzt."
+      },
+      "MaintenanceTicketPrinter": {
+        "Title": "Wartungsticket-Drucker",
+        "Description": "Die Waffe druckt ein Wartungsticket mit der Aufschrift PRIORITÄT: IRGENDWANN. Es hat keinen regeltechnischen Effekt. Faltet man das Ticket in der Mitte, erscheint eine zweite Zeile: LÖSUNG: BENUTZER BETRIEB GERÄT WEITER."
+      },
+      "CompactStorageMode": {
+        "Title": "Kompakter Transportmodus",
+        "Description": "Die Waffe entscheidet, dass mitten im Kampf der perfekte Zeitpunkt ist, ihre Transportfähigkeit vorzuführen. Nach deinem nächsten Fernkampf-Angriff mit derselben Waffe vor Ende deines nächsten Zuges faltet, teleskopiert oder verriegelt sie sich in eine kompakte Transportkonfiguration. Sie kann nicht erneut angreifen, bis du 1 Aktion Interagieren aufwendest, um sie wieder in Feuerbereitschaft zu bringen. Solange sie kompakt ist, kann die SL einen Umstandsbonus von +1 auf einen Wurf gewähren, der ausdrücklich dazu dient, diese Waffe zu verbergen, sofern ihre kleinere Form dabei sinnvoll hilft. Nichts wird beschädigt."
       }
     }
   }

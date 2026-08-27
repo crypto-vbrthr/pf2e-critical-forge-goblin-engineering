@@ -1,6 +1,6 @@
 # PF2E Critical Forge: Goblin Engineering
 
-Version **0.1.0-dev.5**
+Version **0.1.0-dev.6**
 
 Goblin Engineering is a humorous expansion for PF2E Critical Forge. Its cards treat critical fumbles as short-lived equipment incidents: springs object, latches become overconfident, ammunition systems panic, and sometimes the weapon simply emits an indignant squeak.
 
@@ -14,15 +14,15 @@ The completed Weapon Malfunctions deck contains thirty cards for critical fumble
 
 The deck deliberately ranges beyond simple action taxes. It includes temporary weapon-property changes, defensive and utility modes, movement oddities, small random outcomes, light and noise, controlled positive side effects, and several purely narrative equipment incidents.
 
-### Ranged Engineering - 20 / 30 cards
+### Ranged Engineering - 30 / 30 cards
 
-The first two Ranged Engineering blocks provide twenty cards for critical fumbles with non-spell ranged weapons. Ranged unarmed attacks and spell attacks are excluded so the deck stays focused on actual equipment.
+The completed Ranged Engineering deck provides thirty cards for critical fumbles with non-spell ranged weapons. Ranged unarmed attacks and spell attacks are excluded so the deck stays focused on actual equipment.
 
-Current cards include the original reload, safety, recoil, pressure, retrieval, and diagnostic incidents plus a second block covering close-quarters attachments, double-feed optimization, emergency ear protection, bow silencers, sling stabilizers, aggressive retrieval reels, and self-zeroing sights.
+The full deck covers reload and ammunition systems, safety interlocks, recoil and pressure hardware, bow-string controls, sling payload experiments, projectile retrieval, temporary optics modes, overenthusiastic maintenance systems, compact storage behavior, and numerous diagnostic devices that are much more confident than useful.
 
 Ranged Engineering is intentionally narrower than Martial Consequences: Ranged Mishaps. Ranged Mishaps covers firing positions, sightlines, cover, range estimation, projectile paths, target reactions, and shooting rhythm. Ranged Engineering instead asks what happens when the weapon, ammunition system, safety mechanism, pressure regulator, or retrieval feature becomes the source of the problem.
 
-Across both blocks, the deck includes six narrative-only incidents, several mixed outcomes, ammunition and reload oddities, bow-, sling-, and firearm-specific hardware, a thrown-weapon retrieval incident, and rare bounded benefits that never erase the original critical fumble. None of these cards permanently damages the weapon or creates repair costs.
+Across all three blocks, the deck includes nine narrative-only incidents, several mixed outcomes, ammunition and reload oddities, bow-, sling-, and firearm-specific hardware, temporary visual and survey configurations, thrown-weapon retrieval incidents, and rare bounded benefits that never erase the original critical fumble. None of these cards permanently damages the weapon or creates repair costs.
 
 ### Reserved pack
 

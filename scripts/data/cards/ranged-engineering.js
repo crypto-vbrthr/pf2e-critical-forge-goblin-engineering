@@ -197,6 +197,114 @@ export const RANGED_ENGINEERING_CARDS = Object.freeze([
     tags: ["sight", "attack-roll", "sequence", "interact", "same-weapon", "mixed-result"],
     filters: { weaponGroups: ["bow", "firearm"] },
     contentBatch: 2
+  }),
+  defineRangedEngineering({
+    id: "re-021-spark-arrestor-gives-up",
+    localizationKey: "SparkArrestorGivesUp",
+    impact: "strong",
+    weight: 0.45,
+    fallbackTitle: "Spark Arrestor Gives Up",
+    fallbackDescription: "A spark arrestor flips open, looks at the firearm's next discharge, and resigns. On your next ranged Strike with this same firearm before the end of your next turn, a burst of harmlessly dramatic sparks erupts around you after the attack resolves. You and creatures adjacent to you are dazzled until the start of your next turn. Before the Strike, you can spend 1 Interact action to close the arrestor and end this consequence instead.",
+    tags: ["firearm", "sparks", "dazzled", "interact", "same-weapon", "area-chaos", "one-use"],
+    filters: { weaponGroups: ["firearm"] },
+    contentBatch: 3
+  }),
+  defineRangedEngineering({
+    id: "re-022-string-wax-applicator-goes-wild",
+    localizationKey: "StringWaxApplicatorGoesWild",
+    impact: "moderate",
+    weight: 0.7,
+    fallbackTitle: "String Wax Applicator Goes Wild",
+    fallbackDescription: "An automatic waxer coats the string, cable, or serving with enough enthusiasm for three weapons. Your next ranged Strike with this same bow before the end of your next turn deals 1 additional circumstance damage on a hit. After that Strike resolves, the mechanism gums up and the weapon cannot Strike again until you spend 1 Interact action cleaning the excess wax away. Nothing is damaged, but everything is extremely shiny.",
+    tags: ["bow", "damage", "maintenance", "interact", "same-weapon", "mixed-result", "one-use"],
+    filters: { weaponGroups: ["bow"] },
+    contentBatch: 3
+  }),
+  defineRangedEngineering({
+    id: "re-023-heavy-payload-selector",
+    localizationKey: "HeavyPayloadSelector",
+    impact: "strong",
+    weight: 0.45,
+    fallbackTitle: "Heavy Payload Selector",
+    fallbackDescription: "A selector on the sling clicks from PROJECTILE to MORE PROJECTILE. For your next ranged Strike with this same sling before the end of your next turn, you may accept a -1 circumstance penalty to the attack roll. If you do and the Strike hits, it deals 3 additional circumstance damage. If you decline, the sling functions normally and the selector returns to its previous position while muttering through a tiny ratchet.",
+    tags: ["sling", "payload", "attack-roll", "damage", "choice", "same-weapon", "mixed-result", "one-use"],
+    filters: { weaponGroups: ["sling"] },
+    contentBatch: 3
+  }),
+  defineRangedEngineering({
+    id: "re-024-sight-hood-becomes-sunshade",
+    localizationKey: "SightHoodBecomesSunshade",
+    impact: "light",
+    weight: 0.8,
+    fallbackTitle: "Sight Hood Becomes Sunshade",
+    fallbackDescription: "A protective hood unfolds over the sighting line and immediately becomes far more interested in eye comfort than accuracy. Until the start of your next turn, you gain a +1 circumstance bonus to saving throws against visual effects while wielding this weapon, but ranged Strikes with it take a -1 circumstance penalty. You can spend 1 Interact action to fold the hood away and end both effects early.",
+    tags: ["sight", "visual", "saving-throw", "attack-roll", "interact", "same-weapon", "mixed-result"],
+    filters: { weaponGroups: ["bow", "firearm"] },
+    contentBatch: 3
+  }),
+  defineRangedEngineering({
+    id: "re-025-emergency-optics-washer",
+    localizationKey: "EmergencyOpticsWasher",
+    impact: "moderate",
+    weight: 0.7,
+    fallbackTitle: "Emergency Optics Washer",
+    fallbackDescription: "A tiny wiper and an alarming amount of cleaning fluid sweep across the weapon's sights. Your next ranged Strike with this same weapon before the end of your next turn gains a +1 circumstance bonus to its attack roll. Immediately after the Strike resolves, the overspray makes you dazzled until the start of your next turn. You can spend 1 Interact action before the Strike to cancel the cleaning cycle and end this consequence instead.",
+    tags: ["sight", "optics", "attack-roll", "dazzled", "interact", "same-weapon", "mixed-result", "one-use"],
+    filters: { weaponGroups: ["bow", "firearm"] },
+    contentBatch: 3
+  }),
+  defineRangedEngineering({
+    id: "re-026-observation-stock-extends",
+    localizationKey: "ObservationStockExtends",
+    impact: "moderate",
+    weight: 0.75,
+    fallbackTitle: "Observation Stock Extends",
+    fallbackDescription: "A telescoping stock, cheek rest, or viewing brace extends into SURVEY CONFIGURATION. Until the end of your next turn, while wielding this weapon you gain a +1 circumstance bonus to Perception checks to Seek, but ranged Strikes with it take a -1 circumstance penalty. You can spend 1 Interact action to collapse the survey hardware and end this consequence.",
+    tags: ["observation", "seek", "perception", "attack-roll", "interact", "same-weapon", "mixed-result"],
+    filters: { weaponGroups: ["bow", "firearm"] },
+    contentBatch: 3
+  }),
+  defineRangedEngineering({
+    id: "re-027-projectile-serial-numberer",
+    localizationKey: "ProjectileSerialNumberer",
+    impact: "narrative",
+    weight: 1.4,
+    fallbackTitle: "Projectile Serial Numberer",
+    fallbackDescription: "A miniature engraver stamps the next available piece of ammunition with SERIAL NO. 000001. There is no mechanical effect. The following piece is stamped SERIAL NO. 000001-B, suggesting the numbering system has already encountered governance problems.",
+    tags: ["narrative", "ammunition", "serial-number", "bureaucracy", "no-mechanical-effect"],
+    contentBatch: 3
+  }),
+  defineRangedEngineering({
+    id: "re-028-brass-catcher-files-a-report",
+    localizationKey: "BrassCatcherFilesAReport",
+    impact: "narrative",
+    weight: 1.4,
+    fallbackTitle: "Brass Catcher Files a Report",
+    fallbackDescription: "A tiny brass catcher deploys beside the firearm and produces a paper incident form before any casing arrives. There is no mechanical effect. The form has already checked the box marked OPERATOR INVOLVEMENT: PROBABLE.",
+    tags: ["narrative", "firearm", "brass", "paperwork", "no-mechanical-effect"],
+    filters: { weaponGroups: ["firearm"] },
+    contentBatch: 3
+  }),
+  defineRangedEngineering({
+    id: "re-029-maintenance-ticket-printer",
+    localizationKey: "MaintenanceTicketPrinter",
+    impact: "narrative",
+    weight: 1.4,
+    fallbackTitle: "Maintenance Ticket Printer",
+    fallbackDescription: "The weapon prints a maintenance ticket reading PRIORITY: EVENTUALLY. There is no mechanical effect. Folding the ticket in half causes a second line to appear: RESOLUTION: USER CONTINUED OPERATING DEVICE.",
+    tags: ["narrative", "maintenance", "ticket", "paperwork", "no-mechanical-effect"],
+    contentBatch: 3
+  }),
+  defineRangedEngineering({
+    id: "re-030-compact-storage-mode",
+    localizationKey: "CompactStorageMode",
+    impact: "moderate",
+    weight: 0.7,
+    fallbackTitle: "Compact Storage Mode",
+    fallbackDescription: "The weapon decides the middle of a fight is the perfect time to demonstrate portability. After your next ranged Strike with this same weapon before the end of your next turn, it folds, telescopes, or locks itself into compact storage mode. It cannot Strike again until you spend 1 Interact action returning it to firing configuration. While compact, the GM may grant a +1 circumstance bonus to a check made specifically to Conceal this weapon if its reduced shape could reasonably help. Nothing is damaged.",
+    tags: ["storage", "maintenance", "interact", "same-weapon", "conceal-object", "mixed-result", "one-use"],
+    filters: { weaponGroups: ["bow", "firearm"] },
+    contentBatch: 3
   })
 
 ]);

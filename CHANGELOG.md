@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.0-dev.6 - Ranged Engineering III
+
+- Added the final 10 Ranged Engineering cards, completing the deck at 30 / 30 cards.
+- Added firearm spark-arrestor failure, bow-string waxing, a sling heavy-payload selector, temporary sight protection, an overenthusiastic optics washer, and a survey configuration.
+- Added three narrative-only incidents: Projectile Serial Numberer, Brass Catcher Files a Report, and Maintenance Ticket Printer.
+- Added Compact Storage Mode as a post-shot transport malfunction with a small situational concealment upside.
+- Preserved the boundary against Ranged Mishaps: no cover manipulation, range-estimation penalties, firing-lane geometry, target reactions, or generic shot-rhythm failures.
+- Completed the Ranged Engineering deck at 30 cards and added regression/localization coverage for the final block.
+
 ## 0.1.0-dev.5 - Ranged Engineering II
 
 - Added 10 additional Ranged Engineering cards, bringing the deck to 20 / 30 cards.

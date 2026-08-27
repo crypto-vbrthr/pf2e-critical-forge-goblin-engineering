@@ -1,6 +1,6 @@
 # Running Overlap Review
 
-Reviewed through **0.1.0-dev.5** against the supplied Critical Forge and expansion modules.
+Reviewed through **0.1.0-dev.6** against the supplied Critical Forge and expansion modules.
 
 ## Critical Forge Core
 
@@ -120,3 +120,18 @@ The second ten-card block was reviewed against the same 30-card Ranged Mishaps d
 
 The deck remains equipment-centered: the joke and the consequence both originate in a device that has begun interpreting its job description too creatively.
 
+
+## Ranged Engineering III review (0.1.0-dev.6)
+
+The final ten-card block was reviewed against the supplied 30-card Ranged Mishaps deck and the first twenty Ranged Engineering cards. No direct title duplicates were found.
+
+- **Spark Arrestor Gives Up** creates a firearm-local spark burst around the operator rather than changing a firing lane, target defense, or recoil movement.
+- **String Wax Applicator Goes Wild** is a bow maintenance sequence coupling a small damage benefit to post-shot cleanup.
+- **Heavy Payload Selector** is a sling-specific optional accuracy/damage tradeoff and does not modify range increments or target movement.
+- **Sight Hood Becomes Sunshade** trades weapon accuracy for temporary visual protection; it does not alter cover or line of sight.
+- **Emergency Optics Washer** creates a one-shot accuracy benefit followed by operator dazzle, keeping the consequence in the sight hardware rather than battlefield geometry.
+- **Observation Stock Extends** temporarily repurposes the weapon as a Seek aid at the cost of ranged accuracy.
+- **Compact Storage Mode** is a post-shot folding/maintenance state with a narrow concealment utility benefit rather than a generic firing-rhythm penalty.
+- **Projectile Serial Numberer**, **Brass Catcher Files a Report**, and **Maintenance Ticket Printer** are narrative-only and mechanically harmless.
+
+Ranged Engineering is complete at 30 cards. The final deck still preserves the split established at the start of the review: Ranged Mishaps describes bad shooting circumstances, while Ranged Engineering describes hardware that has begun making unsolicited design decisions.

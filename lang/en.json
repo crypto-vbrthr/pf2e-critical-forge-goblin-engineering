@@ -233,6 +233,46 @@
       "SelfZeroingSightOverachieves": {
         "Title": "Self-Zeroing Sight Overachieves",
         "Description": "A tiny sight clicks through several positions and triumphantly announces ZERO FOUND. Your next ranged Strike with this same weapon before the end of your next turn gains a +1 circumstance bonus to its attack roll. After that Strike resolves, the sight flips backward. If you make another ranged Strike with the weapon before the end of your following turn without first spending 1 Interact action to turn the sight around, that Strike takes a -1 circumstance penalty. The consequence then ends."
+      },
+      "SparkArrestorGivesUp": {
+        "Title": "Spark Arrestor Gives Up",
+        "Description": "A spark arrestor flips open, looks at the firearm's next discharge, and resigns. On your next ranged Strike with this same firearm before the end of your next turn, a burst of harmlessly dramatic sparks erupts around you after the attack resolves. You and creatures adjacent to you are dazzled until the start of your next turn. Before the Strike, you can spend 1 Interact action to close the arrestor and end this consequence instead."
+      },
+      "StringWaxApplicatorGoesWild": {
+        "Title": "String Wax Applicator Goes Wild",
+        "Description": "An automatic waxer coats the string, cable, or serving with enough enthusiasm for three weapons. Your next ranged Strike with this same bow before the end of your next turn deals 1 additional circumstance damage on a hit. After that Strike resolves, the mechanism gums up and the weapon cannot Strike again until you spend 1 Interact action cleaning the excess wax away. Nothing is damaged, but everything is extremely shiny."
+      },
+      "HeavyPayloadSelector": {
+        "Title": "Heavy Payload Selector",
+        "Description": "A selector on the sling clicks from PROJECTILE to MORE PROJECTILE. For your next ranged Strike with this same sling before the end of your next turn, you may accept a -1 circumstance penalty to the attack roll. If you do and the Strike hits, it deals 3 additional circumstance damage. If you decline, the sling functions normally and the selector returns to its previous position while muttering through a tiny ratchet."
+      },
+      "SightHoodBecomesSunshade": {
+        "Title": "Sight Hood Becomes Sunshade",
+        "Description": "A protective hood unfolds over the sighting line and immediately becomes far more interested in eye comfort than accuracy. Until the start of your next turn, you gain a +1 circumstance bonus to saving throws against visual effects while wielding this weapon, but ranged Strikes with it take a -1 circumstance penalty. You can spend 1 Interact action to fold the hood away and end both effects early."
+      },
+      "EmergencyOpticsWasher": {
+        "Title": "Emergency Optics Washer",
+        "Description": "A tiny wiper and an alarming amount of cleaning fluid sweep across the weapon's sights. Your next ranged Strike with this same weapon before the end of your next turn gains a +1 circumstance bonus to its attack roll. Immediately after the Strike resolves, the overspray makes you dazzled until the start of your next turn. You can spend 1 Interact action before the Strike to cancel the cleaning cycle and end this consequence instead."
+      },
+      "ObservationStockExtends": {
+        "Title": "Observation Stock Extends",
+        "Description": "A telescoping stock, cheek rest, or viewing brace extends into SURVEY CONFIGURATION. Until the end of your next turn, while wielding this weapon you gain a +1 circumstance bonus to Perception checks to Seek, but ranged Strikes with it take a -1 circumstance penalty. You can spend 1 Interact action to collapse the survey hardware and end this consequence."
+      },
+      "ProjectileSerialNumberer": {
+        "Title": "Projectile Serial Numberer",
+        "Description": "A miniature engraver stamps the next available piece of ammunition with SERIAL NO. 000001. There is no mechanical effect. The following piece is stamped SERIAL NO. 000001-B, suggesting the numbering system has already encountered governance problems."
+      },
+      "BrassCatcherFilesAReport": {
+        "Title": "Brass Catcher Files a Report",
+        "Description": "A tiny brass catcher deploys beside the firearm and produces a paper incident form before any casing arrives. There is no mechanical effect. The form has already checked the box marked OPERATOR INVOLVEMENT: PROBABLE."
+      },
+      "MaintenanceTicketPrinter": {
+        "Title": "Maintenance Ticket Printer",
+        "Description": "The weapon prints a maintenance ticket reading PRIORITY: EVENTUALLY. There is no mechanical effect. Folding the ticket in half causes a second line to appear: RESOLUTION: USER CONTINUED OPERATING DEVICE."
+      },
+      "CompactStorageMode": {
+        "Title": "Compact Storage Mode",
+        "Description": "The weapon decides the middle of a fight is the perfect time to demonstrate portability. After your next ranged Strike with this same weapon before the end of your next turn, it folds, telescopes, or locks itself into compact storage mode. It cannot Strike again until you spend 1 Interact action returning it to firing configuration. While compact, the GM may grant a +1 circumstance bonus to a check made specifically to Conceal this weapon if its reduced shape could reasonably help. Nothing is damaged."
       }
     }
   }

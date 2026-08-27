@@ -5,7 +5,7 @@ import { WEAPON_MALFUNCTION_CARDS } from "../scripts/data/cards/weapon-malfuncti
 import { RANGED_ENGINEERING_CARDS } from "../scripts/data/cards/ranged-engineering.js";
 import { buildGoblinEngineeringPacks } from "../scripts/data/packs.js";
 
-test("dev.5 retains thirty unique Weapon Malfunctions", () => {
+test("dev.6 retains thirty unique Weapon Malfunctions", () => {
   assert.equal(WEAPON_MALFUNCTION_CARDS.length, 30);
   assert.equal(new Set(WEAPON_MALFUNCTION_CARDS.map((card) => card.id)).size, 30);
   assert.equal(new Set(WEAPON_MALFUNCTION_CARDS.map((card) => card.fallbackTitle)).size, 30);
@@ -113,10 +113,10 @@ test("dev.3 narrative incidents remain mechanically harmless", () => {
   }
 });
 
-test("dev.5 retains twenty unique Ranged Engineering cards", () => {
-  assert.equal(RANGED_ENGINEERING_CARDS.length, 20);
-  assert.equal(new Set(RANGED_ENGINEERING_CARDS.map((card) => card.id)).size, 20);
-  assert.equal(new Set(RANGED_ENGINEERING_CARDS.map((card) => card.fallbackTitle)).size, 20);
+test("dev.6 completes thirty unique Ranged Engineering cards", () => {
+  assert.equal(RANGED_ENGINEERING_CARDS.length, 30);
+  assert.equal(new Set(RANGED_ENGINEERING_CARDS.map((card) => card.id)).size, 30);
+  assert.equal(new Set(RANGED_ENGINEERING_CARDS.map((card) => card.fallbackTitle)).size, 30);
 });
 
 test("dev.4 Ranged Engineering batch one remains intact", () => {
@@ -151,6 +151,48 @@ test("dev.5 adds ten cards in Ranged Engineering batch two", () => {
     "re-019-ammunition-inspector",
     "re-020-self-zeroing-sight-overachieves"
   ]);
+});
+
+test("dev.6 adds the final ten cards in Ranged Engineering batch three", () => {
+  const batchThree = RANGED_ENGINEERING_CARDS.filter((card) => card.metadata.contentBatch === 3);
+  assert.equal(batchThree.length, 10);
+  assert.deepEqual(batchThree.map((card) => card.id.split(".").at(-1)), [
+    "re-021-spark-arrestor-gives-up",
+    "re-022-string-wax-applicator-goes-wild",
+    "re-023-heavy-payload-selector",
+    "re-024-sight-hood-becomes-sunshade",
+    "re-025-emergency-optics-washer",
+    "re-026-observation-stock-extends",
+    "re-027-projectile-serial-numberer",
+    "re-028-brass-catcher-files-a-report",
+    "re-029-maintenance-ticket-printer",
+    "re-030-compact-storage-mode"
+  ]);
+});
+
+test("dev.6 completes Ranged Engineering with additional equipment-centered mechanics", () => {
+  const bySuffix = (suffix) => RANGED_ENGINEERING_CARDS.find((card) => card.id.endsWith(suffix));
+  assert.deepEqual(bySuffix("re-021-spark-arrestor-gives-up").filters.weaponGroups, ["firearm"]);
+  assert.match(bySuffix("re-021-spark-arrestor-gives-up").fallbackDescription, /dazzled/i);
+  assert.deepEqual(bySuffix("re-022-string-wax-applicator-goes-wild").filters.weaponGroups, ["bow"]);
+  assert.match(bySuffix("re-023-heavy-payload-selector").fallbackDescription, /3 additional circumstance damage/i);
+  assert.match(bySuffix("re-024-sight-hood-becomes-sunshade").fallbackDescription, /visual effects/i);
+  assert.match(bySuffix("re-025-emergency-optics-washer").fallbackDescription, /overspray makes you dazzled/i);
+  assert.match(bySuffix("re-026-observation-stock-extends").fallbackDescription, /Perception checks to Seek/i);
+  assert.match(bySuffix("re-030-compact-storage-mode").fallbackDescription, /compact storage mode/i);
+});
+
+test("dev.6 narrative ranged incidents remain mechanically harmless", () => {
+  for (const suffix of [
+    "re-027-projectile-serial-numberer",
+    "re-028-brass-catcher-files-a-report",
+    "re-029-maintenance-ticket-printer"
+  ]) {
+    const card = RANGED_ENGINEERING_CARDS.find((entry) => entry.id.endsWith(suffix));
+    assert.equal(card.impact, "narrative");
+    assert.equal(card.tags.includes("no-mechanical-effect"), true);
+    assert.match(card.fallbackDescription, /no mechanical effect/i);
+  }
 });
 
 test("Ranged Engineering stays in non-spell ranged weapon fumble contexts", () => {
@@ -229,8 +271,8 @@ test("pack construction exposes two active content packs and one reserved pack",
   assert.equal(packs[0].decks.attack.cards.length, 30);
   assert.equal(packs[0].metadata.implementedCards, 30);
   assert.equal(packs[0].enabled, true);
-  assert.equal(packs[1].decks.attack.cards.length, 20);
-  assert.equal(packs[1].metadata.implementedCards, 20);
+  assert.equal(packs[1].decks.attack.cards.length, 30);
+  assert.equal(packs[1].metadata.implementedCards, 30);
   assert.equal(packs[1].enabled, true);
   assert.equal(packs[2].decks.attack.cards.length, 0);
   assert.equal(packs[2].enabled, false);
