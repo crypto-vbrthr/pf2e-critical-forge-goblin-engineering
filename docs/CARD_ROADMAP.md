@@ -66,3 +66,8 @@ The completed deck targets the action slugs `repair`, `craft`, `pick-a-lock`, `d
 Shield-only incidents remain out of scope because actions such as Raise a Shield do not involve a check and therefore do not create a skill-critical context.
 
 At 30 cards, Equipment Incidents is complete for the initial Goblin Engineering release scope. Further skill content should wait for playtest feedback or a deliberately separate expansion of the supported action set.
+
+
+## Initial release scope
+
+The initial Goblin Engineering content plan is complete at **90 / 90 cards**. The three decks are frozen for `0.1.0-rc.1` except for bug fixes, wording corrections, localization fixes, or balance changes found during release-candidate playtesting. New mechanical themes should wait until after the first stable release so the release candidate remains a controlled test target.

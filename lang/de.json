@@ -8,11 +8,11 @@
     "Packs": {
       "WeaponMalfunctions": {
         "Title": "Goblin Engineering: Waffenfehlfunktionen",
-        "Description": "Humorvolle kritische Patzer für nichtmagische Nahkampfwaffen mit unzuverlässiger Technik, fragwürdigen Sicherheitsfunktionen und kurzen Ausrüstungsproblemen."
+        "Description": "Humorvolle kritische Patzer für Nahkampfwaffen mit unzuverlässiger Technik, fragwürdigen Sicherheitsfunktionen und kurzen Ausrüstungsproblemen; Zauberangriffe und waffenlose Angriffe sind ausgeschlossen."
       },
       "RangedEngineering": {
         "Title": "Goblin Engineering: Fernkampf-Ingenieurskunst",
-        "Description": "Humorvolle kritische Patzer für nichtmagische Fernkampfwaffen mit unzuverlässigen Munitionssystemen, fragwürdigen Sicherheitsvorrichtungen und Technik, die mitten im Kampf eigene Ansichten entwickelt."
+        "Description": "Humorvolle kritische Patzer für Fernkampfwaffen mit unzuverlässigen Munitionssystemen, fragwürdigen Sicherheitsvorrichtungen und Technik, die mitten im Kampf eigene Ansichten entwickelt; Zauberangriffe und waffenlose Angriffe sind ausgeschlossen."
       },
       "EquipmentIncidents": {
         "Title": "Goblin Engineering: Ausrüstungszwischenfälle",
@@ -22,11 +22,11 @@
     "Settings": {
       "WeaponMalfunctions": {
         "Name": "Waffenfehlfunktionen aktivieren",
-        "Hint": "Aktiviert humorvolle Karten für kritische Patzer mit nichtmagischen Nahkampfwaffen."
+        "Hint": "Aktiviert humorvolle Karten für kritische Patzer mit Nahkampfwaffen; Zauberangriffe und waffenlose Angriffe sind ausgeschlossen."
       },
       "RangedEngineering": {
         "Name": "Fernkampf-Ingenieurskunst aktivieren",
-        "Hint": "Aktiviert humorvolle Karten für kritische Patzer mit nichtmagischen Fernkampfwaffen."
+        "Hint": "Aktiviert humorvolle Karten für kritische Patzer mit Fernkampfwaffen; Zauberangriffe und waffenlose Angriffe sind ausgeschlossen."
       },
       "EquipmentIncidents": {
         "Name": "Ausrüstungszwischenfälle aktivieren",

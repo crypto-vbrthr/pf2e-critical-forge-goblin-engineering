@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.1.0-rc.1 - Full Content, Integration & Balance Review
+
+- Promoted the complete 90-card Goblin Engineering set to release-candidate status.
+- Completed the full content, integration, localization, overlap, and weighted-balance review across all three packs.
+- Confirmed the final inventory at 30 Weapon Malfunctions, 30 Ranged Engineering cards, and 30 Equipment Incidents.
+- Kept the Critical Forge runtime baseline at 1.0.1-rc.6.1 / API 0.9.7 with the `cards.skillCheckCriticals` capability.
+- Confirmed all Equipment Incidents preserve the normal PF2e critical-failure result before adding their equipment consequence.
+- Confirmed no card permanently destroys equipment or creates repair costs.
+- Corrected German pack and setting wording so magical physical weapons are not incorrectly described as excluded; the actual boundary is spell and unarmed attack contexts.
+- Added `docs/RELEASE_REVIEW.md` with final card inventory, weighted impact distributions, integration boundaries, localization findings, and overlap conclusions.
+- Added a module-level release check for version synchronization, dependencies, localization parity, card inventory, pack topology, archive hygiene, and JavaScript syntax.
+- Marked all three pack metadata blocks as `release-candidate`.
+
 ## 0.1.0-dev.9 - Equipment Incidents III
 
 - Added the final 10 Equipment Incidents cards, completing the skill deck at 30 / 30 cards and the module at 90 total cards.
