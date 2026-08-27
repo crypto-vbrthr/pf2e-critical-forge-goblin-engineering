@@ -1,4 +1,4 @@
-# Goblin Engineering 0.1.0-rc.1 Release Review
+# Goblin Engineering 0.1.0 Stable Release Review
 
 ## Scope
 
@@ -138,6 +138,6 @@ The module remains distinct from:
 
 ## Release conclusion
 
-The review found no blocking content, integration, balance, localization, or packaging issue. The 90-card set is suitable for release-candidate testing as **0.1.0-rc.1**.
+The review found no blocking content, integration, balance, localization, or packaging issue. The 90-card release candidate was subsequently tested successfully in Foundry VTT and is promoted unchanged to **0.1.0 Stable**.
 
-Further changes before 0.1.0 should be limited to bugs, live-play balance findings, unclear wording, or localization corrections. New card themes should wait until after the stable release.
+The initial stable content set is now frozen at 90 cards. Future card themes and feature expansions should be developed after 0.1.0 rather than folded into the first stable release.

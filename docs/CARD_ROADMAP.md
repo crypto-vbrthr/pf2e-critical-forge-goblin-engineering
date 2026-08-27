@@ -70,4 +70,4 @@ At 30 cards, Equipment Incidents is complete for the initial Goblin Engineering 
 
 ## Initial release scope
 
-The initial Goblin Engineering content plan is complete at **90 / 90 cards**. The three decks are frozen for `0.1.0-rc.1` except for bug fixes, wording corrections, localization fixes, or balance changes found during release-candidate playtesting. New mechanical themes should wait until after the first stable release so the release candidate remains a controlled test target.
+The initial Goblin Engineering content plan is complete at **90 / 90 cards** and released as `0.1.0`. The three decks are frozen for the first stable release. New mechanical themes, additional packs, and broader trigger experiments should be developed after 0.1.0 so the stable baseline remains controlled and reproducible.

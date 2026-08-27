@@ -1,6 +1,6 @@
 # Running Overlap Review
 
-Reviewed through **0.1.0-rc.1** against the supplied Critical Forge and expansion modules.
+Reviewed through **0.1.0** against the supplied Critical Forge and expansion modules.
 
 ## Critical Forge Core
 
@@ -190,7 +190,7 @@ No new magic-facing skill actions were introduced, so the deck remains outside *
 At 30 cards, Equipment Incidents now completes the initial Goblin Engineering plan: melee weapons malfunction, ranged hardware improvises, and skill tools develop unsolicited features, all without permanent equipment destruction or cancellation of the triggering critical failure.
 
 
-## Release candidate overlap conclusion (0.1.0-rc.1)
+## Stable release overlap conclusion (0.1.0)
 
 The complete 90-card set was reviewed as one module rather than as three isolated development streams. No direct content-title duplicate was found against the supplied Critical Forge, Martial Consequences, Arsenal, Arcane Backlash, or Against All Odds card sources. The only matching Goblin Engineering title inside the Critical Forge source tree is the embedded integration-test fixture for `Broken Pick Requests Promotion`, not a competing core card.
 

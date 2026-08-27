@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0 - Stable Release
+
+- Promoted the successfully live-tested 90-card release candidate to the first stable Goblin Engineering release.
+- Kept all 30 Weapon Malfunctions, 30 Ranged Engineering cards, and 30 Equipment Incidents unchanged from rc.1.
+- Marked all three Critical Forge pack metadata blocks as `stable`.
+- Kept the tested Critical Forge baseline at 1.0.1-rc.6.1 / API 0.9.7 with the `cards.skillCheckCriticals` capability.
+- Updated release metadata, documentation, and release checks for the stable 0.1.0 package.
+
 ## 0.1.0-rc.1 - Full Content, Integration & Balance Review
 
 - Promoted the complete 90-card Goblin Engineering set to release-candidate status.

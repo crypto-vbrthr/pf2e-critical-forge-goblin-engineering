@@ -1,6 +1,6 @@
 # PF2E Critical Forge: Goblin Engineering
 
-Version **0.1.0-rc.1**
+Version **0.1.0**
 
 Goblin Engineering is a humorous expansion for PF2E Critical Forge. Its cards treat critical fumbles as short-lived equipment incidents: springs object, latches become overconfident, ammunition systems panic, and sometimes the weapon simply emits an indignant squeak.
 
@@ -26,17 +26,17 @@ Across all three blocks, the deck includes nine narrative-only incidents, severa
 
 ### Equipment Incidents - 30 / 30 cards
 
-Equipment Incidents uses Critical Forge's skill-check critical context. The release-candidate deck contains thirty equipment-heavy critical-failure cards for Repair, Craft, Pick a Lock, Disable a Device, Treat Wounds, Administer First Aid, Treat Disease, and Treat Poison. The module requires Critical Forge 1.0.1-rc.6.1 so the normalized PF2e action slugs used by these cards match reliably in live rolls.
+Equipment Incidents uses Critical Forge's skill-check critical context. The stable deck contains thirty equipment-heavy critical-failure cards for Repair, Craft, Pick a Lock, Disable a Device, Treat Wounds, Administer First Aid, Treat Disease, and Treat Poison. The module requires Critical Forge 1.0.1-rc.6.1 so the normalized PF2e action slugs used by these cards match reliably in live rolls.
 
 The completed deck deliberately layers its humor on top of the normal PF2e critical-failure result instead of replacing it. A failed Repair still damages the item, a failed Pick a Lock still breaks the tools, a failed Disable a Device can still trigger the mechanism, and a failed Treat Wounds still causes its normal damage. Goblin Engineering adds short-lived tool behavior, paperwork, calibration problems, workspace hazards, and occasional bounded upside around those outcomes.
 
 Shield-only actions are still outside this deck because Raise a Shield does not make a check and therefore does not create a skill-critical trigger.
 
-## Release candidate
+## Stable release
 
-The full 90-card content, integration, localization, overlap, and balance review is complete for `0.1.0-rc.1`. No card in the release candidate permanently destroys equipment, creates repair costs, or cancels the triggering critical fumble or skill critical failure. Strong attack consequences are deliberately low-weight, while narrative-only incidents remain common enough to keep the module playful rather than relentlessly punitive.
+Version `0.1.0` promotes the complete 90-card set after successful release-candidate testing in Foundry VTT. No card permanently destroys equipment, creates repair costs, or cancels the triggering critical fumble or skill critical failure. Strong attack consequences are deliberately low-weight, while narrative-only incidents remain common enough to keep the module playful rather than relentlessly punitive.
 
-The release candidate is validated against PF2E Critical Forge 1.0.1-rc.6.1 and its `cards.skillCheckCriticals` capability. See `docs/RELEASE_REVIEW.md` for the review matrix and final balance distribution.
+The stable release is validated against PF2E Critical Forge 1.0.1-rc.6.1 and its `cards.skillCheckCriticals` capability. See `docs/RELEASE_REVIEW.md` for the review matrix and final balance distribution.
 
 ## Requirements
 

@@ -18,7 +18,7 @@ export const GOBLIN_PACK_CONFIGS = Object.freeze([
       family: "goblin-engineering",
       category: "weapon-malfunctions",
       scope: "non-spell-melee-weapon-critical-fumbles",
-      contentStatus: "release-candidate",
+      contentStatus: "stable",
       plannedCards: 30,
       implementedCards: 30
     })
@@ -37,7 +37,7 @@ export const GOBLIN_PACK_CONFIGS = Object.freeze([
       family: "goblin-engineering",
       category: "ranged-engineering",
       scope: "non-spell-ranged-weapon-critical-fumbles",
-      contentStatus: "release-candidate",
+      contentStatus: "stable",
       plannedCards: 30,
       implementedCards: 30
     })
@@ -56,7 +56,7 @@ export const GOBLIN_PACK_CONFIGS = Object.freeze([
       family: "goblin-engineering",
       category: "equipment-incidents",
       scope: "equipment-heavy-skill-check-critical-failures",
-      contentStatus: "release-candidate",
+      contentStatus: "stable",
       plannedCards: 30,
       implementedCards: 30
     })

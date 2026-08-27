@@ -23,9 +23,9 @@ const requiredApi = constants.match(/REQUIRED_CRITICAL_FORGE_API_VERSION\s*=\s*"
 if (manifest.version === pkg.version && pkg.version === moduleVersion) pass(`version metadata agrees on ${manifest.version}`);
 else fail(`version mismatch: manifest=${manifest.version}, package=${pkg.version}, constants=${moduleVersion}`);
 
-if (!String(manifest.version).includes("-dev")) pass("release version contains no development suffix");
-else if (allowDev) pass("development suffix accepted for quality check");
-else fail("release version still contains a development suffix");
+if (!String(manifest.version).includes("-")) pass("stable release version contains no prerelease suffix");
+else if (allowDev) pass("prerelease suffix accepted for quality check");
+else fail("stable release version still contains a prerelease suffix");
 
 if (manifest.compatibility?.minimum === "14" && manifest.compatibility?.verified === "14") pass("Foundry 14 compatibility is explicit");
 else fail("Foundry compatibility must declare minimum and verified version 14");
@@ -69,8 +69,8 @@ else fail("card inventory does not match the 90-card release scope");
 if (new Set(allCards.map((card) => card.id)).size === 90 && new Set(allCards.map((card) => card.fallbackTitle)).size === 90) pass("all card ids and fallback titles are unique");
 else fail("duplicate card id or fallback title detected");
 
-if (GOBLIN_PACK_CONFIGS.length === 3 && GOBLIN_PACK_CONFIGS.every((config) => config.metadata?.contentStatus === "release-candidate" && config.metadata?.implementedCards === 30)) pass("all three packs are marked release-candidate and complete");
-else fail("pack release status or implemented-card metadata is inconsistent");
+if (GOBLIN_PACK_CONFIGS.length === 3 && GOBLIN_PACK_CONFIGS.every((config) => config.metadata?.contentStatus === "stable" && config.metadata?.implementedCards === 30)) pass("all three packs are marked stable and complete");
+else fail("pack stable status or implemented-card metadata is inconsistent");
 
 const built = buildGoblinEngineeringPacks();
 if (built.length === 3 && built.every((pack) => pack.enabled) && built[0].decks?.attack && built[1].decks?.attack && built[2].decks?.skill) pass("pack topology is attack / attack / skill and all packs default enabled");

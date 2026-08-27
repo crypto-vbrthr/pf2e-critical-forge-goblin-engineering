@@ -21,21 +21,21 @@ const weightedShare = (cards, impact) => {
   return band / total;
 };
 
-test("release candidate metadata and Critical Forge baseline are synchronized", () => {
-  assert.equal(MODULE_VERSION, "0.1.0-rc.1");
+test("stable release metadata and Critical Forge baseline are synchronized", () => {
+  assert.equal(MODULE_VERSION, "0.1.0");
   assert.equal(REQUIRED_CRITICAL_FORGE_VERSION, ">=1.0.1-rc.6.1");
   assert.equal(REQUIRED_CRITICAL_FORGE_API_VERSION, ">=0.9.7");
-  assert.equal(GOBLIN_PACK_CONFIGS.every((config) => config.metadata.contentStatus === "release-candidate"), true);
+  assert.equal(GOBLIN_PACK_CONFIGS.every((config) => config.metadata.contentStatus === "stable"), true);
 });
 
-test("release candidate contains exactly three complete 30-card packs", () => {
+test("stable release contains exactly three complete 30-card packs", () => {
   assert.equal(WEAPON_MALFUNCTION_CARDS.length, 30);
   assert.equal(RANGED_ENGINEERING_CARDS.length, 30);
   assert.equal(EQUIPMENT_INCIDENT_CARDS.length, 30);
   assert.equal(buildGoblinEngineeringPacks().reduce((sum, pack) => sum + Object.values(pack.decks).flatMap((deck) => deck.cards).length, 0), 90);
 });
 
-test("all 90 release titles and ids are unique", () => {
+test("all 90 stable release titles and ids are unique", () => {
   const cards = [...WEAPON_MALFUNCTION_CARDS, ...RANGED_ENGINEERING_CARDS, ...EQUIPMENT_INCIDENT_CARDS];
   assert.equal(new Set(cards.map((card) => card.id)).size, 90);
   assert.equal(new Set(cards.map((card) => card.fallbackTitle)).size, 90);
