@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { PACK_IDS } from "../scripts/constants.js";
 import { WEAPON_MALFUNCTION_CARDS } from "../scripts/data/cards/weapon-malfunctions.js";
 import { RANGED_ENGINEERING_CARDS } from "../scripts/data/cards/ranged-engineering.js";
+import { EQUIPMENT_INCIDENT_CARDS } from "../scripts/data/cards/equipment-incidents.js";
 import { buildGoblinEngineeringPacks } from "../scripts/data/packs.js";
 
 test("dev.6 retains thirty unique Weapon Malfunctions", () => {
@@ -260,7 +261,7 @@ test("dev.5 narrative ranged incidents remain mechanically harmless", () => {
   }
 });
 
-test("pack construction exposes two active content packs and one reserved pack", () => {
+test("pack construction exposes three active content packs", () => {
   const packs = buildGoblinEngineeringPacks();
   assert.equal(packs.length, 3);
   assert.deepEqual(packs.map((pack) => pack.id), [
@@ -274,6 +275,60 @@ test("pack construction exposes two active content packs and one reserved pack",
   assert.equal(packs[1].decks.attack.cards.length, 30);
   assert.equal(packs[1].metadata.implementedCards, 30);
   assert.equal(packs[1].enabled, true);
-  assert.equal(packs[2].decks.attack.cards.length, 0);
-  assert.equal(packs[2].enabled, false);
+  assert.equal(packs[2].decks.skill.cards.length, 10);
+  assert.equal(packs[2].metadata.implementedCards, 10);
+  assert.equal(packs[2].enabled, true);
+});
+
+test("dev.7 adds ten Equipment Incidents in the dedicated skill deck", () => {
+  assert.equal(EQUIPMENT_INCIDENT_CARDS.length, 10);
+  assert.equal(new Set(EQUIPMENT_INCIDENT_CARDS.map((card) => card.id)).size, 10);
+  assert.equal(new Set(EQUIPMENT_INCIDENT_CARDS.map((card) => card.fallbackTitle)).size, 10);
+  for (const card of EQUIPMENT_INCIDENT_CARDS) {
+    assert.equal(card.packId, PACK_IDS.EQUIPMENT_INCIDENTS);
+    assert.equal(card.category, "skillCheckCriticalFailure");
+    assert.equal(card.deckType, "skill");
+    assert.equal(card.tone, "humorous");
+    assert.equal(card.effect, null);
+    assert.equal(card.metadata.contentBatch, 1);
+    assert.equal(card.filters.actionSlugs.length > 0, true, card.id);
+  }
+});
+
+test("Equipment Incidents cover the six reviewed equipment-heavy skill actions", () => {
+  const actions = new Set(EQUIPMENT_INCIDENT_CARDS.flatMap((card) => card.filters.actionSlugs));
+  assert.deepEqual([...actions].sort(), [
+    "administer-first-aid",
+    "craft",
+    "disable-a-device",
+    "pick-a-lock",
+    "repair",
+    "treat-wounds"
+  ]);
+});
+
+test("dev.7 preserves the normal PF2e critical-failure outcome in card text", () => {
+  const bySuffix = (suffix) => EQUIPMENT_INCIDENT_CARDS.find((card) => card.id.endsWith(suffix));
+  assert.match(bySuffix("ei-001-torque-limiter-enters-negotiations").fallbackDescription, /fails normally/i);
+  assert.match(bySuffix("ei-003-blueprint-adds-an-optional-disaster").fallbackDescription, /normal loss of materials/i);
+  assert.match(bySuffix("ei-005-broken-pick-requests-promotion").fallbackDescription, /broken tools/i);
+  assert.match(bySuffix("ei-007-safety-flag-deploys").fallbackDescription, /triggering the mechanism/i);
+  assert.match(bySuffix("ei-009-bandage-dispenser-achieves-coverage").fallbackDescription, /including its damage/i);
+});
+
+test("dev.7 includes bounded upside and narrative-only equipment incidents", () => {
+  const bySuffix = (suffix) => EQUIPMENT_INCIDENT_CARDS.find((card) => card.id.endsWith(suffix));
+  assert.equal(bySuffix("ei-006-lock-profile-accidentally-saved").tags.includes("benefit"), true);
+  assert.equal(bySuffix("ei-009-bandage-dispenser-achieves-coverage").tags.includes("benefit"), true);
+  for (const suffix of [
+    "ei-002-spare-parts-form-a-committee",
+    "ei-004-measuring-tape-invents-a-unit",
+    "ei-005-broken-pick-requests-promotion",
+    "ei-007-safety-flag-deploys"
+  ]) {
+    const card = bySuffix(suffix);
+    assert.equal(card.impact, "narrative");
+    assert.equal(card.tags.includes("no-mechanical-effect"), true);
+    assert.match(card.fallbackDescription, /(no mechanical effect|no additional mechanical effect)/i);
+  }
 });

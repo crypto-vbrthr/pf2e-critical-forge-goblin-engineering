@@ -5,6 +5,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { WEAPON_MALFUNCTION_CARDS } from "../scripts/data/cards/weapon-malfunctions.js";
 import { RANGED_ENGINEERING_CARDS } from "../scripts/data/cards/ranged-engineering.js";
+import { EQUIPMENT_INCIDENT_CARDS } from "../scripts/data/cards/equipment-incidents.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -40,5 +41,25 @@ test("overlap review documents the main neighboring packs and all three ranged c
   }
   for (const title of ["Helpful Auto-Loader", "Ammunition Argument", "Recoil Stumble", "Pressure Gauge Redlines", "Double-Feed Optimizer", "Retrieval Reel Overcommits", "Spark Arrestor Gives Up", "Compact Storage Mode"]) {
     assert.match(review, new RegExp(title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"));
+  }
+});
+
+
+test("Equipment Incident titles are unique and preserve the equipment-centered identity", () => {
+  const allNeighborTitles = new Set([
+    ...RANGED_NEIGHBOR_TITLES,
+    ...WEAPON_MALFUNCTION_CARDS.map((card) => card.fallbackTitle),
+    ...RANGED_ENGINEERING_CARDS.map((card) => card.fallbackTitle)
+  ]);
+  assert.equal(new Set(EQUIPMENT_INCIDENT_CARDS.map((card) => card.fallbackTitle)).size, 10);
+  for (const card of EQUIPMENT_INCIDENT_CARDS) {
+    assert.equal(allNeighborTitles.has(card.fallbackTitle), false, card.fallbackTitle);
+  }
+});
+
+test("overlap review documents the Equipment Incidents rules boundary", () => {
+  const review = fs.readFileSync(path.join(root, "docs/OVERLAP_REVIEW.md"), "utf8");
+  for (const phrase of ["Equipment Incidents I review", "Repair", "Craft", "Pick a Lock", "Disable a Device", "Treat Wounds", "Administer First Aid"]) {
+    assert.match(review, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i"));
   }
 });

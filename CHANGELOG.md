@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.0-dev.7 - Equipment Incidents I
+
+- Added the first 10 Equipment Incidents cards using Critical Forge's new skill-check critical-failure context.
+- Activated the independent Equipment Incidents world setting and registered its cards in the dedicated `skill` deck.
+- Raised the Critical Forge requirement to 1.0.1-rc.5 / API 0.9.7 and now require the `cards.skillCheckCriticals` capability.
+- Added cards for Repair, Craft, Pick a Lock, Disable a Device, Treat Wounds, and Administer First Aid.
+- Preserved PF2e's normal critical-failure consequences and layered Goblin Engineering incidents on top rather than replacing or weakening them.
+- Added alternate Crafting support where PF2e options can use Crafting for Pick a Lock, Disable a Device, or construct First Aid.
+- Added skill, action, and item filter support to the shared Goblin Engineering card factory.
+- Added DE/EN localization, pack-setting coverage, skill-deck regression tests, and Critical Forge rc.5 validator coverage.
+
 ## 0.1.0-dev.6 - Ranged Engineering III
 
 - Added the final 10 Ranged Engineering cards, completing the deck at 30 / 30 cards.

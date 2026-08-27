@@ -41,6 +41,20 @@ At 30 cards, Ranged Engineering is complete for the initial release scope. Furth
 ## Equipment Incidents
 
 Planned: 30 cards  
-Implemented: 0 cards
+Implemented: 10 cards
 
-This pack is intended for shields, tools, held items, containers, and similar equipment. Critical Forge currently selects cards from critical roll contexts, so this pack remains reserved until its trigger and context requirements are reviewed.
+Equipment Incidents uses Critical Forge's dedicated skill-check deck and focuses on critical failures where tools or work equipment are central to the activity.
+
+The first block covers:
+
+- Repair toolkit calibration and spare-part incidents
+- Crafting plans and measuring equipment
+- broken thieves' tools and accidentally useful lock profiling
+- Disable a Device probes and overconfident safety indicators
+- healer's toolkit bandage and clamp behavior
+- bounded benefits that never erase the original critical failure
+- narrative-only incidents that add flavor without extra mechanical punishment
+
+The deck currently targets the action slugs `repair`, `craft`, `pick-a-lock`, `disable-a-device`, `treat-wounds`, and `administer-first-aid`.
+
+Shield-only incidents remain out of scope because actions such as Raise a Shield do not involve a check and therefore do not create a skill-critical context.

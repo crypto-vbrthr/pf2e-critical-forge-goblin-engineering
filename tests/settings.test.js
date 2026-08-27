@@ -19,8 +19,8 @@ test("registers independent world settings for all three planned packs", () => {
     assert.equal(entry.config.type, Boolean);
     assert.equal(typeof entry.config.onChange, "function");
   }
-  assert.deepEqual(registrations.map((entry) => entry.config.config), [true, true, false]);
-  assert.deepEqual(registrations.map((entry) => entry.config.default), [true, true, false]);
+  assert.deepEqual(registrations.map((entry) => entry.config.config), [true, true, true]);
+  assert.deepEqual(registrations.map((entry) => entry.config.default), [true, true, true]);
 });
 
 test("reads settings independently and falls back to development defaults", () => {
@@ -38,11 +38,11 @@ test("reads settings independently and falls back to development defaults", () =
   assert.deepEqual(readPackSettings({ settings: { get: () => { throw new Error("not ready"); } } }), {
     [SETTING_KEYS.WEAPON_MALFUNCTIONS]: true,
     [SETTING_KEYS.RANGED_ENGINEERING]: true,
-    [SETTING_KEYS.EQUIPMENT_INCIDENTS]: false
+    [SETTING_KEYS.EQUIPMENT_INCIDENTS]: true
   });
 });
 
-test("pack settings independently disable active packs while reserved packs stay disabled", () => {
+test("pack settings independently disable all three active packs", () => {
   const packs = buildGoblinEngineeringPacks({
     [SETTING_KEYS.WEAPON_MALFUNCTIONS]: false,
     [SETTING_KEYS.RANGED_ENGINEERING]: false,
@@ -50,5 +50,11 @@ test("pack settings independently disable active packs while reserved packs stay
   });
   assert.equal(packs[0].enabled, false);
   assert.equal(packs[1].enabled, false);
-  assert.equal(packs[2].enabled, false);
+  assert.equal(packs[2].enabled, true);
+  const disabledEquipment = buildGoblinEngineeringPacks({
+    [SETTING_KEYS.WEAPON_MALFUNCTIONS]: true,
+    [SETTING_KEYS.RANGED_ENGINEERING]: true,
+    [SETTING_KEYS.EQUIPMENT_INCIDENTS]: false
+  });
+  assert.equal(disabledEquipment[2].enabled, false);
 });

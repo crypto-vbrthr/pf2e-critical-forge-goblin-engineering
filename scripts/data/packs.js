@@ -1,14 +1,14 @@
 import { MODULE_ID, MODULE_VERSION, PACK_IDS, SETTING_KEYS } from "../constants.js";
 import { WEAPON_MALFUNCTION_CARDS } from "./cards/weapon-malfunctions.js";
 import { RANGED_ENGINEERING_CARDS } from "./cards/ranged-engineering.js";
-
-const EMPTY_CARDS = Object.freeze([]);
+import { EQUIPMENT_INCIDENT_CARDS } from "./cards/equipment-incidents.js";
 
 export const GOBLIN_PACK_CONFIGS = Object.freeze([
   Object.freeze({
     settingKey: SETTING_KEYS.WEAPON_MALFUNCTIONS,
     settingToken: "WeaponMalfunctions",
     id: PACK_IDS.WEAPON_MALFUNCTIONS,
+    deckType: "attack",
     fallbackTitle: "Goblin Engineering: Weapon Malfunctions",
     fallbackDescription: "Humorous critical fumbles for non-spell melee weapons, focused on unreliable hardware, suspicious safety features, and brief equipment problems.",
     cards: WEAPON_MALFUNCTION_CARDS,
@@ -27,6 +27,7 @@ export const GOBLIN_PACK_CONFIGS = Object.freeze([
     settingKey: SETTING_KEYS.RANGED_ENGINEERING,
     settingToken: "RangedEngineering",
     id: PACK_IDS.RANGED_ENGINEERING,
+    deckType: "attack",
     fallbackTitle: "Goblin Engineering: Ranged Engineering",
     fallbackDescription: "Humorous critical fumbles for non-spell ranged weapons, focused on unreliable ammunition systems, questionable safety devices, and hardware that develops opinions mid-fight.",
     cards: RANGED_ENGINEERING_CARDS,
@@ -45,18 +46,19 @@ export const GOBLIN_PACK_CONFIGS = Object.freeze([
     settingKey: SETTING_KEYS.EQUIPMENT_INCIDENTS,
     settingToken: "EquipmentIncidents",
     id: PACK_IDS.EQUIPMENT_INCIDENTS,
+    deckType: "skill",
     fallbackTitle: "Goblin Engineering: Equipment Incidents",
-    fallbackDescription: "Reserved for shields, tools, held items, and wider equipment incidents in a later development block.",
-    cards: EMPTY_CARDS,
-    defaultEnabled: false,
+    fallbackDescription: "Humorous critical failures for equipment-heavy skill checks such as Repair, Craft, Pick a Lock, Disable a Device, Treat Wounds, and Administer First Aid.",
+    cards: EQUIPMENT_INCIDENT_CARDS,
+    defaultEnabled: true,
     metadata: Object.freeze({
       theme: "goblin-engineering",
       family: "goblin-engineering",
       category: "equipment-incidents",
-      scope: "planned-runtime-integration",
-      contentStatus: "reserved",
+      scope: "equipment-heavy-skill-check-critical-failures",
+      contentStatus: "development",
       plannedCards: 30,
-      implementedCards: 0
+      implementedCards: 10
     })
   })
 ]);
@@ -74,7 +76,7 @@ export function buildGoblinEngineeringPacks(settings = {}) {
     enabled: config.cards.length > 0 && (settings[config.settingKey] ?? config.defaultEnabled) !== false,
     metadata: config.metadata,
     decks: Object.freeze({
-      attack: Object.freeze({ cards: config.cards })
+      [config.deckType]: Object.freeze({ cards: config.cards })
     })
   }));
 }

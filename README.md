@@ -1,6 +1,6 @@
 # PF2E Critical Forge: Goblin Engineering
 
-Version **0.1.0-dev.6**
+Version **0.1.0-dev.7**
 
 Goblin Engineering is a humorous expansion for PF2E Critical Forge. Its cards treat critical fumbles as short-lived equipment incidents: springs object, latches become overconfident, ammunition systems panic, and sometimes the weapon simply emits an indignant squeak.
 
@@ -24,17 +24,19 @@ Ranged Engineering is intentionally narrower than Martial Consequences: Ranged M
 
 Across all three blocks, the deck includes nine narrative-only incidents, several mixed outcomes, ammunition and reload oddities, bow-, sling-, and firearm-specific hardware, temporary visual and survey configurations, thrown-weapon retrieval incidents, and rare bounded benefits that never erase the original critical fumble. None of these cards permanently damages the weapon or creates repair costs.
 
-### Reserved pack
+### Equipment Incidents - 10 / 30 cards
 
-- Equipment Incidents - planned, 0 / 30 cards
+Equipment Incidents now uses Critical Forge's skill-check critical context introduced in Critical Forge 1.0.1-rc.5 / API 0.9.7. The first ten cards cover equipment-heavy critical skill failures for Repair, Craft, Pick a Lock, Disable a Device, Treat Wounds, and Administer First Aid.
 
-Equipment Incidents remains disabled and its setting stays hidden until its trigger and context requirements for shields, tools, held items, and containers are reviewed.
+The deck deliberately layers its humor on top of the normal PF2e critical-failure result instead of replacing it. A failed Repair still damages the item, a failed Pick a Lock still breaks the tools, a failed Disable a Device can still trigger the mechanism, and a failed Treat Wounds still causes its normal damage. Goblin Engineering adds short-lived tool behavior, paperwork, calibration problems, and occasional bounded upside around those outcomes.
+
+Shield-only actions are still outside this deck because Raise a Shield does not make a check and therefore does not create a skill-critical trigger.
 
 ## Requirements
 
 - Foundry VTT 14
 - Pathfinder Second Edition 8.1.2 or newer
-- PF2E Critical Forge 1.0.0-rc or newer
+- PF2E Critical Forge 1.0.1-rc.5 or newer (API 0.9.7+, `cards.skillCheckCriticals`)
 
 ## Settings
 
@@ -42,7 +44,7 @@ Each Goblin Engineering pack has its own world setting.
 
 - Weapon Malfunctions is enabled by default.
 - Ranged Engineering is enabled by default once this development block is installed.
-- Equipment Incidents remains hidden and disabled while it has no cards.
+- Equipment Incidents is enabled by default in dev.7 and can be disabled independently.
 
 Settings refresh the registered Critical Forge packs without requiring a world restart.
 

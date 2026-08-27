@@ -6,6 +6,11 @@ const FILTER_KEYS = Object.freeze([
   "attackTraits",
   "excludedAttackTraits",
   "saveTypes",
+  "skillTypes",
+  "actionSlugs",
+  "itemTypes",
+  "itemTraits",
+  "excludedItemTraits",
   "spellTraditions",
   "spellTraits",
   "sourceTraits",
@@ -69,6 +74,45 @@ function defineGoblinCard({
   });
 }
 
+function defineGoblinSkillCard({
+  id,
+  packId,
+  collection,
+  localizationKey,
+  tone = "humorous",
+  impact = "moderate",
+  fallbackTitle,
+  fallbackDescription,
+  weight = 1,
+  tags = [],
+  filters = {},
+  contentBatch = 1
+}) {
+  return Object.freeze({
+    schemaVersion: 1,
+    id: `${MODULE_ID}.${collection}.${id}`,
+    packId,
+    category: "skillCheckCriticalFailure",
+    deckType: "skill",
+    tone,
+    impact,
+    titleKey: `PF2E_GOBLIN_ENGINEERING.Cards.${localizationKey}.Title`,
+    descriptionKey: `PF2E_GOBLIN_ENGINEERING.Cards.${localizationKey}.Description`,
+    fallbackTitle,
+    fallbackDescription,
+    weight,
+    tags: Object.freeze(["goblin-engineering", collection, "skill-check", "critical-failure", "equipment", ...unique(tags)]),
+    filters: freezeFilters(filters),
+    conditions: null,
+    effect: null,
+    metadata: Object.freeze({
+      collection,
+      contentBatch,
+      resolution: "manual"
+    })
+  });
+}
+
 export function defineWeaponMalfunction(options) {
   return defineGoblinCard({
     ...options,
@@ -84,5 +128,13 @@ export function defineRangedEngineering(options) {
     collection: "ranged-engineering",
     requiredAttackTraits: ["ranged"],
     defaultExcludedAttackTraits: ["spell", "unarmed"]
+  });
+}
+
+export function defineEquipmentIncident(options) {
+  return defineGoblinSkillCard({
+    ...options,
+    packId: PACK_IDS.EQUIPMENT_INCIDENTS,
+    collection: "equipment-incidents"
   });
 }

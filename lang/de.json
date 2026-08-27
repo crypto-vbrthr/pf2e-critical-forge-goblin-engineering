@@ -16,7 +16,7 @@
       },
       "EquipmentIncidents": {
         "Title": "Goblin Engineering: Ausrüstungszwischenfälle",
-        "Description": "Reserviert für Schilde, Werkzeuge, gehaltene Gegenstände und weitere Ausrüstungszwischenfälle in einem späteren Entwicklungsblock."
+        "Description": "Humorvolle kritische Fehlschläge bei ausrüstungsintensiven Fertigkeitsproben: Reparaturausrüstung, Diebeswerkzeuge, Heilerwerkzeuge, Pläne, Sonden, Klemmen und andere Geräte, die plötzlich mitarbeiten wollen."
       }
     },
     "Settings": {
@@ -30,7 +30,7 @@
       },
       "EquipmentIncidents": {
         "Name": "Ausrüstungszwischenfälle aktivieren",
-        "Hint": "Reserviert für das spätere Ausrüstungs-Deck. Dieser Entwicklungsstand enthält noch keine Ausrüstungskarten."
+        "Hint": "Aktiviert humorvolle Ausrüstungszwischenfälle bei unterstützten kritischen Fehlschlägen von Fertigkeitsproben wie Reparieren, Herstellen, Schloss knacken, Mechanismus ausschalten, Wunden versorgen und Erste Hilfe leisten."
       }
     },
     "Cards": {
@@ -273,6 +273,46 @@
       "CompactStorageMode": {
         "Title": "Kompakter Transportmodus",
         "Description": "Die Waffe entscheidet, dass mitten im Kampf der perfekte Zeitpunkt ist, ihre Transportfähigkeit vorzuführen. Nach deinem nächsten Fernkampf-Angriff mit derselben Waffe vor Ende deines nächsten Zuges faltet, teleskopiert oder verriegelt sie sich in eine kompakte Transportkonfiguration. Sie kann nicht erneut angreifen, bis du 1 Aktion Interagieren aufwendest, um sie wieder in Feuerbereitschaft zu bringen. Solange sie kompakt ist, kann die SL einen Umstandsbonus von +1 auf einen Wurf gewähren, der ausdrücklich dazu dient, diese Waffe zu verbergen, sofern ihre kleinere Form dabei sinnvoll hilft. Nichts wird beschädigt."
+      },
+      "TorqueLimiterEntersNegotiations": {
+        "Title": "Drehmomentbegrenzer verhandelt",
+        "Description": "Der Versuch zum Reparieren scheitert normal, einschließlich des Schadens durch den kritischen Fehlschlag. Danach klickt der Drehmomentbegrenzer der Reparaturausrüstung auf eine Einstellung mit der Aufschrift DISKUTIEREN. Bevor du mit derselben Ausrüstung deinen nächsten Wurf zum Reparieren ablegst, musst du 1 Minute zum Zurücksetzen aufwenden oder erhältst auf diesen Wurf einen Situationsmalus von -1. Das Zurücksetzen beendet diese Folge."
+      },
+      "SparePartsFormACommittee": {
+        "Title": "Ersatzteile bilden einen Ausschuss",
+        "Description": "Der Versuch zum Reparieren scheitert normal. Mehrere Schrauben, Unterlegscheiben und andere lose Teile ordnen sich neben der Reparaturausrüstung zu einem kleinen Kreis an. Es gibt keinen mechanischen Effekt. Eine Unterlegscheibe scheint Protokoll zu führen."
+      },
+      "BlueprintAddsAnOptionalDisaster": {
+        "Title": "Bauplan ergänzt optionale Katastrophe",
+        "Description": "Der Versuch zum Herstellen scheitert normal, einschließlich des üblichen Materialverlustes. Auf deinen Plänen ist irgendwie ein neuer Schritt mit der Bezeichnung OPTIONALE KATASTROPHE erschienen. Bevor du mit diesen Plänen deinen nächsten Wurf zum Herstellen ablegst, musst du 10 Minuten für die Korrektur aufwenden oder erhältst auf diesen Wurf einen Situationsmalus von -1. Die Korrektur beendet diese Folge."
+      },
+      "MeasuringTapeInventsAUnit": {
+        "Title": "Messwerkzeug erfindet eine Einheit",
+        "Description": "Der Versuch zum Herstellen scheitert normal. Dein Messwerkzeug zieht sich ein, fährt wieder aus und kennzeichnet einen völlig gewöhnlichen Abschnitt als 1 GOBLIN. Es gibt keinen mechanischen Effekt. Alle anderen Maße bleiben unverändert, was die Sache irgendwie schlimmer macht."
+      },
+      "BrokenPickRequestsPromotion": {
+        "Title": "Abgebrochener Dietrich verlangt Beförderung",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Schloss knacken ab, einschließlich der zerbrochenen Werkzeuge. Ein abgebrochener Dietrich erhält anschließend ein winziges eingestanztes Schild mit der Aufschrift HAUPTSCHLÜSSEL. Es gibt keinen zusätzlichen mechanischen Effekt. Das Schild ist außerordentlich überzeugt von sich."
+      },
+      "LockProfileAccidentallySaved": {
+        "Title": "Schlossprofil versehentlich gespeichert",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Schloss knacken ab, einschließlich eventuell zerbrochener Werkzeuge. Trotz allem hat die Ausrüstung eine nützliche Information gespeichert. Dein nächster Wurf zum Schloss knacken gegen dasselbe Schloss innerhalb von 10 Minuten erhält einen Situationsbonus von +1, sofern du über benutzbare Werkzeuge verfügst. Danach endet der Bonus."
+      },
+      "SafetyFlagDeploys": {
+        "Title": "Sicherheitsflagge fährt aus",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Mechanismus ausschalten ab, einschließlich des Auslösens des Mechanismus, falls zutreffend. Genau im falschen Moment springt aus deinen Werkzeugen eine leuchtende Flagge mit der Aufschrift GERÄTETEST ABGESCHLOSSEN. Es gibt keinen zusätzlichen mechanischen Effekt."
+      },
+      "ProbeLocksFullyExtended": {
+        "Title": "Sonde verriegelt vollständig ausgefahren",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Mechanismus ausschalten ab. Eine Sonde der Ausrüstung verriegelt in maximal ausgefahrener Stellung. Bevor du vor dem Ende deines nächsten Zuges mit derselben Ausrüstung deinen nächsten Wurf zum Mechanismus ausschalten ablegst, musst du 1 Aktion Interagieren aufwenden, um sie einzufahren, oder erhältst auf diesen Wurf einen Situationsmalus von -1. Das Einfahren beendet diese Folge."
+      },
+      "BandageDispenserAchievesCoverage": {
+        "Title": "Verbandspender erreicht vollständige Abdeckung",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Wunden versorgen ab, einschließlich des Schadens. Danach wickeln die Heilerwerkzeuge den Patienten mit unangemessener Gründlichkeit ein. Dein nächster Wurf für Erste Hilfe leisten zum Stillen einer Blutung bei diesem Patienten innerhalb von 1 Stunde erhält einen Situationsbonus von +1. Danach endet der Bonus."
+      },
+      "EmergencyClampChoosesTheBag": {
+        "Title": "Notfallklemme wählt die Tasche",
+        "Description": "Eine Notfallklemme aktiviert sich mit bewundernswerter Dringlichkeit und befestigt sich an den Heilerwerkzeugen. Bis zum Ende deines nächsten Zuges musst du 1 Aktion Interagieren aufwenden, um die Klemme zu lösen, bevor du mit diesen Heilerwerkzeugen erneut Erste Hilfe leisten kannst. Das Lösen beendet diese Folge."
       }
     }
   }

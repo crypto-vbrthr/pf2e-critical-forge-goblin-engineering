@@ -2,7 +2,7 @@
   "id": "pf2e-critical-forge-goblin-engineering",
   "title": "PF2E Critical Forge: Goblin Engineering",
   "description": "A humorous Critical Forge expansion about unreliable weapons, questionable safety features, sparks, squeaks, and controlled equipment chaos.",
-  "version": "0.1.0-dev.6",
+  "version": "0.1.0-dev.7",
   "authors": [
     {
       "name": "crypto-vbrthr"
@@ -18,7 +18,7 @@
         "id": "pf2e-critical-forge",
         "type": "module",
         "compatibility": {
-          "minimum": "1.0.0-rc"
+          "minimum": "1.0.1-rc.5"
         }
       }
     ],
@@ -51,5 +51,5 @@
   "readme": "README.md",
   "url": "https://github.com/crypto-vbrthr/pf2e-critical-forge-goblin-engineering",
   "manifest": "https://raw.githubusercontent.com/crypto-vbrthr/pf2e-critical-forge-goblin-engineering/main/module.json",
-  "download": "https://github.com/crypto-vbrthr/pf2e-critical-forge-goblin-engineering/releases/download/0.1.0-dev.6/pf2e-critical-forge-goblin-engineering.zip"
+  "download": "https://github.com/crypto-vbrthr/pf2e-critical-forge-goblin-engineering/releases/download/0.1.0-dev.7/pf2e-critical-forge-goblin-engineering.zip"
 }

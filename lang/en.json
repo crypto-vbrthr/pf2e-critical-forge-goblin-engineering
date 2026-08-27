@@ -16,7 +16,7 @@
       },
       "EquipmentIncidents": {
         "Title": "Goblin Engineering: Equipment Incidents",
-        "Description": "Reserved for shields, tools, held items, and wider equipment incidents in a later development block."
+        "Description": "Humorous critical failures for equipment-heavy skill checks: repair kits, thieves' tools, healer's toolkits, plans, probes, clamps, and other devices that decide to participate."
       }
     },
     "Settings": {
@@ -30,7 +30,7 @@
       },
       "EquipmentIncidents": {
         "Name": "Enable Equipment Incidents",
-        "Hint": "Reserved for the future Equipment Incidents deck. This development build does not contain equipment cards yet."
+        "Hint": "Enables humorous Equipment Incidents for supported critical skill-check failures such as Repair, Craft, Pick a Lock, Disable a Device, Treat Wounds, and Administer First Aid."
       }
     },
     "Cards": {
@@ -273,6 +273,46 @@
       "CompactStorageMode": {
         "Title": "Compact Storage Mode",
         "Description": "The weapon decides the middle of a fight is the perfect time to demonstrate portability. After your next ranged Strike with this same weapon before the end of your next turn, it folds, telescopes, or locks itself into compact storage mode. It cannot Strike again until you spend 1 Interact action returning it to firing configuration. While compact, the GM may grant a +1 circumstance bonus to a check made specifically to Conceal this weapon if its reduced shape could reasonably help. Nothing is damaged."
+      },
+      "TorqueLimiterEntersNegotiations": {
+        "Title": "Torque Limiter Enters Negotiations",
+        "Description": "The Repair attempt fails normally, including any damage caused by the critical failure. The toolkit's torque limiter then clicks into a setting labeled DISCUSS. Before your next Repair check with the same toolkit, spend 1 minute resetting it or take a -1 circumstance penalty to that check. Resetting it ends this consequence."
+      },
+      "SparePartsFormACommittee": {
+        "Title": "Spare Parts Form a Committee",
+        "Description": "The Repair attempt fails normally. Several screws, washers, and other loose pieces arrange themselves into a tiny circle beside the toolkit. There is no mechanical effect. One washer appears to be taking minutes."
+      },
+      "BlueprintAddsAnOptionalDisaster": {
+        "Title": "Blueprint Adds an Optional Disaster",
+        "Description": "The Craft attempt fails normally, including the normal loss of materials. Your plans have somehow gained a new step labeled OPTIONAL DISASTER. Before your next Craft check using these plans, spend 10 minutes correcting them or take a -1 circumstance penalty to that check. Correcting the plans ends this consequence."
+      },
+      "MeasuringTapeInventsAUnit": {
+        "Title": "Measuring Tape Invents a Unit",
+        "Description": "The Craft attempt fails normally. Your measuring tool retracts, extends again, and marks one perfectly ordinary interval as 1 GOBLIN. There is no mechanical effect. Every other measurement remains unchanged, which somehow makes this worse."
+      },
+      "BrokenPickRequestsPromotion": {
+        "Title": "Broken Pick Requests Promotion",
+        "Description": "Resolve the normal critical failure for Pick a Lock, including the broken tools. One snapped pick then acquires a tiny stamped label reading MASTER KEY. There is no additional mechanical effect. The label is extremely confident."
+      },
+      "LockProfileAccidentallySaved": {
+        "Title": "Lock Profile Accidentally Saved",
+        "Description": "Resolve the normal critical failure for Pick a Lock, including any broken tools. Despite everything, the toolkit records one useful piece of information. Your next Pick a Lock check against the same lock within 10 minutes gains a +1 circumstance bonus, provided you have usable tools. This bonus then ends."
+      },
+      "SafetyFlagDeploys": {
+        "Title": "Safety Flag Deploys",
+        "Description": "Resolve the normal critical failure for Disable a Device, including triggering the mechanism when applicable. At exactly the wrong moment, a bright flag springs from your toolkit reading DEVICE TEST COMPLETE. There is no additional mechanical effect."
+      },
+      "ProbeLocksFullyExtended": {
+        "Title": "Probe Locks Fully Extended",
+        "Description": "Resolve the normal critical failure for Disable a Device. One probe in the toolkit locks at maximum extension. Before your next Disable a Device check with the same toolkit before the end of your next turn, spend 1 Interact action to collapse it or take a -1 circumstance penalty to that check. Collapsing it ends this consequence."
+      },
+      "BandageDispenserAchievesCoverage": {
+        "Title": "Bandage Dispenser Achieves Coverage",
+        "Description": "Resolve the normal critical failure for Treat Wounds, including its damage. The healer's toolkit then wraps the patient with unreasonable thoroughness. The next Administer First Aid check you make to Stop Bleeding on that patient within 1 hour gains a +1 circumstance bonus. The bonus then ends."
+      },
+      "EmergencyClampChoosesTheBag": {
+        "Title": "Emergency Clamp Chooses the Bag",
+        "Description": "An emergency clamp activates with admirable urgency and attaches itself to the healer's toolkit. Until the end of your next turn, before you can Administer First Aid again using that toolkit, you must spend 1 Interact action to release the clamp. Releasing it ends this consequence."
       }
     }
   }

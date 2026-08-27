@@ -135,3 +135,21 @@ The final ten-card block was reviewed against the supplied 30-card Ranged Mishap
 - **Projectile Serial Numberer**, **Brass Catcher Files a Report**, and **Maintenance Ticket Printer** are narrative-only and mechanically harmless.
 
 Ranged Engineering is complete at 30 cards. The final deck still preserves the split established at the start of the review: Ranged Mishaps describes bad shooting circumstances, while Ranged Engineering describes hardware that has begun making unsolicited design decisions.
+
+
+## Equipment Incidents I review (0.1.0-dev.7)
+
+The first Equipment Incidents block was reviewed against the PF2e Player Core critical-failure results for the supported activities and against the existing Goblin Engineering decks.
+
+The governing rule is deliberately conservative: **Goblin Engineering does not replace the normal skill critical failure.** Its card is an additional short-lived equipment incident.
+
+- **Repair** already damages the item on a critical failure. Torque Limiter Enters Negotiations and Spare Parts Form a Committee do not add more item damage.
+- **Craft** already loses part of the committed materials on a critical failure. Blueprint Adds an Optional Disaster and Measuring Tape Invents a Unit do not increase that loss.
+- **Pick a Lock** already breaks the tools on a critical failure. Broken Pick Requests Promotion is narrative-only, while Lock Profile Accidentally Saved grants a bounded future benefit without restoring the broken tools.
+- **Disable a Device** already triggers the mechanism on a critical failure. Safety Flag Deploys and Probe Locks Fully Extended do not replace or prevent that trigger.
+- **Treat Wounds** already damages the patient on a critical failure. Bandage Dispenser Achieves Coverage explicitly resolves that damage first and only adds a narrow later First Aid benefit.
+- **Administer First Aid** receives a short toolkit action tax from Emergency Clamp Chooses the Bag without adding damage or changing the underlying PF2e outcome.
+
+This block also avoids Arcane Backlash territory. Identify Magic, Trick Magic Item, Learn a Spell, and other magic-facing skill failures are intentionally not included.
+
+The result is a new mechanical lane for the module: **Weapon Malfunctions and Ranged Engineering make weapons behave badly; Equipment Incidents makes the tools involved in a failed skill activity develop unsolicited features.**

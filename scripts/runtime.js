@@ -27,7 +27,8 @@ export function initializeGoblinEngineering(forge, { gameRef = globalThis.game }
       capabilities: [
         "cards.multiDeckPacks",
         "extensions.contracts",
-        "extensions.registrationDiagnostics"
+        "extensions.registrationDiagnostics",
+        "cards.skillCheckCriticals"
       ]
     }
   });
