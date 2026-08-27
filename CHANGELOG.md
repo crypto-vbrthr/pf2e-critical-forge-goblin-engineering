@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.0-dev.9 - Equipment Incidents III
+
+- Added the final 10 Equipment Incidents cards, completing the skill deck at 30 / 30 cards and the module at 90 total cards.
+- Added final Repair/Craft incidents for lubrication, workbench hardware, and an opinionated reference gauge.
+- Added final thieves-tool incidents for lock counting, magnetic organization, continuity testing, and an overbright inspection lamp.
+- Added a removable gauze terrain incident for Treat Wounds / Administer First Aid plus final Treat Disease and Treat Poison cards.
+- Preserved all normal PF2e critical-failure consequences, including broken tools, triggered devices, medical damage, item damage/material loss, and disease/poison saving-throw penalties.
+- Completed Equipment Incidents at 30 cards without adding magic-facing skill checks or unsupported shield-only triggers.
+- Expanded DE/EN localization, roadmap, overlap review, batch regression tests, final card-count coverage, and release metadata.
+
 ## 0.1.0-dev.8 - Equipment Incidents II
 
 - Added 10 additional Equipment Incidents cards, bringing the skill deck to 20 / 30 cards.

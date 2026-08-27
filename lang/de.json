@@ -353,6 +353,46 @@
       "FailureAnalysisActuallyWorks": {
         "Title": "Fehleranalyse funktioniert tatsächlich",
         "Description": "Wickle den normalen kritischen Fehlschlag bei Reparieren oder Herstellen ab. Eine winzige Anzeige an der Ausrüstung zeigt auf etwas in der Nähe und leuchtet mit der Aufschrift TATSÄCHLICHES PROBLEM auf. Dein nächster Wurf zum Wissen abrufen innerhalb von 10 Minuten, der ausdrücklich dem Verständnis des fehlgeschlagenen Gegenstands, Projekts oder Mechanismus dient, erhält einen Situationsbonus von +1. Der ursprüngliche kritische Fehlschlag und alle seine normalen Folgen bleiben unverändert."
+      },
+      "OilCanAchievesTotalCoverage": {
+        "Title": "Ölkännchen erreicht vollständige Abdeckung",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Reparieren oder Herstellen ab. Ein Schmiergerät in der Ausrüstung überzieht jeden brauchbaren Griff, jeden Hebel und mehrere Finger mit beeindruckender Effizienz. Bevor du innerhalb von 10 Minuten deinen nächsten Wurf zum Reparieren oder Herstellen mit derselben Ausrüstung ablegst, musst du 1 Minute zum Reinigen aufwenden oder erhältst auf diesen Wurf einen Situationsmalus von -1. Nach diesem Wurf endet die Folge in jedem Fall."
+      },
+      "WorkbenchViseFilesForIndependence": {
+        "Title": "Werkbankschraubstock beantragt Unabhängigkeit",
+        "Description": "Der Versuch zum Reparieren oder Herstellen scheitert normal. Der Schraubstock dreht sich exakt um 180 Grad, gibt das Werkstück frei und enthüllt ein winziges Schild mit der Aufschrift FREI. Es gibt keinen zusätzlichen regeltechnischen Effekt. Das Schild war vorher nicht da."
+      },
+      "ReferenceGaugeBecomesOpinionated": {
+        "Title": "Referenzlehre entwickelt eine Meinung",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Reparieren oder Herstellen ab, einschließlich normaler Beschädigung des Gegenstands oder Materialverluste. Eine Referenzlehre markiert ein Maß mit WAHRSCHEINLICH WICHTIG. Wenn du 1 Minute aufwendest, um dieses Maß zu überprüfen, erhält dein nächster Wurf zum Reparieren oder Herstellen am selben Gegenstand oder Projekt innerhalb von 1 Stunde einen Situationsbonus von +1. Der ursprüngliche kritische Fehlschlag bleibt unverändert."
+      },
+      "TensionWrenchStartsCounting": {
+        "Title": "Spannwerkzeug beginnt zu zählen",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Schloss knacken ab, einschließlich eventuell zerbrochener Werkzeuge. Ein winziger Zähler am Spannwerkzeug klickt auf VERSUCH 2, hält kurz inne und springt selbstständig auf VERSUCH 4. Es gibt keinen zusätzlichen regeltechnischen Effekt. Was mit Versuch drei geschehen ist, erklärt es nicht."
+      },
+      "MagneticOrganizerFindsTheLock": {
+        "Title": "Magnetischer Sortierer findet das Schloss",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Schloss knacken oder Mechanismus ausschalten ab, einschließlich zerbrochener Werkzeuge oder eines ausgelösten Mechanismus, falls zutreffend. Ein magnetischer Sortierer springt aus der Ausrüstung und haftet am Schloss oder Mechanismus fest. Bis eine angrenzende Kreatur 1 Aktion Interagieren zum Entfernen aufwendet, erhält der nächste Wurf zum Schloss knacken oder Mechanismus ausschalten gegen dasselbe Ziel einen Situationsmalus von -1. Das Entfernen verursacht keinen Schaden."
+      },
+      "ContinuityTesterAnnouncesEverything": {
+        "Title": "Durchgangsprüfer bestätigt einfach alles",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Mechanismus ausschalten ab, einschließlich des Auslösens des Mechanismus, falls zutreffend. Der Durchgangsprüfer beginnt bei jeder Oberfläche, jedem Werkzeug, jeder Schnalle und jedem nahen Stiefel zu piepen und zeigt dabei DURCHGANG: JA an. Es gibt keinen zusätzlichen regeltechnischen Effekt."
+      },
+      "InspectionLampPerformsAFlashTest": {
+        "Title": "Inspektionslampe führt einen Blitztest durch",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Mechanismus ausschalten ab, einschließlich des Auslösens des Mechanismus, falls zutreffend. Die Inspektionslampe der Ausrüstung führt ungefragt direkt vor deinen Augen einen Test mit maximaler Helligkeit durch. Du bist bis zum Beginn deines nächsten Zuges geblendet. Die normalen Folgen des kritischen Fehlschlags des Mechanismus bleiben unverändert."
+      },
+      "GauzeRollEstablishesAPerimeter": {
+        "Title": "Mullbinde errichtet einen Sicherheitsbereich",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Wunden versorgen oder Erste Hilfe leisten ab. Eine Mullbinde schießt aus den Heilerwerkzeugen und rollt sich über den Boden ab. Während einer Begegnung wird ein angrenzendes Feld von 1,50 m nach Wahl der SL zu schwierigem Gelände, bis eine angrenzende Kreatur 1 Aktion Interagieren zum Wegräumen der Mullbinde aufwendet. Außerhalb einer Begegnung gibt es keinen zusätzlichen regeltechnischen Effekt."
+      },
+      "SymptomChartAddsAColumn": {
+        "Title": "Symptomtabelle fügt eine Spalte hinzu",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Krankheit behandeln ab, einschließlich des Malus auf den nächsten Rettungswurf des Patienten. Die Symptomtabelle klappt eine zusätzliche Spalte mit der Überschrift MÖGLICHERWEISE TECHNIK auf und setzt sofort ein Häkchen. Es gibt keinen zusätzlichen regeltechnischen Effekt."
+      },
+      "ReagentStripOverreacts": {
+        "Title": "Reagenzstreifen übertreibt",
+        "Description": "Wickle den normalen kritischen Fehlschlag bei Vergiftung behandeln ab, einschließlich des Malus auf den nächsten Rettungswurf des Patienten. Ein Reagenzstreifen nimmt eine spektakuläre und ungewöhnlich eindeutige Farbe an. Der nächste Wurf zum Vergiftung behandeln bei demselben Patienten innerhalb von 10 Minuten erhält einen Situationsbonus von +1. Dieser Bonus verändert oder entfernt den Malus auf den Rettungswurf durch den auslösenden kritischen Fehlschlag nicht."
       }
     }
   }

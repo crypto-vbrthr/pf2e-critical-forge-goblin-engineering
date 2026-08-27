@@ -201,5 +201,111 @@ export const EQUIPMENT_INCIDENT_CARDS = Object.freeze([
     tags: ["repair", "craft", "toolkit", "benefit", "mixed-result", "recall-knowledge", "one-use"],
     filters: { skillTypes: ["crafting"], actionSlugs: ["repair", "craft"] },
     contentBatch: 2
+  }),
+  defineEquipmentIncident({
+    id: "ei-021-oil-can-achieves-total-coverage",
+    localizationKey: "OilCanAchievesTotalCoverage",
+    impact: "moderate",
+    fallbackTitle: "Oil Can Achieves Total Coverage",
+    fallbackDescription: "Resolve the normal critical failure for Repair or Craft. A lubricator in the toolkit coats every useful grip, handle, and several fingers with impressive efficiency. Before your next Repair or Craft check using the same toolkit within 10 minutes, spend 1 minute cleaning it or take a -1 circumstance penalty to that check. After that check, this consequence ends either way.",
+    tags: ["repair", "craft", "toolkit", "lubrication", "cleanup", "action-tax"],
+    filters: { skillTypes: ["crafting"], actionSlugs: ["repair", "craft"] },
+    contentBatch: 3
+  }),
+  defineEquipmentIncident({
+    id: "ei-022-workbench-vise-files-for-independence",
+    localizationKey: "WorkbenchViseFilesForIndependence",
+    impact: "narrative",
+    weight: 1.35,
+    fallbackTitle: "Workbench Vise Files for Independence",
+    fallbackDescription: "The Repair or Craft attempt fails normally. The vise rotates exactly 180 degrees, releases the workpiece, and reveals a tiny plate reading FREE. There is no additional mechanical effect. The plate was not there before.",
+    tags: ["repair", "craft", "toolkit", "narrative", "no-mechanical-effect", "vise"],
+    filters: { skillTypes: ["crafting"], actionSlugs: ["repair", "craft"] },
+    contentBatch: 3
+  }),
+  defineEquipmentIncident({
+    id: "ei-023-reference-gauge-becomes-opinionated",
+    localizationKey: "ReferenceGaugeBecomesOpinionated",
+    impact: "light",
+    weight: 0.65,
+    fallbackTitle: "Reference Gauge Becomes Opinionated",
+    fallbackDescription: "Resolve the normal critical failure for Repair or Craft, including any normal item damage or material loss. A reference gauge marks one measurement PROBABLY IMPORTANT. If you spend 1 minute verifying that measurement, your next Repair or Craft check concerning the same item or project within 1 hour gains a +1 circumstance bonus. The original critical failure remains unchanged.",
+    tags: ["repair", "craft", "toolkit", "benefit", "mixed-result", "measurement", "one-use"],
+    filters: { skillTypes: ["crafting"], actionSlugs: ["repair", "craft"] },
+    contentBatch: 3
+  }),
+  defineEquipmentIncident({
+    id: "ei-024-tension-wrench-starts-counting",
+    localizationKey: "TensionWrenchStartsCounting",
+    impact: "narrative",
+    weight: 1.35,
+    fallbackTitle: "Tension Wrench Starts Counting",
+    fallbackDescription: "Resolve the normal critical failure for Pick a Lock, including any broken tools. A tiny counter on the tension wrench clicks to ATTEMPT 2, pauses, and advances itself to ATTEMPT 4. There is no additional mechanical effect. It refuses to explain what happened to attempt three.",
+    tags: ["pick-a-lock", "thieves-tools", "narrative", "no-mechanical-effect", "counter"],
+    filters: { skillTypes: ["thievery", "crafting"], actionSlugs: ["pick-a-lock"] },
+    contentBatch: 3
+  }),
+  defineEquipmentIncident({
+    id: "ei-025-magnetic-organizer-finds-the-lock",
+    localizationKey: "MagneticOrganizerFindsTheLock",
+    impact: "moderate",
+    fallbackTitle: "Magnetic Organizer Finds the Lock",
+    fallbackDescription: "Resolve the normal critical failure for Pick a Lock or Disable a Device, including broken tools or a triggered mechanism when applicable. A magnetic organizer leaps from the toolkit and clamps itself to the lock or device. Until an adjacent creature spends 1 Interact action removing it, the next Pick a Lock or Disable a Device check against that same target takes a -1 circumstance penalty. Removing it causes no damage.",
+    tags: ["pick-a-lock", "disable-a-device", "thieves-tools", "magnet", "interact", "same-target"],
+    filters: { skillTypes: ["thievery", "crafting"], actionSlugs: ["pick-a-lock", "disable-a-device"] },
+    contentBatch: 3
+  }),
+  defineEquipmentIncident({
+    id: "ei-026-continuity-tester-announces-everything",
+    localizationKey: "ContinuityTesterAnnouncesEverything",
+    impact: "narrative",
+    weight: 1.35,
+    fallbackTitle: "Continuity Tester Announces Everything",
+    fallbackDescription: "Resolve the normal critical failure for Disable a Device, including triggering the mechanism when applicable. The continuity tester begins beeping at every surface, tool, buckle, and nearby boot while displaying CONTINUITY: YES. There is no additional mechanical effect.",
+    tags: ["disable-a-device", "thieves-tools", "narrative", "no-mechanical-effect", "tester"],
+    filters: { skillTypes: ["thievery", "crafting"], actionSlugs: ["disable-a-device"] },
+    contentBatch: 3
+  }),
+  defineEquipmentIncident({
+    id: "ei-027-inspection-lamp-performs-a-flash-test",
+    localizationKey: "InspectionLampPerformsAFlashTest",
+    impact: "moderate",
+    fallbackTitle: "Inspection Lamp Performs a Flash Test",
+    fallbackDescription: "Resolve the normal critical failure for Disable a Device, including triggering the mechanism when applicable. The toolkit's inspection lamp performs an unsolicited maximum-brightness test directly into your eyes. You are dazzled until the start of your next turn. The device's normal critical-failure consequences are unchanged.",
+    tags: ["disable-a-device", "thieves-tools", "light", "dazzled", "operator"],
+    filters: { skillTypes: ["thievery", "crafting"], actionSlugs: ["disable-a-device"] },
+    contentBatch: 3
+  }),
+  defineEquipmentIncident({
+    id: "ei-028-gauze-roll-establishes-a-perimeter",
+    localizationKey: "GauzeRollEstablishesAPerimeter",
+    impact: "moderate",
+    fallbackTitle: "Gauze Roll Establishes a Perimeter",
+    fallbackDescription: "Resolve the normal critical failure for Treat Wounds or Administer First Aid. A gauze roll launches from the healer's toolkit and unspools across the floor. During an encounter, one adjacent 5-foot square chosen by the GM becomes difficult terrain until an adjacent creature spends 1 Interact action clearing the gauze. Outside an encounter, there is no additional mechanical effect.",
+    tags: ["treat-wounds", "administer-first-aid", "healers-toolkit", "gauze", "difficult-terrain", "interact"],
+    filters: { skillTypes: ["medicine", "nature", "crafting"], actionSlugs: ["treat-wounds", "administer-first-aid"] },
+    contentBatch: 3
+  }),
+  defineEquipmentIncident({
+    id: "ei-029-symptom-chart-adds-a-column",
+    localizationKey: "SymptomChartAddsAColumn",
+    impact: "narrative",
+    weight: 1.35,
+    fallbackTitle: "Symptom Chart Adds a Column",
+    fallbackDescription: "Resolve the normal critical failure for Treat Disease, including the penalty to the patient's next saving throw. The symptom chart unfolds one extra column labeled POSSIBLY ENGINEERING and immediately checks it. There is no additional mechanical effect.",
+    tags: ["treat-disease", "healers-toolkit", "narrative", "no-mechanical-effect", "chart"],
+    filters: { skillTypes: ["medicine"], actionSlugs: ["treat-disease"] },
+    contentBatch: 3
+  }),
+  defineEquipmentIncident({
+    id: "ei-030-reagent-strip-overreacts",
+    localizationKey: "ReagentStripOverreacts",
+    impact: "light",
+    weight: 0.65,
+    fallbackTitle: "Reagent Strip Overreacts",
+    fallbackDescription: "Resolve the normal critical failure for Treat Poison, including the penalty to the patient's next saving throw. A reagent strip turns a spectacular and unusually specific color. The next Treat Poison check made on the same patient within 10 minutes gains a +1 circumstance bonus. This bonus does not alter or remove the saving-throw penalty from the triggering critical failure.",
+    tags: ["treat-poison", "healers-toolkit", "benefit", "mixed-result", "same-patient", "one-use"],
+    filters: { skillTypes: ["medicine"], actionSlugs: ["treat-poison"] },
+    contentBatch: 3
   })
 ]);

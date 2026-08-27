@@ -275,15 +275,15 @@ test("pack construction exposes three active content packs", () => {
   assert.equal(packs[1].decks.attack.cards.length, 30);
   assert.equal(packs[1].metadata.implementedCards, 30);
   assert.equal(packs[1].enabled, true);
-  assert.equal(packs[2].decks.skill.cards.length, 20);
-  assert.equal(packs[2].metadata.implementedCards, 20);
+  assert.equal(packs[2].decks.skill.cards.length, 30);
+  assert.equal(packs[2].metadata.implementedCards, 30);
   assert.equal(packs[2].enabled, true);
 });
 
-test("dev.8 contains twenty Equipment Incidents in the dedicated skill deck", () => {
-  assert.equal(EQUIPMENT_INCIDENT_CARDS.length, 20);
-  assert.equal(new Set(EQUIPMENT_INCIDENT_CARDS.map((card) => card.id)).size, 20);
-  assert.equal(new Set(EQUIPMENT_INCIDENT_CARDS.map((card) => card.fallbackTitle)).size, 20);
+test("dev.9 completes Equipment Incidents with thirty cards in the dedicated skill deck", () => {
+  assert.equal(EQUIPMENT_INCIDENT_CARDS.length, 30);
+  assert.equal(new Set(EQUIPMENT_INCIDENT_CARDS.map((card) => card.id)).size, 30);
+  assert.equal(new Set(EQUIPMENT_INCIDENT_CARDS.map((card) => card.fallbackTitle)).size, 30);
   for (const card of EQUIPMENT_INCIDENT_CARDS) {
     assert.equal(card.packId, PACK_IDS.EQUIPMENT_INCIDENTS);
     assert.equal(card.category, "skillCheckCriticalFailure");
@@ -325,6 +325,23 @@ test("dev.8 adds ten Equipment Incidents in content batch two", () => {
     "ei-018-wire-spool-auto-deploys",
     "ei-019-emergency-splint-selects-the-operator",
     "ei-020-failure-analysis-actually-works"
+  ]);
+});
+
+test("dev.9 adds the final ten Equipment Incidents in content batch three", () => {
+  const batchThree = EQUIPMENT_INCIDENT_CARDS.filter((card) => card.metadata.contentBatch === 3);
+  assert.equal(batchThree.length, 10);
+  assert.deepEqual(batchThree.map((card) => card.id.split(".").at(-1)), [
+    "ei-021-oil-can-achieves-total-coverage",
+    "ei-022-workbench-vise-files-for-independence",
+    "ei-023-reference-gauge-becomes-opinionated",
+    "ei-024-tension-wrench-starts-counting",
+    "ei-025-magnetic-organizer-finds-the-lock",
+    "ei-026-continuity-tester-announces-everything",
+    "ei-027-inspection-lamp-performs-a-flash-test",
+    "ei-028-gauze-roll-establishes-a-perimeter",
+    "ei-029-symptom-chart-adds-a-column",
+    "ei-030-reagent-strip-overreacts"
   ]);
 });
 
@@ -392,6 +409,32 @@ test("dev.8 narrative Equipment Incidents remain mechanically harmless", () => {
     "ei-011-sterilizer-declares-victory",
     "ei-013-dose-counter-wraps-around",
     "ei-016-toolbox-drawer-labels-everything"
+  ]) {
+    const card = bySuffix(suffix);
+    assert.equal(card.impact, "narrative");
+    assert.equal(card.tags.includes("no-mechanical-effect"), true);
+    assert.match(card.fallbackDescription, /(no mechanical effect|no additional mechanical effect)/i);
+  }
+});
+
+
+test("dev.9 final Equipment Incidents preserve critical failures while broadening tool behavior", () => {
+  const bySuffix = (suffix) => EQUIPMENT_INCIDENT_CARDS.find((card) => card.id.endsWith(suffix));
+  assert.match(bySuffix("ei-021-oil-can-achieves-total-coverage").fallbackDescription, /normal critical failure/i);
+  assert.equal(bySuffix("ei-023-reference-gauge-becomes-opinionated").tags.includes("benefit"), true);
+  assert.match(bySuffix("ei-025-magnetic-organizer-finds-the-lock").fallbackDescription, /broken tools or a triggered mechanism/i);
+  assert.match(bySuffix("ei-027-inspection-lamp-performs-a-flash-test").fallbackDescription, /dazzled until the start of your next turn/i);
+  assert.match(bySuffix("ei-028-gauze-roll-establishes-a-perimeter").fallbackDescription, /difficult terrain/i);
+  assert.match(bySuffix("ei-030-reagent-strip-overreacts").fallbackDescription, /does not alter or remove the saving-throw penalty/i);
+});
+
+test("dev.9 narrative Equipment Incidents remain mechanically harmless", () => {
+  const bySuffix = (suffix) => EQUIPMENT_INCIDENT_CARDS.find((card) => card.id.endsWith(suffix));
+  for (const suffix of [
+    "ei-022-workbench-vise-files-for-independence",
+    "ei-024-tension-wrench-starts-counting",
+    "ei-026-continuity-tester-announces-everything",
+    "ei-029-symptom-chart-adds-a-column"
   ]) {
     const card = bySuffix(suffix);
     assert.equal(card.impact, "narrative");

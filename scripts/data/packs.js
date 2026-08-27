@@ -58,7 +58,7 @@ export const GOBLIN_PACK_CONFIGS = Object.freeze([
       scope: "equipment-heavy-skill-check-critical-failures",
       contentStatus: "development",
       plannedCards: 30,
-      implementedCards: 20
+      implementedCards: 30
     })
   })
 ]);

@@ -41,11 +41,11 @@ At 30 cards, Ranged Engineering is complete for the initial release scope. Furth
 ## Equipment Incidents
 
 Planned: 30 cards  
-Implemented: 20 cards
+Implemented: 30 cards
 
 Equipment Incidents uses Critical Forge's dedicated skill-check deck and focuses on critical failures where tools or work equipment are central to the activity.
 
-The first two blocks cover:
+The completed three-block deck covers:
 
 - Repair toolkit calibration and spare-part incidents
 - Crafting plans and measuring equipment
@@ -57,7 +57,12 @@ The first two blocks cover:
 - Treat Disease and Treat Poison incidents that explicitly preserve the normal penalty to the patient's next saving throw
 - parts trays, toolbox organization, lockpick cases, and wire spools that turn work equipment into short-lived complications
 - additional bounded Recall Knowledge benefits that never undo the triggering critical failure
+- lubrication mishaps, opinionated gauges, magnetic tool organizers, inspection lamps, and workbench hardware with unsolicited behavior
+- short-lived encounter-space complications such as runaway gauze without adding permanent equipment damage
+- paired narrative and mixed-result incidents for Treat Disease and Treat Poison that explicitly preserve their normal saving-throw penalties
 
-The deck currently targets the action slugs `repair`, `craft`, `pick-a-lock`, `disable-a-device`, `treat-wounds`, `administer-first-aid`, `treat-disease`, and `treat-poison`.
+The completed deck targets the action slugs `repair`, `craft`, `pick-a-lock`, `disable-a-device`, `treat-wounds`, `administer-first-aid`, `treat-disease`, and `treat-poison`.
 
 Shield-only incidents remain out of scope because actions such as Raise a Shield do not involve a check and therefore do not create a skill-critical context.
+
+At 30 cards, Equipment Incidents is complete for the initial Goblin Engineering release scope. Further skill content should wait for playtest feedback or a deliberately separate expansion of the supported action set.

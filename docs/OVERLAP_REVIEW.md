@@ -168,3 +168,23 @@ The second Equipment Incidents block expands the same conservative rules lane an
 The block still avoids **Arcane Backlash** territory by excluding Identify Magic, Learn a Spell, and other magic-facing checks. It also avoids turning generic Athletics or exploration failures into Goblin Engineering incidents when no specific equipment is guaranteed to be involved.
 
 The rc.6.1 dependency is intentional: Equipment Incidents relies on Critical Forge's canonical action-slug normalization so PF2e options such as `action:pick-a-lock` and equivalent spellings match the card filters consistently.
+
+
+## Equipment Incidents III review (0.1.0-dev.9)
+
+The final ten-card block was reviewed against the first twenty Equipment Incidents and keeps the same conservative rule: the normal PF2e critical-failure result is resolved first and is never erased by the Goblin Engineering card.
+
+- **Oil Can Achieves Total Coverage** adds a brief cleanup/calibration problem after Repair or Craft without increasing item damage or material loss.
+- **Workbench Vise Files for Independence** is narrative-only and leaves the failed work exactly as PF2e resolved it.
+- **Reference Gauge Becomes Opinionated** offers a bounded future +1 circumstance bonus only after the original Repair/Craft failure has been fully resolved.
+- **Tension Wrench Starts Counting** is narrative-only and never restores tools broken by Pick a Lock.
+- **Magnetic Organizer Finds the Lock** can complicate the next attempt against the same lock or device, but it never prevents a mechanism triggered by Disable a Device or repairs broken tools.
+- **Continuity Tester Announces Everything** is narrative-only and does not change the device result.
+- **Inspection Lamp Performs a Flash Test** briefly dazzles the operator after Disable a Device while explicitly preserving the device's normal critical-failure consequences.
+- **Gauze Roll Establishes a Perimeter** creates a small, removable encounter-space complication after Treat Wounds or Administer First Aid rather than changing the medical result itself.
+- **Symptom Chart Adds a Column** is narrative-only and preserves the Treat Disease saving-throw penalty.
+- **Reagent Strip Overreacts** provides a bounded later Treat Poison bonus while explicitly leaving the original saving-throw penalty in place.
+
+No new magic-facing skill actions were introduced, so the deck remains outside **Arcane Backlash** territory. The final block also avoids generic Athletics, Acrobatics, social, or exploration checks where specialized equipment is not guaranteed to be central to the action.
+
+At 30 cards, Equipment Incidents now completes the initial Goblin Engineering plan: melee weapons malfunction, ranged hardware improvises, and skill tools develop unsolicited features, all without permanent equipment destruction or cancellation of the triggering critical failure.

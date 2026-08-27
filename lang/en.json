@@ -353,6 +353,46 @@
       "FailureAnalysisActuallyWorks": {
         "Title": "Failure Analysis Actually Works",
         "Description": "Resolve the normal critical failure for Repair or Craft. A tiny indicator on the toolkit points at something nearby and lights up ACTUAL PROBLEM. Your next Recall Knowledge check made within 10 minutes specifically to understand the failed item, project, or mechanism gains a +1 circumstance bonus. The original critical failure and all of its normal consequences remain unchanged."
+      },
+      "OilCanAchievesTotalCoverage": {
+        "Title": "Oil Can Achieves Total Coverage",
+        "Description": "Resolve the normal critical failure for Repair or Craft. A lubricator in the toolkit coats every useful grip, handle, and several fingers with impressive efficiency. Before your next Repair or Craft check using the same toolkit within 10 minutes, spend 1 minute cleaning it or take a -1 circumstance penalty to that check. After that check, this consequence ends either way."
+      },
+      "WorkbenchViseFilesForIndependence": {
+        "Title": "Workbench Vise Files for Independence",
+        "Description": "The Repair or Craft attempt fails normally. The vise rotates exactly 180 degrees, releases the workpiece, and reveals a tiny plate reading FREE. There is no additional mechanical effect. The plate was not there before."
+      },
+      "ReferenceGaugeBecomesOpinionated": {
+        "Title": "Reference Gauge Becomes Opinionated",
+        "Description": "Resolve the normal critical failure for Repair or Craft, including any normal item damage or material loss. A reference gauge marks one measurement PROBABLY IMPORTANT. If you spend 1 minute verifying that measurement, your next Repair or Craft check concerning the same item or project within 1 hour gains a +1 circumstance bonus. The original critical failure remains unchanged."
+      },
+      "TensionWrenchStartsCounting": {
+        "Title": "Tension Wrench Starts Counting",
+        "Description": "Resolve the normal critical failure for Pick a Lock, including any broken tools. A tiny counter on the tension wrench clicks to ATTEMPT 2, pauses, and advances itself to ATTEMPT 4. There is no additional mechanical effect. It refuses to explain what happened to attempt three."
+      },
+      "MagneticOrganizerFindsTheLock": {
+        "Title": "Magnetic Organizer Finds the Lock",
+        "Description": "Resolve the normal critical failure for Pick a Lock or Disable a Device, including broken tools or a triggered mechanism when applicable. A magnetic organizer leaps from the toolkit and clamps itself to the lock or device. Until an adjacent creature spends 1 Interact action removing it, the next Pick a Lock or Disable a Device check against that same target takes a -1 circumstance penalty. Removing it causes no damage."
+      },
+      "ContinuityTesterAnnouncesEverything": {
+        "Title": "Continuity Tester Announces Everything",
+        "Description": "Resolve the normal critical failure for Disable a Device, including triggering the mechanism when applicable. The continuity tester begins beeping at every surface, tool, buckle, and nearby boot while displaying CONTINUITY: YES. There is no additional mechanical effect."
+      },
+      "InspectionLampPerformsAFlashTest": {
+        "Title": "Inspection Lamp Performs a Flash Test",
+        "Description": "Resolve the normal critical failure for Disable a Device, including triggering the mechanism when applicable. The toolkit's inspection lamp performs an unsolicited maximum-brightness test directly into your eyes. You are dazzled until the start of your next turn. The device's normal critical-failure consequences are unchanged."
+      },
+      "GauzeRollEstablishesAPerimeter": {
+        "Title": "Gauze Roll Establishes a Perimeter",
+        "Description": "Resolve the normal critical failure for Treat Wounds or Administer First Aid. A gauze roll launches from the healer's toolkit and unspools across the floor. During an encounter, one adjacent 5-foot square chosen by the GM becomes difficult terrain until an adjacent creature spends 1 Interact action clearing the gauze. Outside an encounter, there is no additional mechanical effect."
+      },
+      "SymptomChartAddsAColumn": {
+        "Title": "Symptom Chart Adds a Column",
+        "Description": "Resolve the normal critical failure for Treat Disease, including the penalty to the patient's next saving throw. The symptom chart unfolds one extra column labeled POSSIBLY ENGINEERING and immediately checks it. There is no additional mechanical effect."
+      },
+      "ReagentStripOverreacts": {
+        "Title": "Reagent Strip Overreacts",
+        "Description": "Resolve the normal critical failure for Treat Poison, including the penalty to the patient's next saving throw. A reagent strip turns a spectacular and unusually specific color. The next Treat Poison check made on the same patient within 10 minutes gains a +1 circumstance bonus. This bonus does not alter or remove the saving-throw penalty from the triggering critical failure."
       }
     }
   }
