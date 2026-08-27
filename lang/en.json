@@ -1,0 +1,79 @@
+{
+  "PF2E_GOBLIN_ENGINEERING": {
+    "PackName": "Goblin Engineering",
+    "Notifications": {
+      "PackSelectionUpdated": "Goblin Engineering pack selection updated.",
+      "RegistrationFailed": "PF2E Critical Forge: Goblin Engineering could not register with Critical Forge."
+    },
+    "Packs": {
+      "WeaponMalfunctions": {
+        "Title": "Goblin Engineering: Weapon Malfunctions",
+        "Description": "Humorous critical fumbles for non-spell melee weapons, focused on unreliable hardware, suspicious safety features, and brief equipment problems."
+      },
+      "RangedEngineering": {
+        "Title": "Goblin Engineering: Ranged Engineering",
+        "Description": "Reserved for chaotic ranged-weapon engineering incidents in a later development block."
+      },
+      "EquipmentIncidents": {
+        "Title": "Goblin Engineering: Equipment Incidents",
+        "Description": "Reserved for shields, tools, held items, and wider equipment incidents in a later development block."
+      }
+    },
+    "Settings": {
+      "WeaponMalfunctions": {
+        "Name": "Enable Weapon Malfunctions",
+        "Hint": "Enables humorous critical-fumble cards for non-spell melee weapons."
+      },
+      "RangedEngineering": {
+        "Name": "Enable Ranged Engineering",
+        "Hint": "Reserved for the future Ranged Engineering deck. This development build does not contain ranged cards yet."
+      },
+      "EquipmentIncidents": {
+        "Name": "Enable Equipment Incidents",
+        "Hint": "Reserved for the future Equipment Incidents deck. This development build does not contain equipment cards yet."
+      }
+    },
+    "Cards": {
+      "UnscheduledMaintenance": {
+        "Title": "Unscheduled Maintenance",
+        "Description": "Something inside the weapon makes a tiny, authoritative click. Before you can Strike with this weapon again before the end of your next turn, you must spend 1 Interact action to reset it. You can use other weapons normally. Nothing is broken; the weapon is simply taking a very short break."
+      },
+      "DiagnosticSqueal": {
+        "Title": "Diagnostic Squeal",
+        "Description": "The weapon emits an indignant squeak. There is no mechanical effect. If anyone checks whether it is broken, it squeaks again, slightly louder."
+      },
+      "CounterweightGoesFreelance": {
+        "Title": "Counterweight Goes Freelance",
+        "Description": "The weapon suddenly balances around a point nobody approved. Your next Strike with the same weapon before the end of your next turn takes a -1 circumstance penalty. You may spend 1 Interact action before that Strike to rebalance the weapon and end this consequence instead."
+      },
+      "EmergencyEjectionSystem": {
+        "Title": "Emergency Ejection System",
+        "Description": "A safety system nobody remembers installing activates flawlessly. The weapon leaves your hand and lands in an adjacent legal space chosen by the GM. If no adjacent space is suitable, it lands at your feet. The weapon is not damaged. Retrieving it follows the normal rules."
+      },
+      "SelfTighteningGrip": {
+        "Title": "Self-Tightening Grip",
+        "Description": "The grip decides that letting go is a user error. Until the end of your next turn, you cannot Release, drop, or hand off this weapon until you spend 1 Interact action to loosen the grip. You can otherwise use the weapon normally."
+      },
+      "UnexpectedSecondaryFunction": {
+        "Title": "Unexpected Secondary Function",
+        "Description": "The weapon begins producing an unnecessary but surprisingly effective cloud of smoke, sparks, or both. Until the start of your next turn, you are concealed from creatures more than 10 feet away while you hold the weapon, but you cannot Hide while holding it. Creatures within 10 feet are unaffected by this concealment."
+      },
+      "SuccessfulFailure": {
+        "Title": "Successful Failure",
+        "Description": "The failed attack accidentally knocks one stubborn mechanism into perfect alignment. Before the end of your next turn, the first Interact action used solely to draw, stow, change the grip of, or reset this same weapon can be performed as a free action. The critical fumble itself remains a critical fumble."
+      },
+      "SafetyFeatureEngaged": {
+        "Title": "Safety Feature Engaged",
+        "Description": "A tiny latch snaps into place with immense confidence. Until the end of your next turn, you cannot make a Strike with this weapon as part of a reaction unless you first spend 1 Interact action to disengage the safety. Disengaging it ends this consequence."
+      },
+      "ReverseThrustCompensation": {
+        "Title": "Reverse Thrust Compensation",
+        "Description": "The weapon begins compensating for a problem in exactly the wrong direction. Your next Strike with the same weapon before the end of your next turn takes a -1 circumstance penalty to the attack roll, but if it hits, it deals 2 additional circumstance damage. The consequence then ends."
+      },
+      "PrototypeBehavior": {
+        "Title": "Prototype Behavior",
+        "Description": "The weapon starts oscillating between two equally confident configurations. Before your next Strike with this weapon before the end of your next turn, choose one: spend 1 Interact action to stabilize it and Strike normally, or make the Strike immediately as a misfortune effect and roll the attack twice, using the worse result. The consequence ends after either choice."
+      }
+    }
+  }
+}

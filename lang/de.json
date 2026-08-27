@@ -1,0 +1,79 @@
+{
+  "PF2E_GOBLIN_ENGINEERING": {
+    "PackName": "Goblin Engineering",
+    "Notifications": {
+      "PackSelectionUpdated": "Die Goblin-Engineering-Paketauswahl wurde aktualisiert.",
+      "RegistrationFailed": "PF2E Critical Forge: Goblin Engineering konnte nicht bei der Critical Forge registriert werden."
+    },
+    "Packs": {
+      "WeaponMalfunctions": {
+        "Title": "Goblin Engineering: Waffenfehlfunktionen",
+        "Description": "Humorvolle kritische Patzer für nichtmagische Nahkampfwaffen mit unzuverlässiger Technik, fragwürdigen Sicherheitsfunktionen und kurzen Ausrüstungsproblemen."
+      },
+      "RangedEngineering": {
+        "Title": "Goblin Engineering: Fernkampf-Ingenieurskunst",
+        "Description": "Reserviert für chaotische technische Zwischenfälle mit Fernkampfwaffen in einem späteren Entwicklungsblock."
+      },
+      "EquipmentIncidents": {
+        "Title": "Goblin Engineering: Ausrüstungszwischenfälle",
+        "Description": "Reserviert für Schilde, Werkzeuge, gehaltene Gegenstände und weitere Ausrüstungszwischenfälle in einem späteren Entwicklungsblock."
+      }
+    },
+    "Settings": {
+      "WeaponMalfunctions": {
+        "Name": "Waffenfehlfunktionen aktivieren",
+        "Hint": "Aktiviert humorvolle Karten für kritische Patzer mit nichtmagischen Nahkampfwaffen."
+      },
+      "RangedEngineering": {
+        "Name": "Fernkampf-Ingenieurskunst aktivieren",
+        "Hint": "Reserviert für das spätere Fernkampf-Deck. Dieser Entwicklungsstand enthält noch keine Fernkampfkarten."
+      },
+      "EquipmentIncidents": {
+        "Name": "Ausrüstungszwischenfälle aktivieren",
+        "Hint": "Reserviert für das spätere Ausrüstungs-Deck. Dieser Entwicklungsstand enthält noch keine Ausrüstungskarten."
+      }
+    },
+    "Cards": {
+      "UnscheduledMaintenance": {
+        "Title": "Außerplanmäßige Wartung",
+        "Description": "Irgendetwas in der Waffe macht ein winziges, sehr bestimmtes Klick. Bevor du mit dieser Waffe vor dem Ende deines nächsten Zuges erneut einen Angriff ausführen kannst, musst du 1 Aktion Interagieren aufwenden, um sie zurückzusetzen. Andere Waffen kannst du normal verwenden. Nichts ist kaputt; die Waffe macht lediglich eine sehr kurze Pause."
+      },
+      "DiagnosticSqueal": {
+        "Title": "Diagnostisches Quietschen",
+        "Description": "Die Waffe gibt ein beleidigtes Quietschen von sich. Es gibt keinen mechanischen Effekt. Falls jemand prüft, ob sie kaputt ist, quietscht sie noch einmal, etwas lauter."
+      },
+      "CounterweightGoesFreelance": {
+        "Title": "Gegengewicht macht sich selbstständig",
+        "Description": "Die Waffe balanciert plötzlich um einen Punkt, den niemand genehmigt hat. Dein nächster Angriff mit derselben Waffe vor dem Ende deines nächsten Zuges erhält einen Situationsmalus von -1. Du kannst vorher 1 Aktion Interagieren aufwenden, um die Waffe neu auszubalancieren und diese Folge stattdessen zu beenden."
+      },
+      "EmergencyEjectionSystem": {
+        "Title": "Notauswurfsystem",
+        "Description": "Ein Sicherheitssystem, an dessen Einbau sich niemand erinnert, funktioniert tadellos. Die Waffe verlässt deine Hand und landet in einem angrenzenden zulässigen Feld nach Wahl der SL. Gibt es kein geeignetes angrenzendes Feld, landet sie zu deinen Füßen. Die Waffe wird nicht beschädigt. Für das Aufheben gelten die normalen Regeln."
+      },
+      "SelfTighteningGrip": {
+        "Title": "Selbstspannender Griff",
+        "Description": "Der Griff entscheidet, dass Loslassen ein Anwenderfehler ist. Bis zum Ende deines nächsten Zuges kannst du diese Waffe weder Loslassen noch fallen lassen oder weitergeben, bevor du 1 Aktion Interagieren aufgewendet hast, um den Griff zu lockern. Ansonsten kannst du die Waffe normal verwenden."
+      },
+      "UnexpectedSecondaryFunction": {
+        "Title": "Unerwartete Zusatzfunktion",
+        "Description": "Die Waffe produziert plötzlich eine unnötige, aber überraschend wirksame Wolke aus Rauch, Funken oder beidem. Bis zum Beginn deines nächsten Zuges bist du für Kreaturen in mehr als 3 Metern Entfernung verborgen, solange du die Waffe hältst, kannst aber nicht Verstecken einsetzen. Kreaturen innerhalb von 3 Metern sind von dieser Verborgenheit nicht betroffen."
+      },
+      "SuccessfulFailure": {
+        "Title": "Erfolgreicher Fehlschlag",
+        "Description": "Der misslungene Angriff schlägt versehentlich einen störrischen Mechanismus in die perfekte Position. Vor dem Ende deines nächsten Zuges kann die erste Aktion Interagieren, die ausschließlich dazu dient, dieselbe Waffe zu ziehen, zu verstauen, ihren Griff zu verändern oder sie zurückzusetzen, als Freie Aktion ausgeführt werden. Der kritische Patzer bleibt trotzdem ein kritischer Patzer."
+      },
+      "SafetyFeatureEngaged": {
+        "Title": "Sicherheitsfunktion aktiviert",
+        "Description": "Ein winziger Riegel rastet mit gewaltigem Selbstvertrauen ein. Bis zum Ende deines nächsten Zuges kannst du mit dieser Waffe keinen Angriff als Teil einer Reaktion ausführen, bevor du nicht 1 Aktion Interagieren aufgewendet hast, um die Sicherung zu lösen. Dadurch endet diese Folge."
+      },
+      "ReverseThrustCompensation": {
+        "Title": "Umgekehrte Schubkompensation",
+        "Description": "Die Waffe beginnt, ein Problem mit beeindruckender Präzision in genau die falsche Richtung auszugleichen. Dein nächster Angriff mit derselben Waffe vor dem Ende deines nächsten Zuges erhält einen Situationsmalus von -1 auf den Angriffswurf. Trifft er trotzdem, verursacht er 2 zusätzlichen Situationsschaden. Danach endet die Folge."
+      },
+      "PrototypeBehavior": {
+        "Title": "Prototypenverhalten",
+        "Description": "Die Waffe beginnt zwischen zwei gleichermaßen überzeugten Konfigurationen zu schwingen. Bevor du vor dem Ende deines nächsten Zuges deinen nächsten Angriff mit dieser Waffe ausführst, wähle eine Möglichkeit: Wende 1 Aktion Interagieren auf, um sie zu stabilisieren und normal anzugreifen, oder führe den Angriff sofort als Unglückseffekt aus, würfle den Angriff zweimal und verwende das schlechtere Ergebnis. Danach endet die Folge."
+      }
+    }
+  }
+}
