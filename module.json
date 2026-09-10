@@ -50,6 +50,6 @@
   "license": "LICENSE",
   "readme": "README.md",
   "url": "https://github.com/crypto-vbrthr/pf2e-critical-forge-goblin-engineering",
-  "manifest": "https://raw.githubusercontent.com/crypto-vbrthr/pf2e-critical-forge-goblin-engineering/main/module.json",
-  "download": "https://github.com/crypto-vbrthr/pf2e-critical-forge-goblin-engineering/releases/download/0.1.0/pf2e-critical-forge-goblin-engineering.zip"
+  "manifest": "https://raw.githubusercontent.com/crypto-vbrthr/pf2e-critical-forge-goblin-engineering/refs/heads/main/module.json",
+  "download": "https://github.com/crypto-vbrthr/pf2e-critical-forge-goblin-engineering/releases/download/v0.1.0/pf2e-critical-forge-goblin-engineering.zip"
 }
